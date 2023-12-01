@@ -1,0 +1,63 @@
+\contentsline {chapter}{\numberline {1}Introducción. }{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Preliminar.}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Teorema de Ostrogradsky.}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Dual de Hodge.}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}La Clasificación de Wigner.}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Campo de spin-1 con masa.}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lagrangiano.}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Grados de Libertad.}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Eliminación del \textit {ghost.}}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Ecuación de movimiento.}{12}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Grados de libertad.}{13}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Hamiltoniano.}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Campo de spin-1 sin masa.}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lagrangiano}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Grados de Libertad.}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Invarianza \textit {gauge.}}{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Ecuación de movimiento y Elección del \textit {gauge}.}{17}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Grados de libertad.}{18}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Hamiltoniano.}{19}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Helicidad.}{19}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Primera restricción.}{20}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Segunda restricción.}{21}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Helicidides del campo de spin-1.}{21}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Campo de spin-2 con masa. }{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Lagrangiano}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Grados de Libertad.}{24}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Eliminación de los \textit {ghosts}.}{25}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Ecuación de movimiento.}{27}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Grados de libertad.}{28}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Hamiltoniano.}{29}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Campo de spin-2 sin masa. }{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Lagrangiano}{32}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Grados de Libertad.}{33}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Invarianza \textit {gauge.}}{33}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Ecuación de movimiento y Elección del \textit {gauge}.}{34}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Grados de libertad.}{36}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Hamiltoniano.}{36}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Helicidad.}{37}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Primera restricción.}{38}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Segunda restricción.}{39}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Helicidades del campo de spin-2.}{40}{subsection.6.4.3}%
+\contentsline {chapter}{\numberline {7}Campo de Kalb-Ramond con masa. }{42}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Lagrangiano}{42}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Campo de fuerza $H_{\mu \nu \rho }$}{43}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Grados de Libertad}{43}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Ecuación de movimiento.}{44}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Hamiltoniano}{45}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Dualidad.}{46}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Campo de Kalb-Ramond sin masa. }{49}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Lagrangiano.}{49}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Grados de Libertad.}{50}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Invarianza \textit {gauge.}}{50}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Ecuación de movimiento y Elección del \textit {gauge}.}{51}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Hamiltoniano.}{52}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Helicidad.}{53}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Primera restricción.}{53}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Segunda restricción.}{54}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Helicidades del campo de Kalb-Ramond.}{55}{subsection.8.3.3}%
+\contentsline {chapter}{\numberline {9}Conclusión}{57}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Recapitulación de los objetivos y alcances de la tesis.}{57}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Discusión de los resultados.}{58}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Posibles continuaciones y conclusión final.}{59}{section.9.3}%
+\contentsline {chapter}{References}{60}{chapter*.3}%

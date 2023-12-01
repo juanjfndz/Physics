@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Informe.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10600 items from 5000.
+Database file #1: Informe-blx.bib
+Database file #2: Chapters/9-Biblio.bib
+Repeated entry---line 539 of file Chapters/9-Biblio.bib
+ : @book{ortín_2004
+ :                  , place={Cambridge}, series={Cambridge Monographs on Mathematical Physics}, title={Gravity and Strings}, DOI={10.1017/CBO9780511616563}, publisher={Cambridge University Press}, author={Ortín, Tomás}, year={2004}, collection={Cambridge Monographs on Mathematical Physics}}
+I'm skipping whatever remains of this entry
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 40 entries,
+            6399 wiz_defined-function locations,
+            1525 strings with 15555 characters,
+and the built_in function-call counts, 240010 in all, are:
+= -- 17436
+> -- 3916
+< -- 1158
++ -- 5666
+- -- 1469
+* -- 17752
+:= -- 24726
+add.period$ -- 0
+call.type$ -- 40
+change.case$ -- 533
+chr.to.int$ -- 76
+cite$ -- 78
+duplicate$ -- 24881
+empty$ -- 22481
+format.name$ -- 2224
+if$ -- 49758
+int.to.chr$ -- 0
+int.to.str$ -- 89
+missing$ -- 0
+newline$ -- 1230
+num.names$ -- 1777
+pop$ -- 13153
+preamble$ -- 1
+purify$ -- 667
+quote$ -- 0
+skip$ -- 6971
+stack$ -- 0
+substring$ -- 31407
+swap$ -- 5912
+text.length$ -- 1041
+text.prefix$ -- 39
+top$ -- 1
+type$ -- 1343
+warning$ -- 0
+while$ -- 2994
+width$ -- 0
+write$ -- 1191
+(There was 1 error message)

@@ -1,0 +1,178 @@
+\chapter{Preliminar.} \label{Preliminar}
+
+\justify{En este capítulo, introducimos tres conceptos teóricos clave que resultan necesarios para nuestro análisis de las teorías de campo de los capítulos siguientes. El primero es el teorema de Ostrogradsky, que utilizamos para examinar las inestabilidades potenciales de nuestras teorías en la Sección \ref{Sec:Ostrogradsky}. A continuación, introducimos el operador de Hodge, que nos permite trabajar con tensores completamente anti-simétricos en la Sección \ref{Intro:Dual}. Por último, presentamos la clasificación de Wigner, que nos permite determinar de antemano el número de grados de libertad que deben tener los campos de en la Sección \ref{introduction:WignerClassification}.}
+%\justify{En este capítulo se introducen tres conceptos teóricos necesarios para los capítulos siguientes. Estas tres nociones nos permiten analizar las teorías basadas en campos con spin de este trabajo: el teorema de Ostrogradsky para comprobar posibles inestabilidades en la Sec. \ref{Sec:Ostrogradsky}, el operador de Hodge con el que trabajar tensores completamente anti-simétricos en la Sec. \ref{Intro:Dual} y la clasificación de Wigner para conocer el número de grados de libertad que deben presentar de antemano los campos con spin en la Sec. \ref{introduction:WignerClassification}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{4mm}
+\section{Teorema de Ostrogradsky.}  \label{Sec:Ostrogradsky}
+
+\justify{En 1850, el matemático Mikhail Ostrogradsky (1801 - 1862) publicó un artículo \cite{Ostrogradsky:1850fid} en el que revisaba la construcción del formalismo hamiltoniano a partir de una clase de lagrangianos no degenerados que tienen derivadas temporales de orden mayor que uno. El artículo de Ostrogradsky muestra que el hamiltoniano construido a partir de estos lagrangianos puede no estar acotado inferiormente, lo que puede dar lugar a inestabilidades en el sistema físico. Este descubrimiento pone de manifiesto la necesidad de evitar el uso de esta clase de lagrangianos para la descripción de una teoría física, ya que no nos permite expresar con rigurosidad y exactitud la realidad.}
+%\justify{En 1850, el matemático Mikhail Ostrogradsky (1801 - 1862) publicó un artículo \cite{Ostrogradsky:1850fid} en el que revisaba la construcción del formalismo hamiltoniano a partir de una clase de lagrangianos: lagrangianos no degenerados con derivadas temporales de orden superior a uno. El artículo de Ostrogradsky demuestra que el hamiltoniano construido a partir de tales lagrangianos puede no estar acotado inferiormente, dando lugar a inestabilidades en el sistema físico. Este descubrimiento revela que los lagrangianos no describen con exactitud la realidad y deben evitarse en las teorías físicas.}
+%\justify{En 1850 el matemático Mikhail Ostrogradsky (1801 - 1862) escribió un artículo \cite{Ostrogradsky:1850fid} en el que revisaba la construcción del formalismo hamiltoniano a partir de una clase de lagrangianos: lagrangianos no degenerados que presentan derivadas temporales de orden superior a uno. El artículo de Ostrogradsky muestra que el hamiltoniano que se construye a partir de lagrangianos no degenerados puede no encontrarse acotado inferiormente, y esto se traduce en la existencia de inestabilidades en el sistema físico. El descubrir que nuestra teoría presenta estas inestabilidades nos alerta de que el lagrangiano no expresa realidad, y por tanto deben evitarse para la descripción de una teoría física.}
+
+
+\justify{En esta sección, presentamos la construcción de Ostrogradsky del hamiltoniano para derivadas de orden $n$, la cual nos permite demostrar el resultado del teorema. El desarrollo matemático se basa en el artículo \cite{2015arXiv1506_02210}.}
+%\justify{En este apartado se muestra la construcción de Ostrogradsky del hamiltoniano para derivadas de orden $n$, la construcción del hamiltoniano de esta forma permite mostrar el resultado del teorema. El desarrollo matemático se basa en el artículo \cite{2015arXiv1506_02210}.}
+
+\justify{Se considera un sistema cuyo lagrangiano clásico $L$ presenta dependencias en la coordenada $x$ y en sus variaciones temporales hasta orden $n$, donde $x$ presenta dependencia temporal}
+
+\begin{equation}
+	L \left(x(t),\, \dot{x}(t),\, \cdots,\, \frac{d^{n}}{dt^{n}}x(t) \equiv x^{(n)}\right).
+\end{equation}
+
+ \justify{Además, la única condición sobre este sistema es que se asumirá que el lagrangiano depende de forma no degenerativa de la $n$-ésima derivada, es decir }
+
+\begin{equation}
+	\frac{\partial^{2}L}{\partial (x^{(n)})^{2} } \neq 0.
+\end{equation}
+
+\justify{La ecuación de Euler-Lagrange para lagrangianos con dependencias de orden $n$ tiene la forma}
+
+\begin{equation}
+	\sum_{i = 0}^{n} (-1)^{i} \frac{d^{i}}{dt^{i}} \left( \frac{\partial L}{\partial x^{(i)}} \right) = 0.
+\end{equation}
+
+\justify{Como se trata de un lagrangiano no degenerado, las ecuaciones forman un sistema que trabaja con derivadas temporales hasta orden $2n$. Es decir, que se puede expresar la solución de la $2n$-ésima derivada de la coordenada en función del resto de variaciones}
+
+\begin{equation}
+	x^{(2n)} = 
+	\mathcal{F} \left(x,\, \dot{x},\, \cdots,\, x^{(2n-1)}\right) 
+	\hspace{5mm} \Longrightarrow \hspace{5mm}
+	x(t) = \mathcal{X}\left(t, \left.  x \right|_{t = 0}, \left. \dot{x} \right|_{t = 0}, \cdots, \left. x^{(2n)} \right|_{t = 0}\right),
+\end{equation}
+
+\justify{donde la solución de la coordenada depende de $2n$ valores iniciales. Por tanto, el espacio de fase del sistema también debe componerse por $2n$ coordenadas. En el trabajo original de Ostrogradsky la elección de las nuevas coordenadas canónicas son de la forma}
+
+\begin{align}
+	X_{i} \equiv& \; x^{(i-1)} ; \hspace{34,5mm} i = 0, \cdots, n\\
+	P_{i} \equiv& \sum_{j = i}^{n} (-1)^{(j-i)} \frac{d^{(j-i)}}{dt^{(j-i)}} \frac{\partial L}{\partial x^{(j)}}; \hspace{5mm} i = 0, \cdots, n.
+\end{align}
+
+\justify{Entonces, el lagrangiano se pueden reexpresar en función de la nueva base de coordenadas}
+
+\begin{equation}
+	L = L \left(X_{1},\, \cdots,\, X_{n},\, x^{(n)} \right).
+\end{equation}
+
+\justify{Si se toma la definición del $n$-ésimo momento canónico, teniendo en cuenta que el sistema es no  degene$\hspace{0.2mm}$rado y de las nuevas dependencias del lagrangiano, se puede expresar $x^{(n)}$ en función de las coordenadas $\left(X_{1}, \cdots, X_{n}\right)$ y $P_{n}$}
+
+\begin{equation}
+	P_{n} = \frac{\partial L}{\partial x^{(n)}} \hspace{5mm} \iff  \hspace{5mm} 
+	x^{(n)} = \mathcal{A} \, (X_{1}, \cdots,\, X_{n},\, P_{n}) \hspace{5mm} \Longrightarrow \hspace{5mm} 
+	L = L \left(X_{1}, \cdots,\, X_{n}, \, \mathcal{A}\right).
+\end{equation}
+
+\justify{Finalmente, el hamiltoniano de Ostrogradsky toma la forma}
+
+\begin{equation} \label{Eq:Introduccion:HLineal}
+	H = P_{1}X_{2} + P_{2}X_{3} + \cdots + P_{n-1}X_{n} + P_{n}\mathcal{A} - L\left(X_{1}, \cdots, X_{n},\, \mathcal{A}\right), 
+\end{equation}
+
+\justify{y satisface las ecuaciones de evolución estacionaria}
+
+\begin{equation}
+	\dot{X}_{i} = \frac{ \partial H }{ \partial P_{i} }, \hspace{10mm} \dot{P}_{i} = - \frac{ \partial H }{ \partial X_{i} }.
+\end{equation}
+
+\justify{El hamiltoniano del sistema no depende explícitamente del tiempo, lo que implica que la energía total del sistema se conserva. Como se ve en la Ec. \eqref{Eq:Introduccion:HLineal}, el hamiltoniano depende linealmente de los momentos canónicos, excepto para el $n$-ésimo momento que depende de la configuración de $\mathcal{A}$. Notablemente, las dependencias lineales no son necesariamente positivas para todas las configuraciones de los momentos conjugados, impidiendo afirmar la existencia de un límite inferior en la energía del sistema.}
+%\justify{El hamiltoniano no depende explícitamente del tiempo, lo que implica que la energía total del sistema resulta constante. La Ec. \eqref{Eq:Introduccion:HLineal}  muestra que el hamiltoniano depende linealmente de los momentos canónicos \textbf{--} excepto el $n$-ésimo momento que depende de la configuración de $\mathcal{A}$ \textbf{--} y pueden ser arbitrariamente negativos. El hecho de que estas dependencias lineales no sean estrictamente positivas para cualquier configuración de cada momento conjugado implica que no se puede afirmar la existencia de un límite inferior en el valor de la energía del sistema.}
+
+\justify{Las ecuaciones de este tipo pueden presentar un tipo específico de inestabilidad en mecánica clásica conocido como inestabilidades de Ostrogradsky. Estas inestabilidades se encuentran asociadas al espacio de fases de los momentos y se manifiestan en la dependencia temporal de la variable dinámica. En consecuencia, una región del campo puede ser estable en su entorno espacial, pero aún así ser susceptible de sufrir inestabilidades de Ostrogradsky en función de su trayectoria temporal. Esto contrasta con otros tipos de inestabilidades, que pueden identificarse encontrando regiones de máximos en el potencial de un sistema.}
+%\justify{Este tipo de soluciones presentan inestabilidades denominadas de tipo Ostrogradsky. En la mecánica clásica, una reducción de la energía potencial viene dado por el encontrarse en mínimos del potencial del sistema, y las inestabilidades se pueden encontrar por encontrarse en regiones de máximos del potencial. Por el contrario, la inestabilidad ostrograskiana se encuentran asociadas al espacio de fase de los momentos, eque se manifiesta en que la variable dinámica desarrolla una dependencia temporal especial. Por tanto, que una partícula - o una región del campo - se encuentre en un entorno espacial energéticamente estable no implica que se salve de una inestabilidad de tipo Ostrogradsky, porque esta se encuentra dependiente del recorrido temporal. }
+
+\justify{En general, las inestabilidades pueden ser muy variables y complejas, por lo que requieren un estudio min$\hspace{0.1mm}$ucioso para su comprensión y predicción. Las inestabilidades de Ostrogradsky no son una excepción y más cuando se caracterizan por esa dependencia especial del tiempo. En el caso de las teorías de campo continuo con inestabilidades de Ostrogradsky, las soluciones de vacío pueden convertirse en una combinación de estados energéticamente positivos y negativos arbitrarios siempre que satisfagan la conservación de la energía. Sin embargo, como no existe un límite inferior en el potencial, la generación de estados posibles es infinita. La descomposición de un estado de vacío en una combinación infinita de estados excitados se considera un resultado catastrófico para una teoría clásica, ya que no se observa en la realidad. Otras implicaciones de estas inestabilidades se discuten en \cite{2015arXiv1506_02210}.}
+%\justify{En general, las inestabilidades pueden ser muy variables y complejas, y su comprensión y predicción requieren un estudio cuidadoso. Las inestabilidades de Ostrogradsky no son una excepción, y su característica dependencia temporal. Para el caso de las teorías de campo continuo con inestabilidades de Ostrogradsky, las soluciones de vacío tienen derecho a convertirse en una combinación de estados energéticamente positivos y negativos arbitrarios, siempre que cumplan con la conservación de la energía. Al no existir un límite inferior, la generación de estados posibles resulta infinita. El decaimiento de un estado de vacío a una combinación infinita de estados excitados se presenta como un resultado catastrófico para una teoría clásica porque no se trata de un evento que se observe en la realidad. En \cite{2015arXiv1506_02210} se enuncian otras implicaciones de estas inestabilidades.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{4mm}
+\section{Dual de Hodge.} \label{Intro:Dual}
+
+\justify{El dual de Hodge se define como una operación sobre (pseudo-)tensores completamente antisimétricos y cuyo resultado es otro (pseudo-)tensor completamente antisimétricos. Más en específico, el dual actua sobre un tensor $A_{i_{1}, \cdots, i_{m}}$, con $m \leq D$ y completamente antisimétrico, se obtiene un tensor $\hat{A}_{i_{m+1}, \cdots, i_{D} }$  de rango ($0, D-m$) de la forma}
+
+\begin{equation}
+	\hat{A}_{i_{m+1}, \cdots, i_{D}} = \frac{1}{m!} \varepsilon_{i_{1}, \cdots, i_{D}} A^{i_{1}, \cdots, i_{m}},
+\end{equation}
+
+\justify{donde $\varepsilon^{i_{1}, \cdots i_{D}}$ se denomina símbolo de Levi-Civita y se define}
+
+\begin{equation}
+	\varepsilon_{i_{1}, \cdots i_{D}} = \left\{
+  \begin{array}{lr}
+   +1,  \text{si } (i_{1}, \cdots i_{D}) \text{ es una permutación par de } (1, 2, 3, \cdots, D) \\
+   -1,  \text{si } (i_{1}, \cdots i_{D}) \text{ es una permutación impar de } (1, 2, 3, \cdots, D) \\
+   0, \text{si dos o más índices se repiten}
+  \end{array}
+\right. .
+\end{equation}
+
+\justify{El operador dual de Hodge muestra la equivalencia entre un tensor antisimétrico de rango $(0, m)$ y otro de tamaño $(0, D-m)$ también antisimétrico. Es decir, a pesar de que el tamaño de los tensores sean distintos, ambos presentan el mismo número de grados de libertad, ambos objetos contienen la misma información.}
+
+\justify{Gracias al dual de Hodge, para el caso de $D = 4$ se puede generar la siguiente clase de equivalencias:}
+
+\begin{equation} \label{Eq:Intro:ClasesEquivalencias}
+ (0,0) \iff (0, 4), \hspace{5mm} (0,1) \iff (0, 3), \hspace{5mm} (0,2) \iff (0, 2).
+ \end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{4mm}
+\section{La Clasificación de Wigner.} \label{introduction:WignerClassification}
+
+\justify{En este trabajo, todas las teorías de campo se consideran en el espacio de Minkowski de 4 dimensiones $(\mathcal{M}_{4})$. Cualquier campo definido en esta variedad debe transformarse covariantemente bajo el grupo de simetría de $\mathcal{M}_{4}$, que se conoce como grupo de isometría o \textit{grupo de Poincaré}.}
+
+\justify{Una de las principales herramientas que utilizamos en este trabajo es la clasificación de Wigner de las representaciones unitarias irreducibles del grupo de Poincaré. Esta clasificación juega un papel crucial en el estudio de las simetrías en las teorías de campos, ya que nos permite organizar los diferentes tipos de campos que pueden existir en $\mathcal{M}_{4}$ según sus propiedades de transformación bajo el grupo de Poincaré. Mostraremos cómo esta clasificación puede utilizarse para derivar nuevos resultados sobre el comportamiento de los campos en $\mathcal{M}_{4}$ y para comprender mejor sus propiedades fundamentales.}
+
+\justify{El \textit{grupo de Poincaré} tiene dos operadores invariantes de Casimir}
+%\justify{Existen dos \textit{casimires} invariantes del \textit{grupo de Poincaré}}
+
+\begin{align} 
+	P^{2} = P_{\mu}P^{\mu} = m^{2}\mathbb{1} \hspace{5mm} &\left[P^{2}, P_{\mu} \right] = 0 \hspace{5mm} \left[P^{2}, L_{\mu\nu} \right] = 0 \label{Eq:P2}, \\
+	W^{2} = W_{\mu}W^{\mu} = m^{2} s\,(s+1) \mathbb{1} \hspace{5mm} &\left[W^{2}, P_{\mu} \right] = 0 \hspace{5mm} \left[W^{2}, L_{\mu\nu} \right] = 0, \label{Eq:Intro:W2}
+\end{align}
+
+\justify{donde $m$ es la masa y se define como un parámetro no negativo, $s$ es el número cuántico de spin asociado al operador de momento de spin $J$, y $\mathbb{1}$ es el operador identidad en cuatro dimensiones. $P_{\mu}$ es el generador infinitesimal de traslaciones, y $L_{\mu\nu}$ es el generador de transformaciones de Lorentz. $W_{\mu}$ es el pseudovector Pauli-Lubański, que es el dual de Hodge del tensor producto $P^{\nu}L^{\rho\lambda}$}
+%\justify{donde $m$ se define no negativo, $s$ se trata del número asociado al momento de spin $J$ y $\mathbb{1}$ representa al operador identidad, en este caso de dimensión 4. $P_{\mu}$ es el generador infinitesimal de las traslaciones y $L_{\mu\nu}$ se define como el generador de las transformaciones de Lorentz.  $W_{\mu}$ se denomina el pseudo-vector de Pauli-Lubański y se trata del dual de Hodge del tensor producto $P^{\nu}L^{\rho\lambda}$}
+
+\begin{equation}
+	W_{\mu} = \frac{1}{2} \varepsilon_{\mu\nu\rho\lambda} P^{\nu}L^{\rho\lambda}.
+\end{equation}
+
+\justify{Los vectores asociados a los operadores de Casimir, $W_{\mu}$ y $P_{\mu}$, son ortogonales entre sí}
+%\justify{y los vectores de los \textit{casimires}, $W_{\mu}$ y $P_{\mu}$, son vectores ortogonales entre sí}
+
+\begin{equation}
+ 	W^{\mu}P_{\mu} = 0.
+\end{equation}
+
+\justify{En 1939, Eugene Paul Wigner (1902 - 1995) clasificó las representaciones irreducibles del \textit{grupo de Poincaré} \cite{Wigner:1939cj}. La clasificación se basa en los dos parámetros asociados a los operadores de Casimir: la masa $m$ y el spin $j$. De los muchos grupos posibles presentados en la clasificación (\cite{JanssenBook} Capítulo 22), en este trabajo nos centraremos en dos: los que consideraremos en nuestro análisis.}
+%\justify{En 1939 Eugene Paul Wigner (1902 - 1995) clasificó las representaciones irreducibles del \textit{grupo de Poincaré} \cite{Wigner:1939cj}. La clasificación se determina en base a los dos parámetros asociados a los \textit{casimires}: la masa $m$ y el spin $j$. De todos los posibles grupos que se presentan en la clasificación (\cite{JanssenBook} capítulo 22), para este trabajo se hace mención de dos:}
+
+\begin{itemize}
+	\item \textbf{Partícula sin masa y energía positiva:} En este caso, la masa presenta un valor nulo, $m=0$. Esto significa que el vector $P^{\mu}$ también es un nulo. Puesto que el vector $W_{\mu}$, también se encuentra definido como un vector nulo y resulta ortogonal a $P_{\mu}$, ambos vectores deben ser proporcionales
+	%\item \textbf{Partícula no masiva y energía positiva:} En este caso la masa presenta un valor nulo $(m = 0)$, y por extensión,  $P^{\mu}$ es un vector de tipo nulo. Como $W_{\mu}$ también se define como un vector nulo y ortogonal a $P_{\mu}$, ambos vectores deben ser proporcionales 
+	
+		\begin{equation} \label{Eq:Introduccion:NoMasivo}
+			W^{\mu} - h P^{\mu} = 0; \hspace{5mm} h =  \frac{ (\vec{j} \cdot \vec{p}\, ) }{ || \vec{p}\, || }.
+		\end{equation}
+	
+	Por lo tanto, este tipo de sistema físico se determina por un único término: la helicidad $h$. Este parámetro se encuentra relacionado con el valor propio del spin $j$, que puede tomar valores enteros y semienteros no negativos. Bajo la transformación de paridad de la expresión \eqref{Eq:Introduccion:NoMasivo}, la fórmula es válida para valores $\pm j$. Esto significa que la representación presenta dos grados de libertad asociados a $j$, para cualquier partícula no masiva de cualquier spin.
+	%y por tanto, este tipo de sistemas físicos se determina bajo un único término, la helicidad $h$. Este parámetro se encuentra relacionado con el autovalor de spin $j$, autovalor que toma valores enteros y semi-enteros no negativos ($j = 0\,, \frac{1}{2}\,, 1\,, \frac{3}{2}\,, 2\,, \cdots$ ). Bajo paridad de la expresión \eqref{Eq:Introduccion:NoMasivo}, la fórmula vale para valores $\pm j$, es decir, para cualquier partícula no masiva de cualquier spin la representación presenta dos grados de libertad asociados a $j$. 
+	
+	\item \textbf{Partícula masiva y energía positiva:} 
+	En el caso de una partícula masiva, es posible considerar un sistema en el que la partícula se encuentra en reposo. Las únicas componentes no triviales de $W_{\mu}$ son las asociadas al momento de spin $J$, de la partícula, con valores propios $j$.
+	%Dado una partícula masiva, existe la posibilidad de tomar un sistema que la deje en reposo. Bajo este sistema de coordenadas el momento angular orbital del sistema resulta nulo, las únicas componentes no-triviales de $W_{\mu}$ son las asociadas al momento de spin $J$ de la partícula, con autovalores $j$.
+
+	\begin{equation}
+		\text{Sistema en reposo: } W^{2} = m^{2}\, j (j+1).
+	\end{equation}
+	
+	El estudio del momento de spin $J$, bajo estas condiciones en mecánica cuántica es bien conocido. Para un spin $j$ dado, la representación del sistema presenta $(2j+1)$ grados de libertad, que se caracterizan por el número cuántico $j_3$. Los valores de este segundo número cuántico vienen dados por $-j, -j+1, \dots, j-1, j$".
+	%Resulta bien conocido el estudio del momento de spin $J$ bajo estas condiciones en mecánica cuántica. Dado un spin $j$, la representación del sistema presenta $(2j + 1)$ grados de libertad, dimensiones que vienen caracterizadas por el bien conocido número cuántico $j_{3}$. Los valores de este segundo número cuántico vienen dados como ($-j,\,  -j +1,\,  \cdots,\,  j-1,\,  j$) .
+\end{itemize}
+
+\justify{Los grupos restantes de la clasificación no resultan relevantes para este trabajo. Esto incluye el caso del vacío y otros casos exóticos que no presentan relación con la realidad, como campos asociados a energía negativa. La clasificación de Wigner proporciona una mejor comprensión de las conexiones entre las teorías de campo en el espacio de Minkowski, y permite entender mejor la relación entre los grados de libertad de un campo, su masa y su spin.}
+
+\justify{Una de las principales ventajas de la clasificación de Wigner es que proporciona un método claro y consistente para etiquetar las distintas representaciones del grupo de Poincaré. Conocer de antemano el número de grados de libertad para los casos masivo y sin masa nos permite estudiar las propiedades de los campos de forma sistemática y organizada, y comparar los resultados obtenidos campos de distinto spin, tanto masivos como sin masa. En este trabajo demostraremos la utilidad de la clasificación de Wigner aplicándola a varias teorías de campo en $\mathcal{M}_4$.}
+%\justify{Una de las principales ventajas de la clasificación de Wigner es que proporciona una forma clara y coherente de etiquetar las distintas representaciones del grupo de Poincaré. Conocer de ante mano los grados de libertad que vienen dado tanto a los casos de masa como sin masa permite estudiar las propiedades de los campos de forma sistemática y organizada, y comparar los resultados obtenidos para distintos tipos de campos, tanto para el caso masivo como sin masa. En este trabajo ilustraremos la utilidad de la clasificación de Wigner aplicándola a varias teorías de campos en $\mathcal{M}_{4}$.}
+
+\newpage  

@@ -1,0 +1,101 @@
+\chapter{Campo de Kalb-Ramond sin masa. } \label{Kalb-Ramond-massless}
+
+\justify{El estudio finaliza con este capítulo, dedicado al caso no masivo del campo Kalb-Ramond. Al igual que comentamos en el capítulo anterior, este campo resulta de gran interés en este trabajo por su estructura tensorial, y las consecuencias que este tiene en cuanto a su spin. Este hecho hace que el campo resulte ser un análisis diferente al de los campos hasta ahora tratados.}
+
+\justify{En el capítulo anterior se estudió el caso masivo del campo Kalb-Ramond y se comprobó que este se comporta como un campo de spin-1. Sin embargo, en este capítulo se demostrará que el campo Kalb-Ramond en su versión no masiva es un campo de spin-0.}
+%\justify{El estudio termina con este capítulo, y el caso no masivo de Kalb-Ramond. La peculiaridad de este campo recae en el spin que expresa este campo, a pesar de que en el capítulo anterior se comprobara de que el caso masivo se comporta como un campo de spin-1, en este capítulo estudiaremos y comprobaremos que el campo de Kalb-Ramond es un campo de spin-0.}
+
+\justify{Para llevar a cabo este estudio, se utilizará el caso no masivo del lagrangiano original propuesto por Kalb y Ramond en su trabajo \cite{Kalb:1974yc}. A partir de este lagrangiano se analizarán las propiedades del modelo, se estudiarán los grados de libertad, se obtendrá la ecuación de movimiento y el hamiltoniano, y finalmente a través del análisis de las helicidades del campo, podremos determinar el spin del campo. De forma similar a lo realizado en los capítulos anteriores, se comenzará con el análisis de las propiedades del modelo.}
+%\justify{Para llevar a cabo este estudio, se utilizará el lagrangiano original propuesto por Kalb y Ramond en su trabajo \cite{Kalb:1974yc}. A partir de este lagrangiano se analizarán las propiedades del modelo, se estudiarán los grados de libertad, se obtendrá la ecuación de movimiento y el hamiltoniano, y finalmente se determinará el spin del campo. Los conocimientos adquiridos en los capítulos previos resultarán de gran ayuda para concluir el análisis de este modelo.}
+%\justify{Para ello, se comenzará con el lagrangiano original propuesto por Kalb y Ramond en su trabajo \cite{Kalb:1974yc}, y se analizarán las propiedades del modelo. De forma similar a lo realizado en los capítulos anteriores, se estudiarán los grados de libertad, se obtendrá la ecuación de movimiento y el hamiltoniano, y finalmente se determinará el spin del campo. Los conocimientos adquiridos en los capítulos previos resultarán de gran ayuda para concluir el análisis de este modelo.}
+%\justify{Para ello, comenzaremos con el lagrangiano que Kalb-Ramond en su trabajo original \cite{Kalb:1974yc}, y analizamos las propiedades del modelo. De igual forma que se hace en los capítulos anteriores estudiaremos los grados de libertad, obtendremos la ecuación de movimiento y el hamiltoniano, y finalmente qué spin presenta el campo. El trabajo empleado a lo largo de los capítulos anteriores resultaran de gran ayuda para concluir con el análisis de este modelo.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Lagrangiano.}
+%#####################################################################################################
+
+\justify{Definimos el campo fundamental del campo como el descrito para el caso masivo: se trata de un tensor de orden dos $B_{\mu\nu}$ antisimétrico. Este campo debe vivir en la variedad $(\mathcal{M}_{4}, \eta)$, y además, debe ser invariante bajo transformaciones de Lorentz y su acción, al igual que en el resto de campos estudiados, debe ser local.}
+%\justify{Definimos el campo fundamental del campo como el descrito para el caso masivo, se trata de un tensor de orden dos $B_{\mu\nu}$ antisimétrico. Este campo debe vivir en la variedad $(\mathcal{M}_{4}, \eta)$, y además, debe ser invariante Lorenz y su acción, al igual que en el resto de campos estudiados, debe ser local.}
+
+\justify{Además, presentamos el mismo tensor de fuerza $H_{\mu\nu\rho}$ que en el capítulo anterior, el cual se describe como}
+%\justify{Además, presentamos el mismo tensor de fuerza $H_{\mu\nu\rho}$ que el capítulo anterior, lo describimos como}
+
+\begin{equation} \label{eq:KRmassless:Hdef}
+	H_{\mu\nu\rho} \equiv \partial_{(\mu}B_{\nu\rho)} = \partial_{\mu}B_{\nu\rho} + \partial_{\rho}B_{\mu\nu} + \partial_{\nu}B_{\rho\mu}.
+\end{equation}
+
+\justify{Se trata de un campo descrito por un tensor de orden tres completamente antisimétrico. Por tanto, el campo presenta las mismas propiedades observadas en el capítulo anterior, así como que también tiene un tensor dual a este }
+%\justify{y se trata de un campo descrito en un tensor de orden tres completamente antisimétrico. Por tanto, el campo presenta las misma propiedades observadas en el capítulo anterior, así como un tensor dual a este}
+
+\begin{equation}
+	\bar{H}^{\lambda} = \frac{1}{3!} \varepsilon^{\lambda\mu\nu\rho}H_{\mu\nu\rho}. 
+\end{equation}
+
+\justify{El lagrangiano de Kalb-Ramond no masivo es el lagrangiano del capítulo anterior, salvo por el término de masa. De esta forma, podemos expresar el lagrangiano de nuestro sistema como la parte puramente dinámica del lagrangiano propuesto por Kalb-Ramond. Es decir, }
+%\justify{El lagrangiano de Kalb-Ramond no masivo es el lagrangiano del capítulo anterior salvo por el término de masa, de esta forma podemos expresar el lagrangiano de nuestro sistema como la parte puramente dinámica del lagrangiano propuesto por Kalb-Ramond. Es decir, }
+
+\begin{equation} \label{eq:KRmassless:Lgr}
+	\mathcal{L}^{KR} = 
+	\frac{1}{12} H_{\mu\nu\rho}H^{\mu\nu\rho} = \frac{1}{4}\partial_{\mu}B_{\nu\rho}\partial^{\mu}B^{\nu\rho} +
+	\frac{1}{2}\partial_{\mu}B_{\nu\rho}\partial^{\nu}B^{\rho\mu}, 
+\end{equation}
+
+\justify{donde el factor $\frac{1}{12}$ viene dado por el convenio de normalización canónica.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad.}
+%#####################################################################################################
+
+\justify{En primer lugar, el campo $B_{\mu\nu}$ se ha descrito inicialmente como el campo del capítulo anterior. Por lo tanto, el número de grados de libertad del tensor es conocido: seis grados de libertad debido a que es un tensor antisimétrico que vive en un espacio-tiempo de cuatro dimensiones ($D(D-1)/2$, con $D= 4$).}
+%\justify{Por un lado, el campo $B_{\mu\nu}$ se ha descrito originalmente como el campo del capítulo anterior. Por tanto, el número de grados de libertad que presenta el tensor es conocido, seis grados de libertad debido a que es un tensor antisimétrico que vive en un espacio-tiempo cuatro dimensional ($D(D-1)/2$, con $D= 4$).}
+
+\justify{Por otro lado, del capítulo anterior conocemos el spin del campo de Kalb-Ramond masivo. Se trata de un campo de spin-1, y de acuerdo con la clasificación de Wigner, sabemos que el número de grados de libertad asociado a este tipo de campos masivos es tres. Por extensión, se podría pensar que el campo de Kalb-Ramond no masivo, el caso que nos interesa en este capítulo, debería comportarse como un campo de spin-1 no masivo, pero no es así. En cambio, en el caso de este capítulo, sabemos de la bibliografía que el campo de Kalb-Ramond se caracteriza por presentar un salto de spin entre los casos masivos y no masivos, de tal forma que el caso no masivo se comporta como un campo de spin-0.}
+%\justify{Por el otro lado, nuevamente del capítulo anterior conocemos el spin del campo de Kalb-Ramond masivo. Se trata de un campo de spin-1, y por la clasificación de Wigner sabemos que el número de grados de libertad asociado a este tipo de campos masivos es tres. Por extensión, se podría pensar que el campo de Kalb-Ramond no masivo, la sección que nos concierne, debería comportarse como un campo de spin-1 no masivo, pero no es el caso. En cambio, para el caso de este capítulo es distinto conocemos de la bibliografía que el campo de Kalb-Ramond se caracteriza por presentar un salto de spin entre los casos masivos y no masivos, de tal forma que el caso no masivo, el caso de este capítulo, se comporta como un campo de spin-0.}
+
+\justify{Según la clasificación de Wigner, los campos de spin-0 presentan un único grado de libertad, un grado asociado al singlete de spin. De esta forma, podemos estar seguros de que el número de restricciones que debemos obtener sobre el campo de Kalb-Ramond debe ser de un total de cinco restricciones. El hecho de tener una discrepancia en el número de grados de libertad, así como el hecho de no tener de antemano el spin al que se le asocia este campo, es motivación suficiente para realizar un estudio de los grados de libertad del campo.}
+%\justify{Según la clasificación de Wigner, los campos de spin-0 presentan un único grado de libertad, un grado asociado al singlete de spin. De esta forma podemos estar seguros que el número de restricciones que debemos obtener sobre el campo de Kalb-Ramond deben ser de un total de cinco restricciones. El hecho de tener una discrepancia en el número de grados de libertad, así como el hecho de no tener de antemano el spin al que se le asocia este campo es motivación más que suficiente para realizar un estudio de los grados de libertad del campo.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Invarianza \textit{gauge.}}}
+%#####################################################################################################
+
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Ecuación de movimiento.}
+%#####################################################################################################
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Hamiltoniano.}
+%#####################################################################################################
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Helicidad.} \label{KRmassless:Helicidad}
+%#####################################################################################################
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Primera restricción.}
+%#####################################################################################################
+
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Segunda restricción.}
+%#####################################################################################################
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Helicidades del campo de Kalb-Ramond.}
+%#####################################################################################################
+
+%#####################################################################################################
+% DUDA Hay que decir que los cálculos están basados en arxiv 1908.09328v1
+\vspace{4mm}
+\section{Dualidad de $H_{\mu\nu\rho}$.} \label{KRMassless:Dual}
+%#####################################################################################################

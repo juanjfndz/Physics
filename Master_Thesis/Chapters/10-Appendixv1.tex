@@ -1,0 +1,177 @@
+\chapter{Appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Descomposición del campo $A_{\mu} = A^{T}_{\mu}  + \partial_{\mu}\chi$ en $\mathcal{L}^{\text{ spin}-1}$.} \label{AppendixI:DescompositionLagrangespin1}
+
+\justify{Se sustituye Ec. (\ref{eq:spin1massless:Adecomposition}) en Ec. (\ref{eq:spin1massless:lagrangian})}
+
+\begin{equation}
+\begin{split}
+	\mathcal{L}^{\text{ spin}-1} &= \lambda_{1} \partial_{\mu} A_{\nu}\, \partial^{\mu} A^{\nu} + \lambda_{2}\, \partial_{\mu} A^{\mu}\, \partial_{\nu} A^{\nu} =\\ \\
+	&= \lambda_{1} \partial_{\mu} \left( A^{T}_{\nu}  + \partial_{\nu}\chi \right) \partial^{\mu} \left( A^{T\;\nu}  + \partial^{\nu}\chi \right)+ \lambda_{2}\, \partial_{\mu} \left( A^{T\;\mu}  + \partial^{\mu}\chi\right) \partial_{\nu} \left( A^{T\;\nu}  + \partial^{\nu}\chi \right) =\\ \\
+	&=  \lambda_{1}\left(\partial_{\mu} A^{T}_{\nu} \partial^{\mu} A^{T\;\nu} +  
+					\partial_{\mu} A^{T}_{\nu}\, \partial^{\mu} \partial^{\nu}\chi +  
+					\partial_{\mu} \partial_{\nu}\chi\, \partial^{\mu} A^{T\;\nu} +  
+					\partial_{\mu} \partial_{\nu}\chi\, \partial^{\mu} \partial^{\nu}\chi\right) + \\ 
+	&\hspace{5mm}  \lambda_{2}\left(\partial_{\mu} A^{T\;\mu}  \partial_{\nu} A^{T\;\nu}  + 
+					\partial_{\mu}A^{T\;\mu} \partial_{\nu} \partial^{\nu}\chi + 
+					\partial_{\mu}\partial^{\mu}\chi\, \partial_{\nu} A^{T\;\nu} +
+					\partial_{\mu} \partial^{\mu}\chi\, \partial_{\nu} \partial^{\nu}\chi\right) = \\ \\
+        &=  \lambda_{1}\left(\partial_{\mu} A^{T}_{\nu} \partial^{\mu} A^{T\;\nu} +  
+					2\, \partial_{\mu} A^{T}_{\nu} \partial^{\mu} \partial^{\nu}\chi +  
+					\partial_{\mu} \partial_{\nu}\chi\, \partial^{\mu} \partial{\nu}\chi\right) + \\
+	&\hspace{5mm}  \lambda_{2}\left(\partial_{\mu} A^{T\;\mu}  \partial_{\nu} A^{T\;\nu}  + 
+					2\, \partial_{\mu}A^{T\;\mu} \partial_{\nu} \partial^{\nu}\chi + 
+					\partial_{\mu} \partial^{\mu}\chi\, \partial_{\nu} \partial^{\nu}\chi\right) = \\ \\
+	&= \lambda_{1}\partial_{\mu} A^{T}_{\nu} \partial^{\mu} A^{T\;\nu}  -  
+	     \lambda_{2}\partial_{\mu} A^{T}_{\nu} \partial^{\nu} A^{T\;\mu}  +
+	     2\, \left(\lambda_{1} + \lambda_{2}\right)\partial_{\mu} A^{T}_{\nu} \partial^{\mu} \partial{\nu}\chi + 
+	     \left(\lambda_{1} + \lambda_{2}\right)\partial_{\mu} \partial_{\nu}\chi\, \partial^{\mu} \partial^{\nu}\chi.
+\end{split}
+\end{equation}
+
+\vspace{5mm}
+
+\justify{En la última igualdad se usa las siguientes equivalencias}
+
+\begin{align*}
+	\partial_{\mu} A^{T\;\mu}  \partial_{\nu} A^{T\;\nu} &=  
+	\partial_{\mu} \left(A^{T\;\mu}  \partial_{\nu} A^{T\;\nu}\right) -  \partial_{\nu} \left(A^{T\;\mu}  \partial_{\mu} A^{T\;\nu}\right) +  \partial_{\nu} A^{T\;\mu}  \partial_{\mu} A^{T\;\nu} = 
+	\mathcal{L}_{\text{Boundary}} + \partial_{\nu} A^{T\;\mu}  \partial_{\mu} A^{T\;\nu} \\
+	\partial_{\mu}A^{T\;\nu}\partial^{\mu}\partial_{\nu}\chi &=
+	\partial_{\mu}\left(A^{\nu}\partial^{\mu}\partial_{\nu}\chi\right) -  \partial_{\nu}\left(A^{T\;\nu}\partial_{\mu}\partial^{\mu}\chi\right) + \partial_{\nu}A^{T\;\nu}\partial_{\mu}\partial^{\mu}\chi = 
+	\mathcal{L}_{\text{Boundary}} +  \partial_{\nu}A^{T\;\nu}\partial_{\mu}\partial^{\mu}\chi \\
+	\partial_{\mu}\partial^{\mu}\chi\,\partial_{\nu}\partial^{\nu}\chi &=
+	 \partial_{\mu}\left(\partial^{\mu}\chi\,\partial_{\nu}\partial^{\nu}\chi\right) - \partial_{\nu}\left(\partial^{\mu}\chi\,\partial_{\mu}\partial^{\nu}\chi\right) + \partial_{\nu}\partial^{\mu}\chi\,\partial_{\mu}\partial^{\nu}\chi = 
+	 \mathcal{L}_{\text{Boundary}}  + \partial_{\nu}\partial^{\mu}\chi\,\partial_{\mu}\partial^{\nu}\chi.
+\end{align*}
+
+\justify{Los términos de frontera no afectan a las ecuaciones de movimiento (Sec. \ref{introduction:FieldEulerLagrange}), por este motivo se pueden omitir. Los dos primeros términos, los asociados únicamente al campo $A^{T}$, no se encuentran relacionados bajo una transformación de la misma forma, al igual que los términos de Ec. (\ref{eq:spin1massless:lagrangian}) tampoco lo están.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{ Hamiltoniano $(\mathcal{H}^{\chi})$ de $\, \left(\lambda_{1} + \lambda_{2}\right)\partial_{\mu}\partial_{\nu}\chi\,\partial^{\mu}\partial^{\nu}\chi$.} \label{AppendixI:LchiHamiltonianDensity}
+
+\justify{A partir de la Ec. \eqref{eq:Intro:H}, se calcula el hamiltoniano del término $\mathcal{L}^{\chi} $, lagrangiano definido en Ec. \eqref{eq:Spin1massless:chighost},}
+
+\begin{equation}
+\begin{split}
+	\mathcal{H}^{\chi} &= 
+	\frac{\partial \mathcal{L}^{\chi}}{\partial \left(\partial_{0}\partial_{\alpha}\chi\right)} \partial_{0}\left(\partial_{\alpha}\chi\right)- \mathcal{L}^{\chi} = \\ \\
+	&= (\lambda_{1} + \lambda_{2}) \left[\left( \delta_{\mu}^{0}\, \delta_{\nu}^{0}\,\partial^{\mu}\partial^{\nu}\chi \;+ \partial_{\mu}\partial_{\nu}\chi \,\eta^{\mu 0}\, \eta^{\nu 0}\right) \partial_{0}\partial_{\alpha}\chi   -  \partial_{\mu}\partial_{\nu}\chi\,\partial^{\mu}\partial^{\nu}\chi \right]= \\ \\
+	&= (\lambda_{1} + \lambda_{2}) \left[ \cancel{2}\;\partial^{0}\partial^{\alpha}\chi \partial_{0}\partial_{\alpha}\chi - \left( \cancel{\partial_{0}\partial_{\nu}\chi\,\partial^{0}\partial^{\nu}\chi} + \partial_{j}\partial_{\nu}\chi\,\partial^{j}\partial^{\nu}\chi \right) \right] = \\ \\
+	&= (\lambda_{1} + \lambda_{2}) \left[  \partial_{0}\partial_{0}\chi \partial^{0}\partial^{0}\chi  +  \cancel{ \partial_{0}\partial_{j}\chi \partial^{0}\partial^{j}\chi -  \partial_{j}\partial_{0}\chi \partial^{j}\partial^{0}\chi} - \partial_{j}\partial_{i}\chi \partial^{j}\partial^{i}\chi   \right] = \\ \\
+	&=  (\lambda_{1} + \lambda_{2}) \left[  (\partial_{0}\partial_{0}\chi)^2 - (\partial_{j}\partial_{i}\chi)^2  \right].
+\end{split}
+\end{equation}
+
+\justify{En el tercer paso se usa el teorema de  Clairaut-Schwarz. De esta forma se comprueba que a $H^{\chi}$ no se le puede definir un valor limite inferior.  ($\lambda_1 + \lambda_2$) solo presentan el signo global.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Hamiltoniano $(\mathcal{H}^{\text{ spin-1}})$ de $\mathcal{L}^{\text{ spin-1}}$.}\label{AppendixI:LHamiltonianDensity}
+
+\justify{A partir de la Ec. \eqref{eq:Intro:H}, se calcula el hamiltoniano de $\mathcal{L}^{\text{ spin-1}}$,  lagrangiano definido en Ec. \eqref{eq:spin1massless:FinalSystemCanonico1}, }
+
+%DUDA; Estaría bien que cuando se pasa a A_{\mu} se cumple la normalizacion canónica
+\begin{equation}
+\begin{split}
+	\mathcal{H^{\text{ spin-1}}} &= 
+	\frac{\partial \mathcal{L}^{\text{ spin-1}} }{\partial \left(\partial_{0}A_{\alpha}\right) } \;\partial_{0}A_{\alpha} - \mathcal{L}^{\text{ spin-1}} = \\ \\
+	&= \frac{-1}{2} \left( \delta^{0}_{\mu} \delta^{\alpha}_{\nu} \;\partial^{\mu}A^{\nu} + \partial_{\mu}A_{\nu} \eta^{0\mu} \eta^{\alpha \nu} -  \delta^{0}_{\mu} \delta^{\alpha}_{\nu} \;\partial^{\nu}A^{\mu} + \partial_{\mu}A_{\nu} \eta^{0\nu} \eta^{\alpha \mu}  \right) - \mathcal{L}^{\text{ spin-1}} = \\ \\
+	&= - \left( \partial^{0}A^{\alpha} - \partial^{\alpha}A^{0} \right)\partial_{0}A_{\alpha} -  \mathcal{L}^{\text{ spin-1}} = \\ \\
+	&= - F^{0\alpha}\, \left(\partial_{0}A_{\alpha} + \partial_{\alpha}A_{0} - \partial_{\alpha}A_{0}    \right) - \mathcal{L}^{\text{ spin-1}} = \\ \\
+	&= -F^{0\alpha}\left(\partial_{0}A_{\alpha} - \partial_{\alpha}A_{0}\right) - F^{0\alpha}\partial_{\alpha}A_{0} - \mathcal{L}^{\text{ spin-1}} = \\ \\
+	&= -F^{0\alpha}F_{0\alpha} + \cancel{\left(\partial_{\alpha}F^{0\alpha}\right)} A_{0} - \partial_{\alpha}\left(F^{0\alpha} A_{0}\right)  + \frac{1}{4}F^{\mu\nu}F_{\mu\nu} = \\ \\
+	&= - F^{0i}F_{0i} + \frac{1}{4}F^{0i}F_{0i}  + \frac{1}{4}F^{i0}F_{i0} + \frac{1}{4}F^{ij}F_{ij} + \mathcal{H}_{\text{Boundary}}= \\ \\
+	&= -\frac{1}{2}F^{0i}F_{0i} + \frac{1}{4}F^{ij}F_{ij}  + \mathcal{H}_{\text{Boundary}}= \\ \\
+	&= \frac{1}{2} \left(F_{0i}\right)^{2} + \frac{1}{4}\left(F_{ij}\right)^{2} + \mathcal{H}_{\text{Boundary}}.
+\end{split}
+\end{equation}
+
+\justify{Para el séptimo paso se usa la propiedad de antisimetricidad del tensor de Faraday,  con esta propiedad se puede afirmar $\sum_{\alpha} F^{0\alpha} = \sum_{i} F^{0i}$. El término $\partial_{\alpha}\left(F^{0\alpha} A_{0}\right)$ es una derivada total que se obtiene de integrar por partes, se trata de un término de frontera ($\mathcal{H}_{\text{Boundary}}$ ). En la demostración, en el sexto paso, se hace uso de la ecuación de movimiento (Ec. \eqref{eq:EomSpin1}) para afirmar que el término $\partial_{\alpha}F^{0\alpha}$ resulta nulo.}
+
+\justify{Los términos de frontera de un hamiltoniano no se pueden obviar, como ocurre en el lagrangiano. Pero se pueden imponer condiciones de contorno que anulen dicho término. Un buen argumento para motivar la imposición de dichos contornos es la búsqueda de la invarianza gauge de $\mathcal{H}^{\text{ spin-1}}$. El término  $\partial_{\alpha}\left(F^{0\alpha} A_{0}\right)$ no es invariante frente a transformaciones $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\xi$.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{ $\mathcal{L}^{\text{ spin}-1}$ invariante bajo cambios $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\xi$. } \label{Appendix1:InvariantLagrangespin1}
+
+\justify{En este apartado se muestra que el lagrangiano de spin-1 expresado en Ec. \eqref{eq:spin1massless:FreeGhost} resulta invariante bajo cambios del tipo $A_{\mu} \rightarrow A'_{\mu} = A_{\mu} + \partial_{\mu}\xi$ }
+
+\begin{equation}
+	\mathcal{L}^{\;\text{spin}-1} \left(A_{\mu}\right) = \mathcal{L}^{\;\text{spin}-1} \left(A'_{\mu} = A_{\mu} + \partial_{\mu}\xi\right).
+\end{equation}
+
+\justify{Para este objetivo, se aplica la transformación a la Eq. (\ref{eq:spin1massless:FinalSystemCanonico2}), expresión del lagrangiano equivalente a la descrita en Eq. \eqref{eq:spin1massless:FreeGhost} }
+
+\begin{equation}
+\begin{split}
+	\mathcal{L}^{\;\text{spin}-1} \left(A'_{\mu}\right) &= 
+	-\frac{1}{4}F'_{\mu\nu}F'^{\mu\nu} =  \\ \\
+	 &= -\frac{1}{4}(\partial_{\mu}A'_{\nu} - \partial_{\nu}A'_{\mu})(\partial^{\mu}A'^{\nu} - \partial^{\nu}A'_{\mu}) = \\ \\
+	 &= -\frac{1}{4}\left[\partial_{\mu}\left(A_{\nu} + \partial_{\nu}\xi\right) - \partial_{\nu}\left(A_{\mu} + \partial_{\mu}\xi\right)\right] \left[\partial^{\mu}\left(A^{\nu} + \partial^{\nu}\xi\right) - \partial^{\nu}\left(A_{\mu} + \partial_{\mu}\xi \right)\right] = \\ \\
+	 &= -\frac{1}{4}\left[ \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu} + \cancel{\partial_{\mu}\partial_{\nu}\xi - \partial_{\nu}\partial_{\mu}\xi}  \right] \left[ \partial^{\mu}A^{\nu} - \partial^{\nu}A^{\mu} + \cancel{\partial^{\mu}\partial^{\nu}\xi - \partial^{\nu}\partial^{\mu}\xi}  \right] = \\ \\
+	&=  -\frac{1}{4}(\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu})(\partial^{\mu}A^{\nu} - \partial^{\nu}A_{\mu})  = 
+	 -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \mathcal{L}^{\;\text{spin}-1} \left(A_{\mu}\right).
+\end{split}
+\end{equation}
+
+\justify{Donde se hace uso del teorema de Clairaut-Schwarz en el tercer paso. En esta demostración no solo muestra la invarianza del lagrangiano, también muestra que el tensor $F_{\mu\nu}$ es invariante}
+
+\begin{equation} \label{eq:Appendix1:InvarianzaF}
+\begin{split}
+	F'_{\mu\nu} &= 
+	\left[\partial_{\mu}\left(A_{\nu} + \partial_{\nu}\xi\right) - \partial_{\nu}\left(A_{\mu} + \partial_{\mu}\xi\right)\right] = \\ \\
+	&= \left[ \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu} + \cancel{\partial_{\mu}\partial_{\nu}\xi - \partial_{\nu}\partial_{\mu}\xi}  \right] = \\ \\
+	&= (\partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}) = F_{\mu\nu}.
+\end{split}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Normalización canónica de $\mathcal{L}^{\text{ spin}-1}$.} \label{AppendixI:Normalizacion}
+
+\justify{La normalización canónica es una condición arbitraria, se impone que la componente cinética del lagrangiano tenga un prefactor $\frac{1}{2}$, prefactor que aparece en el lagrangiano de mecánica clásica}
+
+\begin{equation*}
+	L_{\text{clasico}}(q, \dot{q}; t) = T(\dot{q}) - V(q) = \frac{1}{2} \dot{q}^{2} - V(q).
+\end{equation*}
+
+\justify{Se estudia el caso de $\mathcal{L}^{\text{ spin}-1}$ descrito en Ec. \eqref{eq:spin1massless:FreeGhost}}
+
+\begin{equation*}
+\begin{split}
+	\mathcal{L}^{\text{ spin}-1} &= 
+	\lambda_{1}\left(\partial_{\mu}A^{T\;\nu}\,\partial^{\mu}A^{T}_{\nu} - \partial_{\mu}A^{T\;\mu}\,\partial_{\nu}A^{T\;\nu}\right) = \\
+	&= \lambda_{1}\left(\partial_{0}A^{T\;\nu}\,\partial^{0}A^{T}_{\nu} + \partial_{i}A^{T\;\nu}\,\partial^{i}A^{T}_{\nu} - \partial_{0}A^{T\;0}\,\partial_{\nu}A^{T\;\nu} - \partial_{i}A^{T\;i}\,\partial_{\nu}A^{T\;\nu} \right) = \\
+	&= \lambda_{1}\left(\cancel{\partial_{0}A^{T\;0}\,\partial^{0}A^{T}_{0}} + \partial_{0}A^{T\;i}\,\partial^{0}A^{T}_{i} - \cancel{\partial_{0}A^{T\;0}\,\partial_{0}A^{T\;0}} - \partial_{0}A^{T\;0}\,\partial_{i}A^{T\;i} + \cdots \right)  = \\
+	&= \lambda_{1} \partial_{0}A^{T\;i}\,\partial^{0}A^{T}_{i} + \lambda_{1}(\,\cdots) =
+	-\lambda_{1} (\partial_{0}A^{T\;i})^{2} + \lambda_{1}(\,\cdots).
+\end{split}
+\end{equation*}
+
+\justify{Si se busca que la componente cinética sea de la forma: $\frac{1}{2}(\partial_{0}A^{T\;i})^{2} \iff \lambda_{1} = -\frac{1}{2}$.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Ecuación de movimiento de $\mathcal{L}^{\text{ spin}-1}$} \label{AppendixI:EoM}
+
+\justify{Se obtiene la ecuación de movimiento a partir del lagrangiano definido en Ec. \eqref{eq:spin1massless:FinalSystemCanonico1} y las ecauciones de Euler-Lagrange (Ec. {eq:Intro:EL})}
+
+\begin{equation}
+\begin{split}
+	\cancel{\frac{\partial}{\partial A_{\beta}}\mathcal{L}^{\text{ spin}-1}} - \partial_{\alpha}\frac{\partial}{\partial \left(\partial_{\alpha}A_{\beta}\right)}\mathcal{L}^{\text{ spin}-1} &= 
+	- \left( -\frac{1}{2} \right)\partial_{\alpha}\frac{\partial}{\partial \left(\partial_{\alpha}A_{\beta}\right)}\left(\partial_{\mu}A^{\nu}\,\partial^{\mu}A_{\nu} - \partial_{\mu}A^{\nu}\,\partial_{\nu}A^{\mu}\right) = \\ \\
+	&= \frac{1}{2} \partial_{\alpha}\left( \delta^{\alpha}_{\mu} \delta^{\beta}_{\nu} \, \partial^{\mu}A^{\nu} +  \partial_{\mu}A_{\nu} \,\delta^{\alpha \mu} \delta^{\beta \nu} - \delta^{\alpha}_{\nu} \delta^{\beta}_{\mu} \, \partial^{\nu}A^{\mu} +  \partial_{\nu}A_{\mu} \,\delta^{\alpha \nu} \delta^{\beta \mu} \right) = \\ \\
+	&= \partial_{\alpha}(\partial^{\alpha} A^{\beta} - \partial^{\beta} A^{\alpha}) = 
+	\partial_{\alpha}(\partial^{[\alpha} A^{\beta]}) = \partial_{\alpha}F^{\alpha\beta} = 0.
+\end{split}
+\end{equation}
+
+\justify{Se trata de la misma ecuación que se obtiene en Ec. \eqref{eq:Spin1massless:EoM}.}

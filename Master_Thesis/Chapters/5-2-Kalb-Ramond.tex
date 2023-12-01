@@ -1,0 +1,472 @@
+\chapter{Campo de Kalb-Ramond sin masa. } \label{Kalb-Ramond-massless}
+
+\justify{El estudio finaliza con este capítulo, dedicado al caso no masivo del campo Kalb-Ramond. Al igual que comentamos en el capítulo anterior, este campo resulta de gran interés en este trabajo por su estructura tensorial, y las consecuencias que este tiene en cuanto a su spin. Este hecho hace que el campo resulte ser un análisis diferente al de los campos hasta ahora tratados.}
+
+\justify{En el capítulo anterior se estudió el caso masivo del campo Kalb-Ramond y se comprobó que este se comporta como un campo de spin-1. Sin embargo, en este capítulo se demostrará que el campo Kalb-Ramond en su versión no masiva es un campo de spin-0.}
+%\justify{El estudio termina con este capítulo, y el caso no masivo de Kalb-Ramond. La peculiaridad de este campo recae en el spin que expresa este campo, a pesar de que en el capítulo anterior se comprobara de que el caso masivo se comporta como un campo de spin-1, en este capítulo estudiaremos y comprobaremos que el campo de Kalb-Ramond es un campo de spin-0.}
+
+\justify{Para llevar a cabo este estudio, se utilizará el caso no masivo del lagrangiano original propuesto por Kalb y Ramond en su trabajo \cite{Kalb:1974yc}. A partir de este lagrangiano se analizarán las propiedades del modelo, se estudiarán los grados de libertad, se obtendrá la ecuación de movimiento y el hamiltoniano, y finalmente a través del análisis de las helicidades del campo, podremos determinar el spin del campo. De forma similar a lo realizado en los capítulos anteriores, se comenzará con el análisis de las propiedades del modelo.}
+%\justify{Para llevar a cabo este estudio, se utilizará el lagrangiano original propuesto por Kalb y Ramond en su trabajo \cite{Kalb:1974yc}. A partir de este lagrangiano se analizarán las propiedades del modelo, se estudiarán los grados de libertad, se obtendrá la ecuación de movimiento y el hamiltoniano, y finalmente se determinará el spin del campo. Los conocimientos adquiridos en los capítulos previos resultarán de gran ayuda para concluir el análisis de este modelo.}
+%\justify{Para ello, se comenzará con el lagrangiano original propuesto por Kalb y Ramond en su trabajo \cite{Kalb:1974yc}, y se analizarán las propiedades del modelo. De forma similar a lo realizado en los capítulos anteriores, se estudiarán los grados de libertad, se obtendrá la ecuación de movimiento y el hamiltoniano, y finalmente se determinará el spin del campo. Los conocimientos adquiridos en los capítulos previos resultarán de gran ayuda para concluir el análisis de este modelo.}
+%\justify{Para ello, comenzaremos con el lagrangiano que Kalb-Ramond en su trabajo original \cite{Kalb:1974yc}, y analizamos las propiedades del modelo. De igual forma que se hace en los capítulos anteriores estudiaremos los grados de libertad, obtendremos la ecuación de movimiento y el hamiltoniano, y finalmente qué spin presenta el campo. El trabajo empleado a lo largo de los capítulos anteriores resultaran de gran ayuda para concluir con el análisis de este modelo.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Lagrangiano.}
+%#####################################################################################################
+
+\justify{Definimos el campo fundamental del campo como el descrito para el caso masivo: se trata de un tensor de orden dos $B_{\mu\nu}$ antisimétrico. Este campo debe vivir en la variedad $(\mathcal{M}_{4}, \eta)$, y además, debe ser invariante bajo transformaciones de Lorentz y su acción, al igual que en el resto de campos estudiados, debe ser local.}
+%\justify{Definimos el campo fundamental del campo como el descrito para el caso masivo, se trata de un tensor de orden dos $B_{\mu\nu}$ antisimétrico. Este campo debe vivir en la variedad $(\mathcal{M}_{4}, \eta)$, y además, debe ser invariante Lorenz y su acción, al igual que en el resto de campos estudiados, debe ser local.}
+
+\justify{Además, presentamos el mismo tensor de fuerza $H_{\mu\nu\rho}$ que en el capítulo anterior, el cual se describe como}
+%\justify{Además, presentamos el mismo tensor de fuerza $H_{\mu\nu\rho}$ que el capítulo anterior, lo describimos como}
+
+\begin{equation} \label{eq:KRmassless:Hdef}
+	H_{\mu\nu\rho} \equiv \partial_{[\mu}B_{\nu\rho]} = \partial_{\mu}B_{\nu\rho} + \partial_{\rho}B_{\mu\nu} + \partial_{\nu}B_{\rho\mu}.
+\end{equation}
+
+\justify{Se trata de un campo descrito por un tensor de orden tres completamente antisimétrico. Por tanto, el campo presenta las mismas propiedades observadas en el capítulo anterior, así como que también tiene un tensor dual a este }
+%\justify{y se trata de un campo descrito en un tensor de orden tres completamente antisimétrico. Por tanto, el campo presenta las misma propiedades observadas en el capítulo anterior, así como un tensor dual a este}
+
+\begin{equation}
+	\bar{H}^{\lambda} = \frac{1}{3!} \varepsilon^{\lambda\mu\nu\rho}H_{\mu\nu\rho}. 
+\end{equation}
+
+\justify{El lagrangiano de Kalb-Ramond no masivo es el lagrangiano del capítulo anterior, salvo por el término de masa. De esta forma, podemos expresar el lagrangiano de nuestro sistema como la parte puramente dinámica del lagrangiano propuesto por Kalb-Ramond. Es decir, }
+%\justify{El lagrangiano de Kalb-Ramond no masivo es el lagrangiano del capítulo anterior salvo por el término de masa, de esta forma podemos expresar el lagrangiano de nuestro sistema como la parte puramente dinámica del lagrangiano propuesto por Kalb-Ramond. Es decir, }
+
+\begin{equation} \label{eq:KRmassless:Lgr}
+	\mathcal{L}^{KR} = 
+	\frac{1}{12} H_{\mu\nu\rho}H^{\mu\nu\rho} = \frac{1}{4}\partial_{\mu}B_{\nu\rho}\partial^{\mu}B^{\nu\rho} +
+	\frac{1}{2}\partial_{\mu}B_{\nu\rho}\partial^{\nu}B^{\rho\mu}, 
+\end{equation}
+
+\justify{donde el factor $\frac{1}{12}$ viene dado por el convenio de normalización canónica.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad.}
+%#####################################################################################################
+
+\justify{En primer lugar, el campo $B_{\mu\nu}$ se ha descrito inicialmente como el campo del capítulo anterior. Por lo tanto, el número de grados de libertad del tensor es conocido: seis grados de libertad debido a que es un tensor antisimétrico que vive en un espacio-tiempo de cuatro dimensiones ($D(D-1)/2$, con $D= 4$).}
+%\justify{Por un lado, el campo $B_{\mu\nu}$ se ha descrito originalmente como el campo del capítulo anterior. Por tanto, el número de grados de libertad que presenta el tensor es conocido, seis grados de libertad debido a que es un tensor antisimétrico que vive en un espacio-tiempo cuatro dimensional ($D(D-1)/2$, con $D= 4$).}
+
+\justify{Por otro lado, del capítulo anterior conocemos el spin del campo de Kalb-Ramond masivo. Se trata de un campo de spin-1, y de acuerdo con la clasificación de Wigner, sabemos que el número de grados de libertad asociado a este tipo de campos masivos es tres. Por extensión, se podría pensar que el campo de Kalb-Ramond no masivo, el caso que nos interesa en este capítulo, debería comportarse como un campo de spin-1 no masivo, pero no es así. En cambio, en el caso de este capítulo, sabemos de la bibliografía que el campo de Kalb-Ramond se caracteriza por presentar un salto de spin entre los casos masivos y no masivos, de tal forma que el caso no masivo se comporta como un campo de spin-0.}
+%\justify{Por el otro lado, nuevamente del capítulo anterior conocemos el spin del campo de Kalb-Ramond masivo. Se trata de un campo de spin-1, y por la clasificación de Wigner sabemos que el número de grados de libertad asociado a este tipo de campos masivos es tres. Por extensión, se podría pensar que el campo de Kalb-Ramond no masivo, la sección que nos concierne, debería comportarse como un campo de spin-1 no masivo, pero no es el caso. En cambio, para el caso de este capítulo es distinto conocemos de la bibliografía que el campo de Kalb-Ramond se caracteriza por presentar un salto de spin entre los casos masivos y no masivos, de tal forma que el caso no masivo, el caso de este capítulo, se comporta como un campo de spin-0.}
+
+\justify{Según la clasificación de Wigner, los campos de spin-0 presentan un único grado de libertad, un grado asociado al singlete de spin. De esta forma, podemos estar seguros de que el número de restricciones que debemos obtener sobre el campo de Kalb-Ramond debe ser de un total de cinco restricciones. El hecho de tener una discrepancia en el número de grados de libertad, así como el hecho de no tener de antemano el spin al que se le asocia este campo, es motivación suficiente para realizar un estudio de los grados de libertad del campo.}
+%\justify{Según la clasificación de Wigner, los campos de spin-0 presentan un único grado de libertad, un grado asociado al singlete de spin. De esta forma podemos estar seguros que el número de restricciones que debemos obtener sobre el campo de Kalb-Ramond deben ser de un total de cinco restricciones. El hecho de tener una discrepancia en el número de grados de libertad, así como el hecho de no tener de antemano el spin al que se le asocia este campo es motivación más que suficiente para realizar un estudio de los grados de libertad del campo.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Invarianza \textit{gauge.}}} \label{KRmassless:InvarianzaGauge}
+%#####################################################################################################
+
+\justify{En el campo de Kalb-Ramond no masivo, no es necesaria la búsqueda de campos de tipo fantasmas. Como ya se comprobó en el capítulo anterior, el lagrangiano ya está definido de tal manera que no aparecen términos dinámicos con derivadas temporales de orden superior a dos. Esto significa que, al realizar una descomposición del estilo}
+%\justify{En el caso del campo de Kalb-Ramond no masivo no requerimos de la búsqueda de campos de tipo fantasmas. Como ya comprobamos en el capítulo anterior, el lagrangiano ya se encuentra definido para que no aparezcan términos dinámicos con derivadas temporales de orden superior a dos. Es decir, que si se realiza una descomposición del estilo }
+
+\begin{equation}
+	B_{\mu\nu} = b_{\mu\nu} + \partial_{[\mu}\chi_{\nu]},
+\end{equation}
+
+\justify{en el lagrangiano no aparece la componente asociada al campo $\chi$. En otras palabras, el lagrangiano resulta invariante a este tipo de transformaciones. Por lo tanto, es posible realizar una transformación del campo como}
+%\justify{en el lagrangiano no aparece la componente asociada al campo $\chi$. O lo que es lo mismo, el lagrangiano se encuentra invariante a este tipo de transformaciones. Por tanto podemos realizar una trasnformación del campo del estilo}
+
+\begin{equation} \label{eq:KRmassless:invargauge}
+	B_{\mu\nu} \rightarrow B'_{\mu\nu} = B_{\mu\nu} + \partial_{[\mu}\xi_{\nu]} 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	\mathcal{L}^{KR} \left( B_{\mu\nu} \right) = \mathcal{L}^{KR} \left( B_{\mu\nu} + \partial_{[\mu}\xi_{\nu]} \right),
+\end{equation}
+
+\justify{sin que el lagrangiano, la cinemática o la física del sistema varíen. Esta posibilidad permite elegir el campo $B_{\mu\nu}$ que se desea utilizar de forma arbitraria sin que ello afecte al sistema físico. Esto nos indica que nuestro campo fundamental no es un campo físico en sí mismo, sino más bien un campo auxiliar con el que generar un modelo. Al campo de Kalb-Ramond le está asociado un campo de fuerza $H_{\mu\nu\rho}$, el cual es invariante a las transformaciones mencionadas anteriormente y con el que sí se puede medir y hacer física.}
+
+%\justify{que el lagrangiano, la cinemática y la física del sistema no varía. Por tanto, al igual que hemos comentado en el resto de modelos no masivos, tenemos la posibilidad de escoger el campo $B_{\mu\nu}$ que queramos emplear de forma arbitraria sin que este resultado repercuta en el sistema físico. Esta posibilidad permite darnos cuenta de que nuestro campo fundamental no se trata de un campo físico, más bien de un campo auxiliar con el que poder generar un modelo. Como ya se adelantó al comienzo de esta teoría, al campo de Kalb-Ramond viene asociado un campo de fuerza $H_{\mu\nu\rho}$. Un campo que resulta invariante a dichas transformaciones}
+
+\begin{equation}
+	H_{\mu\nu\rho}\left( B_{\mu\nu} \right) =
+	H_{\mu\nu\rho}\left( B_{\mu\nu} + \partial_{[\mu}\xi_{\nu]} \right).
+\end{equation}
+
+\justify{Esta situación es similar a la que ocurre en el electromagnetismo entre el campo de spin-1 $A_{\mu}$ y el campo electromagnético $F_{\mu\nu}$.}
+%\justify{y con el que sí se podría medir y hacer física. Al igual que ocurre en el electromagnetismo entre el campo de spin-1 $A_{\mu}$ y el propio campo electromagnético $F_{\mu\nu}$.}
+
+\justify{La invarianza mencionada anteriormente es similar a la utilizada en el campo de spin-2 (véase la ecuación \eqref{eq:Spin2massless:Gauge}), pero es antisimétrica. Esta observación tiene interesantes consecuencias. El hecho de ser antisimétrica no permite que la descomposición del campo sea de campos escalares, como sucede en la ecuación \eqref{Eq:Spin2massive:DescEscalar}. Al tratarse de un campo vectorial de la forma de un campo de spin-1, y sin posibilidad de eliminar las componentes escalares, es probable que esté relacionado con las representaciones del triplete de spin.}
+%\justify{Se trata de una invarianza parecida a la usada en el campo de spin-2 (véase la ecuación \eqref{eq:Spin2massless:Gauge}), pero antisimetrizado. Esta apreciación presenta interesantes consecuencias, el ser antisimetrizado no permite que la descomposición del campo sea de campos escalares, como si se presenta en la ecuación \eqref{Eq:Spin2massive:DescEscalar}. Al tratarse de un campo vectorial de la forma de un campo de spin-1, y sin posibilidad de eliminar las componentes escalares, lo más probable es que se encuentre relacionado con las representaciones del triplete de spin.}
+
+\justify{En cualquier caso, al igual que ocurre con el resto de casos estudiados, el hecho de que el sistema físico resulte invariante frente a campos del tipo $B_{\mu\nu}$ implica que podríamos escoger un nuevo campo $B'_{\mu\nu}$ de tal forma que no solo el campo vectorial no aparezca, sino que además podamos asignarle el valor que deseemos. Tomando nuestro nuevo campo la forma:}
+\justify{En cualquier caso, al igual que ocurre con el resto de casos estudiados. El hecho de que el sistema físico resulte invariante frente a este tipo de campos implica que podríamos escoger un nuevo campo $B'_{\mu\nu}$ de tal forma que no solo el campo vectorial no aparezca, si no que tome el valor que deseemos. Tomando nuestro nuevo campo la forma}
+
+\begin{equation}
+	B'_{\mu\nu} = b_{\mu\nu} + \partial_{[\mu}\left(\chi_{\nu]} + \xi_{\nu]} \right).
+\end{equation}
+
+\justify{El nuevo campo vectorial $(\chi_{\mu}' = \chi_{\mu} + \xi_{\mu})$ es elegido, y por tanto podemos restringir sus grados de libertad a voluntad. Como se trata de un vector, podríamos considerar que esta invariancia \textit{gauge} restringe cuatro grados de libertad, de forma análoga al campo de spin-2. Sin embargo, el caracter antisimétrico del campo $B_{\mu\nu}$ implica que siempre existe una componente de la diagonal principal que es definida como nula. Por tanto, esta simetría del sistema nos permite reducir hasta en tres los grados de libertad que originalmente presenta el campo $B_{\mu\nu}$, dejándolo únicamente con tres grados de libertad.}
+%\justify{El nuevo campo vectorial $(\chi' = \chi + \xi)$ es elegido, y por tanto podemos restringir sus grados de libertad a voluntad. Como se trata de un vector podríamos considerar que esta invarianza \textit{gauge} restringe cuatro grados de liberdad, de forma análoga al campo de spin-2, pero el caracter antisimétrico implica que el vector siempre se tope con una componente de la diagonal principal que es definido nulo. Por tanto, esta simetría del sistema nos permite reducir hasta en tres los grados de libertad que originalmente presenta el campo $B_{\mu\nu}$, dejándolo únicamente con tres grados de libertad.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Ecuación de movimiento y Elección del \textit{gauge}.} \label{KRmassless:EOMyGauge}
+%#####################################################################################################
+
+\justify{A lo largo de este trabajo, ya hemos adquirido experiencia en el estudio de campos no masivos. La comprensión de la cinemática del sistema es esencial para el desarrollo de nuestra teoría, aunque ya conocemos que en los casos no masivos no obtenemos ninguna condición específica del campo de estudio. En cualquier caso, la ecuación de movimiento nos permite entender qué tipo de restricción o elección del \textit{gauge} debemos seleccionar para que el campo cumpla con las condiciones de invariancia de Lorenz y localidad.}
+%\justify{Ya tenemos experiencia en la ecuación de movimiento de campos no masivos. El estudio de la cinemática del sistema resulta esencial para el entendimiento de nuestra teoría. Y, aunque para los casos no masivos no extraemos ninguna condición del campo de estudio, nos permite comprender que tipo de restricción, o elección del \textit{gauge}, debemos escoger para que el campo cumpla con las condiciones de invarianza Lorenz y localidad.}
+
+\justify{La ecuación de Euler-Lagrange nos permite obtener la ecuación de movimiento, aunque como su formulación es análoga a la realizada para el caso masivo podemos hacer uso de dicho cálculo. La ecuación de movimiento de este sistema se expresa como}
+%\justify{La ecuación de Euler-Lagrange nos permite obtener la ecuación de movimiento, aunque es análogo que el ya realizado para el caso masivo. La ecuación de movimiento de este sistema se expresa como}
+
+\begin{equation} \label{eq:KRmassless:EOM}
+	\partial_{\gamma} \partial^{(\gamma}B^{\alpha\beta)} = 
+	\partial_{\gamma} \partial^{\gamma}B^{\alpha\beta} + \partial_{\gamma} \partial^{[\alpha}B^{\beta]\gamma} = 
+	0.
+\end{equation}
+
+\justify{O expresado en función del campo $H_{\mu\nu\rho}$}
+
+\begin{equation} \label{eq:KRmassless:Eom2}
+	\partial_{\gamma} H^{\gamma\alpha\beta} = 0.
+\end{equation}
+
+\justify{Por un lado, podemos observar que el resultado obtenido no necesariamente cumple con las condiciones necesarias para encontrarse dentro del marco de la relatividad especial. Sin embargo, en la solución se encuentra un término asociado a una solución de tipo onda relativista. Si pudiéramos restringir las componentes no asociadas a la solución de onda relativista, confirmaríamos que nuestro modelo se encuentra dentro del marco de la relatividad especial.}
+%\justify{Por un lado, podemos observar que el resultado no tiene porqué cumplir con las condiciones necesarias para encontrarse dentro del marco relativista. Aun así, en la solución se encuentra el término asociado a una solución de tipo onda relativista. Si pudiéramos restringirlos confirmaríamos el [añadir texto]}
+
+\justify{Por otro lado, es importante reexpresar la idea de que la ecuación de movimiento no presenta ninguna condición sobre el campo. Al igual que ha ocurrido en otros casos de campos no masivos, la solución pasa por la elección de una condición extra, conocida como gauge. Esta condición debe cumplir con dos requisitos fundamentales: no debe interponerse ni violar la simetría presente en el lagrangiano del sistema, y debe eliminar el número de grados de libertad esperado.}
+%\justify{Por el otro lado, nuevamente reexpresamos la idea de que la ecuación de movimiento no presenta ninguna condición sobre el campo. Al igual que ha ocurrido para el resto de casos de campos no masivos, la solución pasa por la elección de una condición extra. Una condición que no debe interponerse ni violar la simetría que presenta el lagrangiano de este sistema, y que debe eliminar el número de grados de libertad esperado.}
+
+\justify{Por tanto, en este caso en particular, tomamos una elección del gauge del tipo condición de Lorenz, que cumple con estas condiciones y nos permite obtener una solución consistente dentro del marco de la relatividad especial.}
+%\justify{Por tanto, tomamos una elección del \textit{gauge} del tipo condición de Lorenz}
+
+\begin{equation}
+	\partial_{\alpha}B^{\alpha\beta} = 0.
+\end{equation}
+
+\justify{De esta forma podemos asegurarnos que ahora la ecuación de movimiento expresa la cinemática de un campo relativista y local}
+
+\begin{equation}
+	\partial_{\gamma} \partial^{\gamma}B^{\alpha\beta} = 0.
+\end{equation}
+
+\justify{Además de ser una condición que restringe los grados de libertad del campo $B_{\mu\nu}$, es importante señalar que en un principio podría parecer que el número de restricciones que ofrece son hasta cuatro, siendo superior a las restricciones impuestas a los propios grados de libertad. Sin embargo, como comprobaremos en la sección \ref{KRmassless:Helicidad} en la que analizamos la helicidad del campo, esta condición reduce un máximo de dos grados de libertad del conjunto de grados de libertad restantes. Por tanto, el campo cumple con el número de grados de libertad esperado para un campo de spin-0.}
+% \justify{Además, de ser una condición que restringe los grados de libertad del campo $B_{\mu\nu}$. En un principio podría parecer que el número de restricciones que ofrece son hasta cuatro, siendo superior las restricciones impuestas que los propios grados de libertad. Pero como comprobaremos en la sección que analizamos la helicidad del campo, sección \ref{KRmassless:Helicidad}, esta condición reduce un máximo de dos grados de libertad, del conjunto de grados de libertad restantes. Por tanto, el campo cumple con el número de grados de libertad esperado para un campo de spin-0.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Hamiltoniano.}
+%#####################################################################################################
+
+\justify{Para el campo de Kalb-Ramond no masivo hemos determinado que existe un único grado de libertad, siendo el campo de spin-0 el único candidato para este tipo de campos. Además, debido a la invariancia \textit{gauge} del sistema, se ha comprobado que el lagrangiano no presenta inestabilidades de Ostrogradsky. Sin embargo, para asegurarnos de ello, es necesario analizar el hamiltoniano del sistema y comprobar que presenta un límite inferior acotado, así como que la energía del campo de Kalb-Ramond es definida y positiva para cualquier configuración del campo.}
+%\justify{En este momento tenemos la certeza de que el campo de Kalb-Ramond presenta un único grado de libertad, siendo el campo de spin-0 el único candidato a este tipo de campos. Además, gracias a la invarianza \textit{gauge} del sistema, ya conocemos el lagrangiano no se encuentra ante posibles inestabilidades de Ostrogradsky. Pero, en cualquier caso, debemos asegurarnos de ello, esto motiva el análisis del hamiltoniano del sitema, la búsqueda de que este presente un límite inferiro acotado, y que además la energía del campo de Kalb-Ramond se encuentra defino positivo para cualquier configuración del campo.}
+
+\justify{Para calcular el hamiltoniano de esta teoría, se utilizará el tensor definido para el caso masivo del capítulo anterior (ecuación \eqref{Eq:KRPiTensor}). Se define el tensor $\Pi^{\gamma\alpha\beta}$ como}
+%\justify{Para calcular el hamiltoniano de esta teoría, vamos a ayudarnos del tensor definido para el caso masivo del capítulo anterior (ecuación \eqref{Eq:KRPiTensor}). En este caso, se define}
+
+\begin{equation} 
+	\Pi^{\gamma\alpha\beta} 
+	= \frac{\partial \mathcal{L}^{KR}}{\partial \left( \partial_{\gamma}B_{\alpha\beta} \right)} = \frac{1}{2}\partial^{(\gamma}B^{\alpha\beta)} 
+	= \frac{1}{2}H^{\gamma\alpha\beta}.
+\end{equation}
+
+\justify{Para facilitar aún más el desarrollo matemático de esta ocasión, hacemos uso de la misma ecuación de movimiento \eqref{eq:KRmassless:Eom2} para obtener la siguiente relación}
+
+\begin{equation}
+	2\, \partial_{0}\Pi^{0\alpha\beta} = \partial_{i}H^{i\alpha\beta}.
+\end{equation}
+
+\justify{De esta forma el hamiltoniano se puede expresar como la transformación de Legendre de la forma:}
+
+\begin{equation}
+	\mathcal{H}^{KR} =
+	 \frac{1}{2}H^{0\alpha\beta}\partial_{0}B_{\alpha\beta} -\frac{1}{12} H_{\mu\nu\rho}H^{\mu\nu\rho}.
+\end{equation}
+
+\justify{Finalmente, mediante la manipulación ya expresada en los capítulos anteriores, se completa el hamiltoniano para obtener los términos $H^{0\alpha\beta}H_{0\alpha\beta}$, aplicando la regla de Leibniz y recogiendo las derivadas totales en el término $H_{\text{Boundary}}$. Además, se hace uso de la ecuación de movimiento y se separan las componentes temporales y espaciales.}
+%\justify{Realizamos la misma manipulación que la ya expresada en los capítulos anteriores, completamos el hamiltoniano para obtener los términos $H^{0\alpha\beta}H_{0\alpha\beta}$, aplicamos la regla de Leibniz y las derivadas totales las recogemos en el término $H_{\text{Boundary}}$ y hacemos uso de la ecuación de movimiento y separamos las componentes temporales y espaciales.}
+
+\begin{equation} \label{eq:KRmassless:Hamiltonian}
+\begin{split}
+	\mathcal{H}^{KR} 
+	&= \frac{1}{2} \left( H^{0\alpha\beta}H_{0\alpha\beta} - H^{0\alpha\beta}\left(\partial_{\beta}B_{0\alpha} + \partial_{\alpha}B_{\beta0} \right) -\frac{1}{6}\left( H^{0\nu\rho}H_{0\nu\rho} + H^{i\nu\rho}H_{i\nu\rho} \right)  \right) = \\ \\
+	&=  \frac{1}{12} \left( 5 H^{0\alpha\beta}H_{0\alpha\beta} 
+	- H^{i\nu\rho}H_{i\nu\rho}
+	- 12\, \cancel{\partial_{\beta}H^{0\alpha\beta}}B_{0\alpha} \right) + \mathcal{H}_{\text{Boundary}} = \\ \\
+	&= \frac{1}{4} \left(H_{0ij}\right)^{2} + \frac{1}{12}  \left(H_{ijk}\right)^{2} + \mathcal{H}_{\text{Boundary}}
+\end{split}
+\end{equation}
+
+\justify{Se observa que en este caso aparece el resultado completamente positivo sin necesidad de mayor manipulación. Por tanto, se puede confirmar que se trata de un hamiltoniano positivo para cualquier valor de cualquier componente del campo de Kalb-Ramond. De esta forma, se puede asegurar que el sistema se encuentra libre de inestabilidades de Ostrogradsky y que además se trata de un campo de energía positiva de cara a la clasificación de Wigner.}
+%\justify{Podemos observar que esta vez aparece el resultado completamente positivo sin necesidad de mayor manipulación. Por tanto, podemos confirmar que se trata de hamiltoniano positivo, para cualquier valor de cualquier componente del campo de Kalb-Ramond. De esta forma podemos asegurar que el sistema se encuentra libre de posibles inestabilidades de Ostrogradsky y que además se trata de un campo de energía positiva de cara a la clasificación de Wigner.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Helicidad.} \label{KRmassless:Helicidad}
+%#####################################################################################################
+
+\justify{En el campo de Kalb-Ramond, la diferencia entre los grados de libertad masivos y no masivos es esencial. A pesar de que el campo de Kalb-Ramond presenta una dualidad con la acción de Proca en el caso masivo, presenta una dualidad con el campo de spin-0 en el caso no masivo. En esta sección, investigaremos cómo el número de grados de libertad se reduce a uno y cómo se relaciona con la helicidad.}
+%\justify{El campo de Kalb-Ramond se caracteriza por la diferencia de sus grados de libertad entre el caso masivo y el no masivo. Y es que a pesar de que esta el campo de Kalb-Ramond presenta una dualidad con la acción de Proca, en el caso no masivo presenta una dualidad con el campo de spin-0. Dedicaremos esta sección para comprobar componente a componente como el número de grados de libertad se reduce a uno, y cual es la helicidad con la que se relaciona.}
+
+\justify{Utilizaremos una metodología análoga a la utilizada en los capítulos anteriores (secciones \ref{Spin1:Helicity} y \ref{spin2massless:Helicity}). Haremos uso de la invariancia de \textit{gauge} del campo y de la elección de \textit{gauge} que hemos realizado.}
+%\justify{La metodología que emplearemos a continuación ya es conocida, porque resulta análoga a los casos de los capítulos anteriores (seccionoes \ref{Spin1:Helicity} y \ref{spin2massless:Helicity}). Para ello, haremos uso tanto de la invarianza \textit{gauge} que presenta el campo, como la elección \textit{gauge} que hemos realizado.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Primera restricción.}
+%#####################################################################################################
+
+\justify{Nuestro objetivo al elegir el gauge fue el de lograr que el campo de Kalb-Ramond se comportara bajo el marco de la relatividad especial. La solución a este problema requería que la ecuación de movimiento fuera un resultado del estilo onda relativista. Por este motivo, en el apartado \ref{KRmassless:EOMyGauge}, elegimos un gauge de tipo Lorenz tal que}
+%\justify{Nuestro objetivo con la elección del \textit{gauge} fue la de conseguir que el campo de Kalb-Ramond se comporte bajo el marco de la relatividad especial, y la solución a este problema pasaba porque en la ecuación de movimiento fuera un resultado del estilo onda relativista. Por este motivo, en el apartado \ref{KRmassless:EOMyGauge} escogimos un \textit{gauge} de tipo Lorenz de la forma}
+\begin{equation} \label{eq:KRmassless:Gauge}
+	\partial_{\mu}B'^{\mu\nu} = 0.
+\end{equation}
+
+\justify{El cual nos resulta familiar debido a su similitud con los casos anteriores, ya que también puede ser considerado como el caso antisimétrico del gauge armónico, Ec. \eqref{eq:Spin2massless:gaugearmonico}. Y, como ya observamos en el apartado \ref{KRmassless:EOMyGauge}, esta decisión simplificó la ecuación de movimiento en la forma}
+%\justify{\textit{guage} que nos debe resultar familiar de los casos anteriores. ya que también se podría considerar como el caso antisimétrico del \textit{gauge} armónico, Ec. \eqref{eq:Spin2massless:gaugearmonico}.}
+
+%\justify{Y como ya observamos en el apartado \ref{KRmassless:EOMyGauge}, esta decisión simplifica la ecuación de movimiento de la forma}
+
+\begin{equation} \label{eq:KRmassless:EOMG}
+	\partial_{\gamma}\partial^{\gamma}B^{'\, \alpha\beta} = 0.
+\end{equation}
+
+\justify{Se trata de una solución cuya solución es conocida, una combinación de ondas relativistas. De esta forma, podemos asumir que el campo de Kalb-Ramond se comporta, por simplificidad, como una de estas:}
+%\justify{Una ecuación diferencial cuya solución es conocida, combinación de ondas relativistas. De esta forma, podemos asumir que el campo de Kalb-Ramond se comporta de la forma }
+
+\begin{equation}
+	B'_{\alpha\beta} = \mathsf{C}_{\alpha\beta}\,e^{ik_{\lambda}x^{\lambda}}, \hspace{5mm} 
+	( \mathsf{C}_{\mu\nu} ) =  \begin{pmatrix}
+							0 & \mathsf{C}_{01} & \mathsf{C}_{02} & \mathsf{C}_{03}\\
+							& 0 & \mathsf{C}_{12} & \mathsf{C}_{13}\\
+							&  \cdots & 0& \mathsf{C}_{23}\\
+							&  & & 0\\
+					      \end{pmatrix},
+\end{equation}
+
+\justify{donde la amplitud $\mathsf{C}_{\alpha\beta}$ es antisimétrica y cuenta con hasta seis componentes libres. La solución de onda plana junto con las ecuaciones \eqref{eq:KRmassless:Gauge} y \eqref{eq:KRmassless:EOMG} nos permite extraer las dos siguientes condiciones}
+%\justify{donde la amplitud $\mathsf{C}_{\alpha\beta}$ es antisimétrica, con hasta seis componentes libres. La solución de onda plana junto con las ecuaciones \eqref{eq:KRmassless:Gauge} y \eqref{eq:KRmassless:EOMG} permite extraer las dos siguientes condiciones}
+
+\begin{equation} \label{eq:KRmassless:kcondition}
+	k^{\mu} \mathsf{C}_{\mu\nu} = 0, \hspace{4mm} k_{\mu}k^{\mu} = 0.
+\end{equation}
+
+\justify{El primer resultado nos muestra la perpendicularidad entre la amplitud y el vector de onda del campo. Mientras que el segundo resultado nos informa de que el vector de onda es de tipo luz, es decir, que el desplazamiento de las perturbaciones del campo son relativistas. Aunque se traten de dos soluciones, el potencial para ejercer como ligaduras a las componentes del campo es en su conjunto.}
+%\justify{El primer resultado nos muestra la perpendicularidad entre la amplitud y el vector de onda del campo. Mientras que el segundo resultado nos informa de que el vector de onda es de tipo luz, es decir que el desplazamiento de las perturbaciones del campo son relativistas. Aunque se traten de dos soluciones, el potencial para ejercer como ligaduras a las componentes del campo es en su conjunto.}
+
+
+\justify{Para facilitar el cálculo, supondremos que nos encontramos en un sistema de referencia arbitrario, de tal forma que el vector de desplazamiento se encuentra en una dirección privilegiada. En este caso, tomaremos que el vector de onda se define para la última componente espacial. Al ser de tipo luz, el vector se debe definir como}
+%\justify{Para facilitar el cálculo supondremos que nos encontramos en un sistema de referencia arbitrario, de tal forma que el vector de desplazamiento se encuentra en una dirección privilegiada. En este caso tomaremos que el vector de onda se define para la última componente espacial. Al ser de tipo luz, el vector se debe definir como}
+
+\begin{equation}
+	(k^{\mu}) = \begin{pmatrix}
+					k \\
+					0 \\
+					0 \\
+					k 
+			        \end{pmatrix},
+\end{equation}
+
+\justify{lo que permite simplificar a la segunda condición del campo a}
+
+\begin{equation} \label{eq:KR:cond2}
+	k\left(\mathsf{C}_{0\nu} + \mathsf{C}_{3\nu}  \right) = 0. 
+\end{equation}
+\justify{Si se estudian las componentes de la amplitud que aun quedan libres, podemos sacar las siguientes tres relaciones}
+
+\begin{equation} \label{eq:KR:postEOMcond}
+	\mathsf{C}_{03} = \mathsf{C}_{00} = 0, \hspace{4mm} 
+	\mathsf{C}_{13} = \mathsf{C}_{01}, \hspace{4mm} 
+	\mathsf{C}_{23} = \mathsf{C}_{02} 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	( \mathsf{C}_{\mu\nu} ) =  \begin{pmatrix}
+							0 & \mathsf{C}_{01} & \mathsf{C}_{02} & 0\\
+							& 0 & \mathsf{C}_{12} & \mathsf{C}_{01}\\
+							&  \cdots & 0& \mathsf{C}_{02}\\
+							&  & & 0\\
+					      \end{pmatrix}.
+\end{equation}
+
+\justify{En realidad, la condición \eqref{eq:KR:cond2} permite determinar hasta cuatro ecuaciones. Restringir hasta cuatro componentes del campo $\mathsf{C}_{\mu\nu}$, pero el carácter antisimétrico del campo hace que las componentes relacionadas con la diagonal principal resulten trivial. Por tanto, podemos afirmar que efectivamente la elección del \textit{gauge}, o la condición de tipo Lorenz, permite restringir el valor de tres componentes del campo, dejando al campo de Kalb-Ramond con tres grados independientes $(\mathsf{C}_{01}, \mathsf{C}_{02}, \mathsf{C}_{12})$}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Segunda restricción.}
+%#####################################################################################################
+\justify{La elección del \textit{gauge} no fija el \textit{gauge} en sí, es decir, que el campo aún puede sufrir transformaciones del tipo $\eqref{eq:KRmassless:invargauge}$. Además, el campo todavía presenta tres grados de libertad. Como el gauge aún no se encuentra definido, se puede aplicar con el objetivo de eliminar los dos grados de libertad sobrantes.}
+%\justify{La elección de este \textit{gauge} no fija el \textit{gauge} en sí, es decir, que el campo aún puede sufrir transformaciones del tipo \eqref{eq:KRmassless:invargauge}. Además, el campo aun presenta tres grados de libertad. Como el \textit{gauge} aun no se encuentra definido, se puede definir y así eliminar los dos grados de libertad sobrantes.}
+
+\justify{Si tomamos la transformación}
+
+\begin{equation} \label{eq:KRmassless:GaugeCond}
+	B_{\mu\nu} \rightarrow B^{'}_{\mu\nu} = B_{\mu\nu} + i k_{[\mu} U_{\nu]}e^{ik_{\lambda}x^{\lambda}},
+\end{equation}
+
+\justify{nos podemos dar cuenta de que las condiciones que se imponen sobre el campo $B'_{\mu\nu}$ no varían. Por tanto, el campo se sigue comportando como una solución de tipo onda relativista. Por tanto, tomaremos por simplicidad, la solución de una única onda plana como}
+%\justify{Al igual que en los dos capítulos anteriores, nos podemos dar cuenta de que las condiciones que se imponen sobre el campo $B'_{\mu\nu}$ no varía. Por tanto, el campo se sigue comportando como una solución de tipo onda relativista, para este caso, tomaremos como si fuera una única onda plana} 
+
+\begin{equation}
+	B'_{\alpha\beta} = \left(\mathsf{C}_{\alpha\beta} + k_{[\alpha}U_{\beta]} \right)\,e^{ik_{\lambda}x^{\lambda}}.
+\end{equation}
+
+\justify{De igual forma, podemos seguir trabajando con las condiciones $\eqref{eq:KRmassless:kcondition}$. Nos acordamos de que seguimos tomando al vector de onda $k_{\mu}$ con su dirección privilegiada, y entonces la condición $\eqref{eq:KR:cond2}$ se sigue cumpliendo. Si aplicamos ambas restricciones a la amplitud del campo $B'_{\mu\nu}$ las componentes son }
+%\justify{De igual forma, podemos seguir trabajando con las condiciones \eqref{eq:KRmassless:kcondition}. Nos acordamos de que seguimos tomando al vector de onda $k_{\mu}$ con su dirección privilegiada, y entonces la condición \eqref{eq:KR:cond2} se sigue cumpliendo. Si aplicamos ambas restricciones a la amplitud del campo $B'_{\mu\nu}$ las componentes que nos quedan son }
+
+
+\begin{equation}
+	(k^{\lambda}) = \begin{pmatrix}
+					k \\
+					0 \\
+					0 \\
+					k 
+			        \end{pmatrix}
+	\hspace{4mm} \wedge \hspace{4mm}
+	k\left(\mathsf{C}_{0\nu} + \mathsf{C}_{3\nu}  \right) = 0 	       
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	( \mathsf{C}_{\mu\nu} + k_{[\mu}U_{\nu]} ) =  \begin{pmatrix}
+							0 & \mathsf{C}_{01} + kU_{1}& \mathsf{C}_{02} +kU_{2} & 0\\
+							& 0 & \mathsf{C}_{12} & \mathsf{C}_{01} + kU_{1}\\
+							&  \cdots & 0& \mathsf{C}_{02} +kU_{2} \\
+							&  & & 0\\
+					      \end{pmatrix}.
+\end{equation}
+
+\justify{Análogas a las obtenidas en la ecuación \eqref{eq:KR:postEOMcond}. Es decir, seguimos teniendo tres grados de libertad, menos por la salvedad de que en esta ocasión presentamos a las componentes del vector $U$, que son arbitrarias. Y como no afectan a la física del lagrangiano porque este resulta invariante frente a este tipo de transformaciones, podemos tomar el valor del vector $U$ que deseemos. Como el vector se encuentra en dos de los tres grados de libertad restantes, podemos realizar un ajuste fino del vector de tal forma que eliminen dichas componentes. Una posible elección es}
+%\justify{Es decir, seguimos teniendo tres grados de libertad, menos por la salvedad de que en esta ocasión presentamos a las componentes del vector $U$, que son arbitrarias. Y como no afectan a la física del lagrangiano porque este resulta invariante frente a este tipo de transformaciones, podemos tomar el valor del vector $U$ que deseemos. Como el vector se encuentra en dos de los tres grados de libertad restantes, podemos realizar un ajuste fino del vector de tal forma que eliminen dichas componentes. Un posible elección}
+
+\begin{equation} \label{eq:KRmassless:ajustado}
+	(U) = -\frac{1}{k} \left(0, \mathsf{C}_{01}, \mathsf{C}_{02}, 0 \right)
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	( \mathsf{C}_{\mu\nu} + k_{[\mu}U_{\nu]} ) =  \begin{pmatrix}
+							0 & 0&0& 0\\
+							0& 0 & \mathsf{C}_{12} & 0\\
+							0& -\mathsf{C}_{12} & 0 & 0 \\
+							0& 0 & 0 & 0\\
+					      \end{pmatrix}.
+\end{equation}
+
+\justify{De esta forma, el lagrangiano pierde dos grados de libertad por la simetría del lagrangiano. Y deja al campo de Kalb-Ramond no masivo solo con una única componente como su único grado de libertad. El único campo de spin que se encuentra bajo esta descripción es el campo de spin-0. A continuación, se finaliza este apartado con el cálculo de helicidad, para verificar que efectivamente se trata de un campo de spin-0.}
+%\justify{De esta forma, el lagrangiano pierde dos grados de libertad por la simetría del lagrangiano. Y deja al campo de Kalb-Ramond no masivo solo con una única componente como su único grado de libertad. El único campo de spin que se encuentra bajo esta descripción es el campo de spin-0. A continuación se finaliza este apartado con el cálculo de helicidad, para verificar que efectivamente se trata de un campo de spin-0.} 
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Helicidades del campo de Kalb-Ramond.}
+%#####################################################################################################
+\justify{Para el cálculo de la helicidad, no trabajaremos con el campo completamente determinado de la ecuación \eqref{eq:KRmassless:ajustado}. En su lugar, tomaremos al campo antes de tener definido el \textit{gauge}, el descrito en la ecuación \eqref{eq:KR:postEOMcond}. De esta forma, podremos estudiar la helicidad de las componentes restantes del campo, aparte de la asociada al grado de libertad.}
+%\justify{Para el cálculo de la helicidad no se trabajará con el campo completamente determinado de la ecuación \eqref{eq:KRmassless:ajustado}. Si no, antes de definir por el \textit{gauge}, el campo descrito en \eqref{eq:KR:postEOMcond}. De esta forma podemos estudiar la helicidad del resto de componentes a parte del asociado al grado de libertad.}
+
+\justify{Para estudiar las helicidades de las componentes, realizaremos una transformación del campo $B'{\mu\nu}$ del tipo rotación espacial. Al ser un tensor de orden dos, el campo se transforma bajo una rotación de acuerdo a}
+%\justify{Para estudiar las helicidades de las componentes realizamos una transformación del campo $B'_{\mu\nu}$ del tipo rotación. Como ocurre en el capítulo anterior, al ser un tensor de orden dos, el campo bajo una rotación se transforma de la forma}
+
+\begin{equation} \label{eq:kalbramond:Ltrans}
+	B^{''}_{\mu\nu} = (\Lambda^{-1})^{\alpha}_{\hspace{2mm}\mu} (\Lambda^{-1})^{\beta}_{\hspace{2mm}\nu}\, B^{'}_{\alpha\beta}, 
+\end{equation}
+
+\justify{donde $\Lambda{\alpha\beta}$ es el objeto asociado a las transformaciones de Lorentz. Para el caso de una rotación de un ángulo $\theta$ en la misma dirección espacial en la que se define el vector $k_{\mu}$, el operador se describe como en la ecuación (\ref{eq:spin1massless:rotation}), y el campo tras rotar se presenta como}
+%\justify{donde, $\Lambda_{\alpha\beta}$ es el objeto asociado a las transformaciones de Lorentz. Para el caso de una rotación de un ángulo $\theta$ el operador se describre como en la ecuación \eqref{eq:spin1massless:rotation}. De esta forma, el campo tras rotar un ángulo $\theta$ en la misma dirección espacial en la que definimos el vector $k_{\mu}$ tiene la forma } 
+
+\begin{equation}
+	\left(\mathsf{C}^{'}_{\mu\nu}\right) =
+	 \left[\begin{matrix}0 & \mathsf{C}_{01} \cos{\left(\theta \right)} - \mathsf{C}_{02} \sin{\left(\theta \right)} & \mathsf{C}_{01} \sin{\left(\theta \right)} + \mathsf{C}_{02} \cos{\left(\theta \right)} & 0\\
+	& 0 & \mathsf{C}_{12} & \mathsf{C}_{01} \cos{\left(\theta \right)} - \mathsf{C}_{02} \sin{\left(\theta \right)}\\
+	& \cdots & 0 & \mathsf{C}_{01} \sin{\left(\theta \right)} + \mathsf{C}_{02} \cos{\left(\theta \right)}\\
+	&  & & 0\end{matrix}\right].
+\end{equation}
+
+\justify{Nos centraremos en las componentes de libre configuración (i.e. $\mathsf{C}{01}$, $\mathsf{C}{02}$ y $\mathsf{C}_{12}$), al menos hasta aplicar la condición gauge. Con la experiencia adquirida en los capítulos anteriores, podemos identificar que las dos primeras componentes se pueden asociar a las helicidades $\pm1$. Para ello, necesitaremos realizar el mismo cambio de base propuesto en la ecuación (\ref{eq:spin1massless:cambiobase}), obteniendo}
+%\justify{Nos centramos en las componentes de libre configuración (i.e. $\mathsf{C}_{01}$, $\mathsf{C}_{02}$ y $\mathsf{C}_{12}$), al menos hasta aplicar la condición \textit{gauge}. Con la experiencia de los capítulos anteriores, podemos identificar que las dos primeras componentes se pueden asociar a las helicidades $\pm1$. Para ello necesitamos realizar el mismo cambio de base que se propone en la Ec. \eqref{eq:spin1massless:cambiobase},}
+
+\begin{align}
+\mathsf{C}_{R} &= \frac{1}{\sqrt{2}} \left( \mathsf{C}_{1} + i\mathsf{C}_{2} \right) 
+	\hspace{17mm}
+	\mathsf{C}'_{R} = \frac{1}{\sqrt{2}} \left( \mathsf{C}'_{1} + i\mathsf{C}'_{2} \right) = e^{i\theta} \mathsf{C}_{R} \nonumber
+	\\ &\hspace{32mm} \iff  \nonumber \\
+	\mathsf{C}_{L} &= \frac{1}{\sqrt{2}} \left( \mathsf{C}_{1} - i\mathsf{C}_{2} \right) 
+	\hspace{17mm}
+	\mathsf{C}'_{L} = \frac{1}{\sqrt{2}} \left( \mathsf{C}'_{1} - i\mathsf{C}'_{2} \right) = e^{-i\theta} \mathsf{C}_{R}. 
+\end{align}
+
+\justify{De acuerdo con el convenio que hemos establecido (ver la expresión (\ref{eq:spin2massless:spincond})), las componentes $\mathsf{C}{R}$ y $\mathsf{C}{L}$ presentan una helicidad $\pm1$. Sin embargo, al imponer la condición gauge (ecuación (\ref{eq:KRmassless:GaugeCond})), estas dos componentes se anulan, tal como ocurre en la ecuación (\ref{eq:KRmassless:ajustado}). Este resultado confirma la idea expresada en el apartado \ref{KRmassless:InvarianzaGauge} de que el gauge de este sistema está relacionado con los grados de libertad asociados al triplete de spin.}
+%\justify{De acuerdo con el convenio (mirar la expresión \eqref{eq:spin2massless:spincond}), las componentes $\mathsf{C}_{R}$ y $\mathsf{C}_{L}$ presentan una helicidad $\pm1$. \textit{A posteriori}, al imponer la condición \textit{gauge} (Ec. \eqref{eq:KRmassless:GaugeCond}) estas dos componentes se anulan, como ocurre en la ecuación \eqref{eq:KRmassless:ajustado}.  Este resultado confirma la idea de expresada en el apartado \ref{KRmassless:InvarianzaGauge} sobre el hecho de que el \textit{gauge} de este sistema se encuentra relacionado con los grados de libertad asociados al triplete de spin.}
+
+\justify{Finalmente, se puede observar que el único grado de libertad del campo $B'_{\mu\nu}$ se transforma como un campo de spin-0 mediante la siguiente ecuación:}
+%\justify{Finalmente, el único grado de libertad del campo $B'_{\mu\nu}$ se transforma como un campo de spin-0: }
+
+\begin{equation}
+	\mathsf{C}'_{12}  =  \mathsf{C}_{12}
+\end{equation}
+
+\justify{Luegode analizar las helicidades del campo, y comprobar que la helicidad del único grado de libertad es nula, se puede afirmar que el campo $B'_{\mu\nu}$ se comporta como un campo de spin-0 no masivo.
+%\justify{Una vez analizado las helicidades del campo, y comprobado que la helicidad del único grado de libertad es con una fase nula, podemos afirmar que se comporta como si fuera un campo de spin-0 no masivo.}
+
+%DUDA: Hacer un resumen acopio de todo lo estudiado en este capítulo. 
+
+\begin{comment}
+%#####################################################################################################
+% DUDA Hay que decir que los cálculos están basados en arxiv 1908.09328v1
+\vspace{4mm}
+\section{Dualidad de $H_{\mu\nu\rho}$.} \label{KRMassless:Dual}
+%#####################################################################################################
+
+\justify{El campo de fuerza de Kalb-Ramond ($H_{\mu\nu\rho}$) es un tensor de orden 3 completamente antisimétrico, como se puede observar en su definición \eqref{eq:KRmassless:Hdef} y en sus propiedades \eqref{eq:KRmassless:HProperty}. Esta condición permite definir su dual $\hat{H}_{\mu}$}
+
+\begin{equation}
+	\hat{H}^{\mu} \equiv \frac{1}{3!} \varepsilon^{\mu\alpha\beta\gamma}H_{\alpha\beta\gamma}.
+\end{equation}
+
+\justify{La equivalencia entre los dos vectores puede resultar abrumador. En un tiempo-espacio de 4 dimensiones, un tensor de orden 3 puede albergar hasta 64 componentes de libre configuración. Pero por el hecho de ser completamente antisimétrico, el tensor contiene la misma información que un vector que vive en la misma variedad.}
+
+\justify{\textbf{Dualidad dentro de la capa de masas.}}
+
+\justify{Se puede hacer uso de los resultados obtenidos a lo largo de este capítulo. Por la definición de $\hat{H}^{\mu}$ podemos extraer una condición más del dual}
+
+\begin{equation}
+	\partial_{\mu}\hat{H}^{\mu} =  
+	\frac{1}{3!} \varepsilon^{\mu\alpha\beta\gamma}\, \partial_{\mu}H_{\alpha\beta\gamma} =  
+	\frac{1}{2} \varepsilon^{\mu\alpha\beta\gamma}\, \partial_{\mu}\partial_{\alpha}B_{\beta\gamma} = 0,
+\end{equation}
+
+\justify{se puede observar rápidamente que se anula, hay que tener en cuenta el teorema de Clairaut-Schwarz. Este teorema garantiza la variación de las posiciones de las derivadas parciales indistintamente de su índice, mientras que el tensor de Levi-Civita resulta completamente antisimétrico.}
+
+\justify{Además, podemos modificar la ecuación de movimiento \eqref{eq:KRmassless:Eom}}
+
+\begin{equation}
+	\varepsilon^{\lambda\gamma\alpha\beta}\partial_{\gamma}\hat{H}^{\lambda} = 0.
+\end{equation}
+
+\justify{Si se juntan ambas condiciones, la condición que debe satisfacer el campo dual es}
+
+\begin{equation}
+	\partial^{[\rho}\hat{H}^{\lambda]} = 0 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	 \hat{H}_{\lambda} = \partial_{\lambda} \phi.
+\end{equation}
+
+\justify{El campo es simétrico frente a cualquier componente de la derivada. Esta peculiaridad nos permite representarlo como si se tratara de un escalar ($\phi$). Es decir, que el campo de fuerza es dual a un campo escalar. El lagrangiano de Kalb-Ramond se puede reexpresar}
+
+\begin{equation}
+	\mathcal{L}^{KR} = 
+	\frac{4}{3}  \partial_{\lambda} \phi \, \partial^{\lambda} \phi.
+\end{equation}
+
+\justify{El lagrangiano concuerda con la asociada a la acción de Klein-Gordon no masiva. Se trata de la acción que describe el campo de spin-0. El prefactor no se ajusta al convenio de la normalización canónica pero con un reajuste del campo escalar se puede obtener el campo deseado}
+
+\begin{equation}
+	\mathcal{L}^{KR} = 
+	\frac{1}{2}  \partial_{\lambda} \varphi \, \partial^{\lambda} \varphi.
+\end{equation}
+
+\justify{Este resultado muestra la relacción que existe el campo $B_{\mu\nu}$ con la dinámica de spin-0. Pero el campo $\phi$ no se trata del campo fundamental, y todas los cambios empleados en este desarrollo se hacen dentro de la capa de masas. En el siguiente apartado mostraremos que también se puede llegar a esta deducción pero fuera de la capa de masa.}
+
+\justify{\textbf{Dualidad fuera de la capa de masas.}}
+
+\justify{Al igual que ocurre en el caso de spin-1, a pesar de que el lagrangiano se pueda expresar de un campo físico, el campo fundamental de la teoría corresponde con un campo auxiliar. De tal forma, que si se quiere obtener una ecuación de movimiento en función del campo de fuerza se obtiene un resultado distinto.}
+
+\begin{equation*}
+	\mathcal{L}^{KR} = 
+	\frac{1}{12} H_{\mu\nu\rho}H^{\mu\nu\rho}
+\end{equation*}
+
+\begin{equation} 
+	0 = \frac{\partial}{\partial H_{\alpha\beta\lambda}}\mathcal{L}^{KR}- \partial_{\gamma}\cancel{\frac{\partial}{\partial \left(\partial_{\gamma}H_{\alpha\beta\lambda}\right)}\mathcal{L}^{KR}} = 
+	\frac{1}{6}\,H^{\alpha\beta\lambda}
+\end{equation}
+
+\justify{Valor que no coincide con la ecuación de movimiento \eqref{eq:KRmassless:Eom}. Al igual que le ocurre al tensor de Faraday, este campo de fuerza no se trata de un tensor cualquiera de orden 3, $H_{\mu\nu\rho}$ es un campo completamente antisimétrico. Propiedad que se debe expresar ante cualquier } 
+
+\end{comment}

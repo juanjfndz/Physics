@@ -1,0 +1,273 @@
+%DUDA: Aun no sé por qué el singlete se asocia a la componente temporal
+
+%#####################################################################################################
+\chapter{Campo de spin-1 con masa.} \label{Spin-1Massive}
+%#####################################################################################################
+
+
+%\justify{El campo de spin-1 tiene una relevancia significativa en la física conocida, ya que muchas interacciones fundamentales están bien descritas a bajas energías por este tipo de campo. Por ejemplo, la interacción electromagnética se describe mediante un campo de spin-1 no masivo, con su partícula mediadora, el fotón. Del mismo modo, los gluones, que median la fuerza nuclear fuerte y son bosones de spin 1. Para esta tesis, los campos de spin-1 sirven de introducción a los próximos campos venideros.}
+%\justify{El campo de spin-1 tiene gran relevancia en la física conocida. Muchas de las interacciones fundamentales de la física se encuentran bien descritas a bajas energías por este tipo de campo. Por ejemplo, la interacción electromagnética se describe mediante un campo de spin-1 no masivo, y su partícula mediadora, el fotón, también presenta spin-1. Del mismo modo, los gluones, que median la fuerza nuclear fuerte, son bosones con spin-1. La fuerza nuclear débil, por su parte, está descrita por un campo masivo de spin-1, y sus partículas mediadoras, los bosones W y Z, también tienen spin-1.}
+%\justify{El campo de spin-1 tiene una gran relevancia en la física conocida, los campos asociados a la mayoría de las interacciones fundamentales de la física se encuentran bien descritas a baja energía por este tipo de campos: En primer lugar, la interacción electromagnética se describe como un campo de spin-1 no masivo, así como su partícula mediadora el fotón; mientras que los gluones conforman al grupo de bosones asociados a la interacción fuerte y también se comportan como spin-1 no masivos. Y en segundo lugar, la fuerza nuclear débil se describe con un campo de spin-1 masivo, y las partículas mediadoras de esta última interacción son los bosones W y Z.}
+
+%\justify{Este capítulo se centra en el campo masivo de spin-1, ya que es un tipo de teoría bien conocido y estudiado. Existen varias motivaciones fenomenológicas para estudiar el caso de un campo con masa finita y spin-1, siendo el ejemplo más interesante para este capítulo la interacción débil y sus partículas mediadoras, los bosones W y Z. (para más información, véase \cite{Taylor:1976ru}).  }
+%\justify{El campo propuesto en este trabajo es el campo masivo de spin-1, un tipo de teoría de campos bien conocido y ampliamente estudiado. Este campo sirve como introducción a los otros campos que se analizan en este trabajo. Examinando las propiedades y el comportamiento de estos campos, podemos comprender mejor los principios fundamentales de la física y sus aplicaciones a una amplia gama de fenómenos.}
+%\justify{El primer campo que se plantea en este trabajo es el campo de spin-1 masivo, esta elección de debe a que se trata de una teoría tipo bien conocida y estudiada. Este campo se usa a modo de introducción para el resto de campos que se estudian en este trabajo.}
+%\justify{Como se ha comentado anteriormente, existen motivaciones fenomenológicas de peso para estudiar el caso de un campo con masa finita y spin-1. El ejemplo más relevante de este trabajo es la interacción débil, conocida por su corto alcance de interacción y porque su campo lleva asociada una masa distinta de cero. Además, está bien establecido que los bosones de la interacción débil presentan comportamiento de campos de  spin-1 (para más información, véase \cite{Taylor:1976ru}).}
+%\justify{Como se presenta en el primer párrafo, existe motivaciones fenomenológicas suficientes como para interesarnos en modelizar el caso de un campo con masa finita y de spin-1. El ejemplo más interesante para este trabajo es la interacción débil, a esta fuerza se le denomina así por su corto alcance de interacción, cuando las partículas de un campo presentan una distancia de vida media finita implica que al campo se le asocia una masa no nula. Además, se sabe que los bosones de la interacción débil son de spin-1 (para más información \cite{Taylor:1976ru}).}
+
+%\justify{Este capítulo realiza un análisis del campo de spin-1 masivo: en la Sec. \ref{seccion:spin1mass:Lagrangiano} se muestra el lagrangiano con el que se quiere trabajar, luego, en la Sec. \ref{seccion:spin1mass:GradosdeLibertad} se calculan los grados de libertad y la ecuación de movimiento; y el capítulo finaliza con el hamiltoniano de la teoría en la Sec. \ref{section:spin1mass:H}.}
+
+\justify{El campo de spin-1 es de gran relevancia en la física conocida, ya que se utiliza a menudo para describir interacciones fundamentales a bajas energías. Por ejemplo, la interacción electromagnética está mediada por un campo de spin-1 en forma de fotones, los gluones, que son las partículas que median la fuerza nuclear fuerte, también son bosones de spin-1. En esta tesis, el estudio de los campos de spin-1 sirve como punto de partida para la exploración de los campos de los capítulos venideros.}
+
+\justify{Este capítulo se centra específicamente en el campo masivo de spin-1, ya que es una teoría bien conocida y estudiada. Hay varias razones de peso para estudiar este tipo de campo, como su aplicación a la interacción débil y sus partículas mediadoras, los bosones W y Z (para más información, véase \cite{Taylor:1976ru}).}
+
+\justify{En este capítulo, analizamos el campo masivo de spin-1 a través de los siguientes pasos: en la Sec. \ref{seccion:spin1mass:Lagrangiano} presentaremos el lagrangiano con el que trabajaremos, seguido de un cálculo de los grados de libertad y la ecuación de movimiento en la Sec. \ref{seccion:spin1mass:GradosdeLibertad}. El capítulo concluye con la presentación del hamiltoniano de la teoría en la Sec. \ref{section:spin1mass:H}.}
+
+%#####################################################################################################
+\section{Lagrangiano.} \label{seccion:spin1mass:Lagrangiano}
+%#####################################################################################################
+
+
+\justify{En este estudio se quiere crear un modelo matemático que describa el comportamiento de un campo $A_{\mu}$ de spin-1 y con masa. Para simplificar, supondremos que vive en una variedad de Minkowski de cuatro dimensiones $\left( \mathcal{M}_{4}, \eta\right)$.  Además, se toman otros dos supuestos iniciales para contribuir a la teoría: la localidad y la invariancia de Lorentz de la acción, esenciales para cualquier teoría clásica relativista.}
+
+\justify{La característica de masa en las partículas afecta a la cinemática de la partícula, y por tanto se tiene que ver reflejado en la acción del sistema. El término del lagrangiano asociado a la masa $m$ del campo viene dado por una autointeracción del propio campo masivo}
+
+\begin{equation}
+	m^{2} A_{\mu}A^{\mu}.
+\end{equation}
+
+\justify{El lagrangiano más general que se puede describir bajo estas condiciones establecidas tiene la forma}
+
+\begin{equation} \label{eq:spin1massive:lagrangian}
+	\mathcal{L}^{\text{ spin}-1}_{\;m} = 
+	-\frac{1}{2}\, \partial_{\mu} A_{\nu} \, \partial^{\mu} A^{\nu} + 
+	\lambda_{2}\, \partial_{\mu} A^{\mu} \, \partial_{\nu} A^{\nu} + \frac{1}{2} m^{2} A_{\mu}B^{\mu},
+\end{equation}
+
+\justify{donde $m$ es la masa en reposo del campo y los factores $\frac{1}{2}$ se escogen por el convenio de la normalización canónica\footnote{La normalización canónica es una condición arbitraria arrastrada de la mecánica clásica, se impone que la componente cinética del lagrangiano tenga un prefactor $\frac{1}{2}$.}. El lector puede sentir curiosidad por la posible existencia de otro término cinético, como el término $\partial_{\mu} A_{\nu}\,  \partial^{\nu} A^{\mu} $, de tal forma que satisfaga las condiciones discutidas en el párrafo anterior. Pero, podemos comprobar que este término no resulta independiente, equivale al segundo sumando de $\mathcal{L}^{\text{ spin}-1}_{\;m}$ y un término de frontera}
+
+\begin{equation} \label{eq:spin1:equivalencia}
+	\partial_{\mu} A^{\mu} \partial_{\nu} A^{\nu} = 
+	\partial_{\mu} A_{\nu} \partial^{\nu}  A^{\mu} + \mathcal{L}_{\text{Boundary}}.
+\end{equation}
+
+\justify{Esta igualdad sugiere que ambas expresiones dan la misma ecuación de movimiento  ($\partial_{\alpha}\partial_{\nu}A^{\nu} = 0$) y, en consecuencia, describen los mismos fenómenos físicos.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad.} \label{seccion:spin1mass:GradosdeLibertad}
+%#####################################################################################################
+
+\justify{Al realizar un cálculo previo de los grados de libertad presentes en el campo, podemos tomar dos enfoques. Por un lado, podemos tener en cuenta el orden tensorial del campo. El campo $A_{\mu}$ se representa como un tensor de orden uno, un campo vectorial lorentziano. Este tipo de tensor se caracteriza por tener un máximo de cuatro grados de libertad.}
+%\justify{A la hora de hacer un cálculo previo de los grados de libertad que presenta el campo se puede tomar dos vías. Por un lado, tomamos en cuenta el orden tensorial del campo, el campo $A_{\mu}$  se representa como un tensor de orden 1, un campo vectorial lorentziano. Este tipo de tensor se caracteriza por tener un máximo de cuatro grados de libertad.}
+
+% DUDA: Hacer referencia a algo de teorías de grupos. 
+\justify{Las simetrías rotacionales asociados al campo vectorial lorentziano vienen dado por la representación irreduccible del grupo $SO(3)$ y cuya álgebra asociada la denotamos por $\mathfrak{so}\,(3)$. Para el caso de un campo de spin-1 con cuatro grados de libertad, la representación irreducible de  $\mathfrak{so}\,(3)$ es de la forma $\left(1\oplus0\right)$. El conjunto de segundos números cuánticos asociados a la representación  $\left(1\oplus0\right)$ es el triplete de spin-1 y el singlete de spin-0 respectivamente, en conjunto se representan como $\left\{(-1, 0, 1), (0)\right\}$. De esta forma se permite identificar de forma inequívoca la helicidad de cada componente del campo $A_{\mu}$.}
+
+\justify{Por otro lado, la clasificación de Wigner (descrita en la sección \ref{introduction:WignerClassification}) nos permite caracterizar los campos que viven en $\mathcal{M}_{4}$. El campo de este capítulo se ajusta a la descripción del grupo de campos con masa y spin, para los que la clasificación de Wigner predice $2j + 1$ grados de libertad del sistema, donde $j$ se define como el spin del campo. En el caso de un campo con masa y spin-1 hay tres grados de libertad. La clasificación de Wigner también permite relacionar los grados de libertad con los valores del segundo número cuántico, en este caso $(-1, 0, 1)$.}
+
+\justify{Podemos apreciar que existe una pequeña discrepancia entre los grados de libertad de $A_{\mu}$ y los grados de libertad predichos por la clasificación de Wigner: sobra un grado de libertad de los asociados al vector lorentziano. Esto sugiere que debe haber alguna restricción impuesta en la teoría. La clasificación de Wigner arroja más información y nos permite identificar que el grado de libertad sobrante está relacionado con el singlete de spin-0.}
+
+\justify{ Este problema con los grados de libertad motiva un estudio más profundo del lagrangiano, así como la búsqueda de esta condición límite. Este desarrollo se basa en el paper de Claudia de Rham \cite{2014arXiv1401_4173}, aunque existen múltiples desarrollos conocidos sobre este tema.}
+ %\justify{Podemos apreciar que existe una pequeña discrepancia entre los grados de libertad de $A_{\mu}$ y los grados de libertad predichos por la clasificación de Wigner: sobra el grado de libertad asociado al spin singlete. Esto sugiere que debe haber alguna restricción impuesta a la teoría, que debe estar relacionada con la componente de $A_{\mu}$ asociada a la representación del spin singlete. Este problema con los grados de libertad motiva un estudio más profundo del lagrangiano, así como la búsqueda de esta condición de ligadura. Este desarrollo se basa en el paper de Claudia de Rham \cite{2014arXiv1401_4173}, aunque existen múltiples desarrollos conocidos sobre este tema.}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\vspace{4mm}
+\subsection{Eliminación del \textit{ghost.}} \label{apartado:spin1mass:ghostelimiantion}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\justify{Para analizar el lagrangiano primero proponemos aislar la componente de spin-0 de la representación del singlete. Para ello, expresamos uno de estos grados de libertad del campo $A_{\mu}$  como una componente $\chi$ aislada del campo vectorial }
+
+\begin{equation} \label{eq:spin1massive:Bdecomposition}
+	A_{\mu} = \mathcal{A}_{\mu}  + \partial_{\mu}\chi.
+\end{equation}
+
+\vspace{2mm}
+
+
+\justify{El campo escalar $\chi$ posee un único grado de libertad, mientras que el campo $\mathcal{A}_{\mu}$ porta los tres grados de libertad restantes correspondientes a la representación de un triplete de spin. Para asegurarnos de que $\mathcal{A}_{\mu}$ efectivamente posee estos tres grados de libertad, debemos imponer una restricción a alguna de sus componentes. Aunque hay varias restricciones posibles a considerar, en la siguiente sección demostraremos que la ecuación de movimiento conduce naturalmente a una condición que es necesaria y suficiente para que $\mathcal{A}_{\mu}$ presente el número deseado de grados de libertad.}
+%\justify{El campo escalar $\chi$ posee un único grado de libertad, y el campo $\mathcal{A}_{\mu}$ porta los tres grados de libertad restantes correspondientes a la representación de un triplete de spin. Para asegurarnos de que $\mathcal{A}_{\mu}$ efectivamente posee estos tres grados de libertad, debemos imponer una restricción a alguna de sus componentes. Aunque hay varias restricciones posibles a considerar , en la siguiente sección mostraremos que la ecuación de movimiento conduce naturalmente a una condición que es necesaria y suficiente para que $\mathcal{A}_{\mu}$ presente el número deseado de grados de libertad.}
+%\justify{donde $\chi$ presenta un único grado de libertad por ser escalar, y por extensión el campo $\mathcal{A}_{\mu}$ debería presentar las componentes restantes, es decir tres grados de libertad asociados a la representación del triplete spin. este campo, presente los 3 grados de libertad asociados al triplete de spin, debemos imponer una condición de ligadura sobre alguna de las componentes del mismo. A pesar de que existe una lista de posibles condiciones a aplicar sobre este campo, en la siguiente sección comprobaremos que, imponiendo una conservación de la fuente del campo, aparece de forma natural la condición de Lorentz, condición necesaria y suficiente para afirmar que $\mathcal{A}_{\mu}$ presenta tres grados de libertad. }
+
+\justify{Queremos analizar en mayor profundidad el comportamiento que presenta el campo $\chi$, para ello substituimos la Ec. (\ref{eq:spin1massive:Bdecomposition}) en Ec. (\ref{eq:spin1massive:lagrangian}) y obtenemos}
+
+\begin{align} \label{eq:spin1mass:Ldecomposition}
+	\mathcal{L}^{\text{ spin}-1}_{\;m} &= 
+	-\frac{1}{2}\,\partial_{\mu}\mathcal{A}_{\nu}\, \partial^{\mu}\mathcal{A}^{\;\nu} + \lambda_{2}\, \partial_{\mu}\mathcal{A}^{\;\mu}\, \partial_{\nu}\mathcal{A}^{\;\nu} + 2\left( \lambda_{2} - \frac{1}{2}\right)\partial_{\mu}\mathcal{A}_{\nu}\, \partial^{\mu}\partial^{\nu}\chi \nonumber \\
+	&\hspace{20mm}+ \left( \lambda_{2} - \frac{1}{2}\right)\partial_{\mu}\partial_{\nu}\chi\,\partial^{\mu}\partial^{\nu}\chi + \frac{1}{2}m^{2} \left( \mathcal{A}_{\mu}\mathcal{A}^{\;\mu} + 2\mathcal{A}_{\mu}\partial^{\mu}\chi + \partial_{\mu}\chi\partial^{\mu}\chi   \right),
+\end{align}
+
+\justify{donde el término cinético del campo $\chi$  del lagrangiano presenta derivadas temporales de orden dos}
+
+\begin{equation} 
+	\mathcal{L}^{\text{ spin}-1}_{m,\,\chi} = \left( \lambda_{2} - \frac{1}{2}\right)\partial_{\mu}\partial_{\nu}\chi\,\partial^{\mu}\partial^{\nu}\chi \label{eq:Spin1massless:chighost}.
+\end{equation}
+
+\justify{Un lagrangiano con estas características se asemeja al caso analizado en el teorema de Ostrogradsky (Sección \ref{Sec:Ostrogradsky}) y es un posible candidato para generar inestabilidades de Ostrogradsky. Esta similitud nos motiva verificar si efectivamente la energía de $\mathcal{L}^{\text{ spin}-1}_{m,\,\chi} $ no presenta una cota inferior bien definida. El hamiltoniano asociado presenta la forma}
+%\justify{donde el término cinético del campo $\chi$  del lagrangiano presenta derivadas temporales de orden dos. Un lagrangiano de estas características resulta parecido al caso estudiado en el teorema de Ostrogradsky (Sec. \ref{Sec:Ostrogradsky}) y un potencial candidato a generar inestabilidades de Ostrogradsky. Esta similitud motiva el análisis de su hamiltoniano para comprobar que efectivamente la energía no presenta una cota inferior bien definida}
+
+\begin{equation} \label{eq:Spin1massless:chighost2}
+	\mathcal{H}^{\text{ spin}-1}_{m,\,\chi} = 
+	( \lambda_{2} - \frac{1}{2}) \left[  (\partial_{0}\partial_{0}\chi)^2 - (\partial_{j}\partial_{i}\chi)^2  \right],  
+\end{equation}
+
+\justify{donde $(\partial_{i}\partial_{j}\chi)^2$ es definido completamente positivo y desprovisto de los signos asociados a los términos de la métrica,}
+
+\begin{equation}
+(\partial_{i}\partial_{j}\chi)^2 = \delta^{il}\delta^{jm} \; \partial_{i}\partial_{j}\chi \; \partial_{l}\partial_{m}\chi.
+\end{equation}
+
+\justify{Por lo tanto, al examinar la ecuación \eqref{eq:Spin1massless:chighost2}, identificamos configuraciones de campo que posibilitan la obtención de un valor arbitrariamente bajo de este hamiltoniano. Los campos que exhiben esta peculiaridad se conocen como \textit{ghosts}. En el presente caso, el término $\mathcal{H}^{\text{ spin}-1}_{m,\,\chi}$ posibilita que el campo $\chi$ manifieste una conducta característica de un \textit{ghost}.}
+%\justify{Por tanto, de la ecuación \eqref{eq:Spin1massless:chighost2} observamos configuraciones del campo que permiten obtener un valor arbitrariamente bajo de este hamiltoniano. Los campos que presentan este comportamiento se denominan \textit{ghost}. En este caso, el término $\mathcal{H}^{\text{ spin}-1}_{m,\,\chi}$ permite que al campo $\chi$ actuar como un \textit{ghost}.}
+
+\justify{El teorema de Ostrogradsky, discutido en la sección \ref{Sec:Ostrogradsky} y con mayor detalle en la referencia \cite{2015arXiv1506_02210}, proporciona una comprensión de los posibles problemas que pueden surgir al incluir un campo de tipo "fantasma" en un lagrangiano. Específicamente, este teorema demuestra que la presencia de campos fantasma puede llevar a inestabilidades en la cinemática del sistema, haciendo que el lagrangiano no sea capaz de describir de manera precisa un sistema físico realista. Por tanto, es importante tener en cuenta las implicaciones del teorema de Ostrogradsky cuando se trabaja con lagrangianos que contienen campos de este tipo.}
+%\justify{El teorema de Ostrogradsky, como se discutió en la \ref{Sec:Ostrogradsky} y con más detalle en \cite{2015arXiv1506_02210}, proporciona una visión de los problemas potenciales que pueden surgir cuando un lagrangiano incluye un campo de tipo \textit{ghost}. En particular, este teorema demuestra que la presencia de campos fantasma puede causar inestabilidades en la cinemática del sistema, haciendo que el lagrangiano sea incapaz de describir con precisión un sistema físico realista. Por lo tanto, es importante tener en cuenta las implicaciones del teorema de Ostrogradsky cuando se trabaja con lagrangianos que contienen campos de este tipo.}
+%\justify{El teorema de Ostrogradsky (Sección \ref{Sec:Ostrogradsky}, y más detalles en \cite{2015arXiv1506_02210}) muestra las consecuencias problemáticas de un lagrangiano que contiene \textit{ghosts}. Naturalmente, esto lleva a inestabilidades en la cinemática del sistema. En general, si un lagrangiano contiene \textit{ghosts} no permite describir un sistema físico clásico.}
+%\justify{El teorema de Ortrogradsky (Sec. \ref{Sec:Ostrogradsky}, y más detalles en \cite{2015arXiv1506_02210}) muestra las consecuencias problemáticas de un lagrangiano que no se encuentra libre de \textit{ghosts}, naturalmente aparecen inestabilidades en la cinemática del sistema. En general, si el lagrangiano no se encuentra libre de \textit{ghosts} no permite describir un sistema físico clásico.}
+
+
+\justify{La presencia del término $\mathcal{L}^{\text{spin}-1}_{m,\chi}$ presenta un impacto negativo en el sistema completo debido a que forma parte de la energía total del sistema. Esto hace que el hamiltoniano total de la teoría no se encuentre acotado inferiormente, lo que puede conducir a comportamientos indeseables en el sistema físico descrito por la teoría. Para evitar esto, resulta necesario imponer una condición que prohíba la actuación del término problemático. En este caso imponemos:}
+%\justify{La presencia del término $\mathcal{L}^{\text{ spin}-1}_{m,\,\chi} $ presenta efectos negativos en todo el sistema. Esto se debe porque $\mathcal{L}^{\text{ spin}-1}_{m,\,\chi} $ es una componente de la energía total del sistema, por lo que el hamiltoniano total de la teoría tampoco se encuentra acotado por abajo. Para evitar que este tipo de comportamiento aparezca en el sistema físico descrito por la teoría, se debe imponer una condición que prohíbe que actúe el término problemático:}
+%\justify{Por extensión, todo el sistema se encuentra enfermo por la presencia del término $\mathcal{L}^{\text{ spin}-1}_{m,\,\chi}$. Esto se debe a que las inestabilidades que afectan al campo $\chi$ se pueden presentar en todo su dominio, es decir, en toda la variedad. Además, $\mathcal{L}^{\text{ spin}-1}_{m,\,\chi}$ es una componente de la energía total del sistema, así que el hamiltoniano de la teoría tampoco se encuentra acotado inferiormente. Para evitar que este tipo de comportamientos aparezcan en el sistema físico de la teoría, se impone una condición que prohíba la acción del término problemático}
+
+
+\begin{equation} 
+	\lambda_{2} - \frac{1}{2} = 0 
+\end{equation}
+
+\justify{Esta condición hace que $\mathcal{H}^{\text{ spin}-1}_{m,\,\chi}$ sea nula para cualquier configuración del campo $\chi$. Si imponemos esta condición sobre la ecuación \eqref{eq:spin1mass:Ldecomposition} no deja al lagrangiano del sistema de la forma}
+
+\begin{equation} \label{eq:spin-1massive:lambdacondition}   
+	\mathcal{L}^{\text{ spin}-1}_{\;m} = 
+	-\frac{1}{2}\left(\partial_{\mu}\mathcal{A}_{\nu}\,\partial^{\mu}\mathcal{A}^{\;\nu} - \partial_{\mu}\mathcal{A}^{\;\mu}\,\partial_{\nu}\mathcal{A}^{\;\nu}\right) + \frac{1}{2}m^{2} \left( \mathcal{A}_{\mu}\mathcal{A}^{\;\mu} + 2\mathcal{A}_{\mu}\partial^{\mu}\chi + \partial_{\mu}\chi\partial^{\mu}\chi   \right),
+\end{equation} 
+
+\justify{donde $\mathcal{L}^{\text{ spin}-1}_{\;m}$ queda libre del término $\mathcal{L}^{\text{ spin}-1}_{m,\,\chi}$ y por tanto, de las posibles inestabilidades de Ostrogradsky. La condición sobre $\lambda_{2}$ implica que el campo $\chi$ desaparece en los términos dinámicos del lagrangiano. Sin embargo, podemos observar que aún aparece en el término de masa. Esta afirmación será relevante para el caso no masivo.}
+
+\justify{El lagrangiano se puede volver a expresar en función del campo $A_{\mu}$ de la forma}
+
+\begin{equation} \label{eq:spin1mass:lagrangianoProca}
+	\mathcal{L}^{\text{ spin}-1}_{\;m} = 
+	-\frac{1}{2}\, \left(\partial_{\mu} A_{\nu} \, \partial^{\mu} A^{\nu} -  \partial_{\mu} A^{\mu} \, \partial_{\nu} A^{\nu}\right)
+	 + \frac{1}{2} m^{2} A_{\mu}A^{\mu},
+\end{equation}
+
+\justify{porque definir el pre-factor $ \lambda_{2}$ nos asegura la desaparición de las posibles inestabilidades de Ostrogradsky. Este lagrangiano se le denomina acción de Proca en nombre de Alexandru Proca (1987 - 1955) \cite{ProcaBiblio}.}
+
+\justify{En la bibliografía, y de forma análoga al campo de spin-1 no masivo, el lagrangiano se suele expresar en función del campo de fuerza $F_{\mu\nu}$}
+
+\begin{equation}
+	\mathcal{L}^{\text{ spin}-1}_{\;m} = 
+	-\frac{1}{4}\, F_{\mu\nu}F^{\mu\nu} + \frac{1}{2} m^{2} A_{\mu}A^{\mu}, 
+	\hspace{4mm}\text{donde}\hspace{2mm} 
+	F_{\mu\nu} \equiv \partial_{[\mu}A_{\nu]}.
+\end{equation}
+
+\justify{Un tensor de orden dos antisimétrico y que, por la propia definición del campo de fuerza, $F_{\mu\nu}$ cumple con la identidad de Bianchi}
+
+\begin{equation}
+	\epsilon^{\lambda\rho\mu\nu}\partial_{\rho}F_{\mu\nu} = 0.
+\end{equation}
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\vspace{4mm}
+\subsection{Ecuación de movimiento.} \label{Spin-1massive:EOMSubsection}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\justify{A pesar de sanar al sistema, la condición \eqref{eq:spin-1massive:lambdacondition} no contribuye con una ligadura al campo de spin. El siguiente paso es el estudiar la ecuación de movimiento y comprobar si se obtiene alguna restricción sobre el campo. Para ello se aplica la ecuación de Euler-Lagrange al lagrangiano y se obtiene la ecuación de movimiento }
+
+\begin{equation} \label{eq:EomSpin1mass}
+	0 
+	= m^{2} A^{\beta} + \partial_{\alpha}\partial^{\alpha}A^{\beta} - \partial^{\beta}\partial_{\alpha}A^{\alpha}, 
+\end{equation}
+
+\justify{que si se expresa en función del campo físico $F_{\mu\nu}$ queda}
+
+\begin{equation} \label{eq:EomSpin1mass:F}
+	\partial_{\alpha} F^{\alpha\beta} = -m^{2} A^{\beta}.
+\end{equation}
+
+\justify{Se puede añadir una derivada extra a la Ec. \eqref{eq:EomSpin1mass:F} y obtener una condición interna}
+
+\begin{equation} \label{eq:spin1mass:condition}
+	0 = \partial_{\beta} \partial_{\alpha} F^{\alpha\beta}  = 
+	m^{2} \partial_{\beta}A^{\beta}  \hspace{5mm}\xrightarrow{\forall m}\hspace{5mm} \partial_{\beta}A^{\beta} = 0.
+\end{equation}
+
+\justify{A la condición \eqref{eq:spin1mass:condition} se le conoce como condición de Lorenz. Se trata de una ligadura que permite fijar una componente del campo en función del resto de componentes, típicamente la componente temporal. Por tanto, de las cuatro componentes totales del vector, quedan tres únicamente independientes. Si se aplica sobre la ecuación de movimiento \eqref{eq:EomSpin1mass} se obtiene}
+
+\begin{equation} \label{eq:EomSpin1mass2}
+	m^{2} A^{\beta} + \partial_{\alpha}\partial^{\alpha}A^{\beta}  = 0,
+\end{equation}
+
+\justify{que se trata de un resultado conocido como ecuación de Proca, una solución de tipo onda masiva relativista. El obtener una solución de este tipo, nos permite afirmar que el campo $A_{\mu}$ respeta el comportamiento local y relativista esperado por una teoría física.}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\vspace{4mm}
+\subsection{Grados de libertad.}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\justify{La condición de Lorenz permite afirmar que el campo $A_{\mu}$ presenta efectivamente tres grados de libertad,
+se ha encontrado una ligadura que permite extraer del campo presenta un grado de libertad sobrante, lo que ha permitido ajustar el número de grados de libertad de manera que coincidan con los esperados por la clasificación de Wigner. Esto es esencial para asegurar la consistencia del modelo y poder utilizarlo en la descripción de sistemas físicos.}
+
+\justify{Además, como se mencionó anteriormente en el análisis de la ecuación  \eqref{eq:spin1massive:Bdecomposition}, la condición \eqref{eq:spin1mass:condition} también implica que el campo $\mathcal{A}_{\mu}$ presenta efectivamente tres grados de libertad. Una de las componentes del campo $\mathcal{A}_{\mu}$ se puede fijar en función del campo $\chi$ y de las demás componentes del campo $\mathcal{A}_{\mu}$. Por ejemplo, en el caso de la componente temporal:}
+%\justify{Además, como se mencionaba anteriormente en el análisis de la Ec. \eqref{eq:spin1massive:Bdecomposition}, la condición \eqref{eq:spin1mass:condition} implica que el campo $\mathcal{A}_{\mu}$ efectivamente presentaba tres grados de libertad. Una de las componentes de este campo se puede fijar en función del campo $\chi$ y del resto de componentes del campo $\mathcal{A}_{\mu}$. Tomando como ejemplo la componente temporal:}
+
+\begin{equation} \label{eq:LorenzProof}
+	\partial_{0} \mathcal{A}^{0} = \partial_{\alpha} \partial^{\alpha}{\chi} - \partial_{i} \mathcal{A}^{i}.
+\end{equation}
+
+\justify{En esta sección, hemos avanzado en la comprensión del comportamiento de nuestro sistema. Analizando las propiedades del campo hemos sido capaces de derivar del caso más general al lagrangiano de Proca, el único lagrangiano posible que es libre de fantasmas para el sistema. Esto implica que el lagrangiano de Proca es fundamental para describir el comportamiento de cualquier campo de spin-1 masivo.}
+
+\justify{Utilizando este lagrangiano, pudimos calcular la ecuación de movimiento del sistema y obtener la condición de Lorenz. Esto nos permitió determinar el exceso de grados de libertad en el sistema y confirmar que coinciden con los esperados por la clasificación de Wigner.}
+
+\justify{La obtención exitosa del lagrangiano de Proca, el cálculo de su ecuación de movimiento y la confirmación del número correcto de grados de libertad del campo mediante la condición de Lorenz son logros importantes que han mejorado nuestra comprensión del sistema. Estos resultados sientan las bases de los próximos capítulos.}
+
+\justify{En la última sección de este capítulo examinaremos el hamiltoniano del sistema. Demostraremos que este objeto se encuentra definido de tal manera que presenta una cota inferior, lo que garantiza que el sistema está libre de inestabilidades de Ostrogradsky. Esto completará nuestra confirmación de que el sistema está libre de inestabilidades de Ostrogradsky.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Hamiltoniano.} \label{section:spin1mass:H}
+%#####################################################################################################
+% FALTA CHATGPT DE AQUí EN ADELANTE
+
+\justify{El hamiltoniano es una herramienta matemática esencial para el estudio de la mecánica clásica y cuántica. Se utiliza para describir la evolución de los sistemas físicos en el tiempo y juega un papel fundamental en la comprensión de estos sistemas. En esta sección final del capítulo, demostraremos que el hamiltoniano de nuestro sistema tiene un límite inferior, lo que garantiza su estabilidad y asegura que no muestra comportamientos inestables o de tipo \textit{ghost} Esto completará nuestro análisis del sistema y confirmará que se comporta de manera consistente y físicamente razonable. Demostrando que el hamiltoniano tiene un límite inferior, podemos estar seguros de que el sistema se encuentra libre de inestabilidades de Ostrogradsky.}
+
+%\justify{El hamiltoniano es un objeto matemático que representa la energía total de un sistema físico. Desempeña un papel fundamental en el estudio de la mecánica clásica y cuántica, y se utiliza para describir la evolución de los sistemas físicos a lo largo del tiempo. En esta sección final del capítulo, demostraremos que el Hamiltoniano de nuestro sistema tiene un límite inferior, lo que garantiza que es estable y no muestra ningún comportamiento fantasmal o inestable. Esto completará nuestro análisis del sistema y confirmará que se comporta bien y tiene sentido desde el punto de vista físico.}
+
+%\justify{el hecho de que el Hamiltoniano del sistema tenga un límite inferior es importante porque garantiza la estabilidad del sistema. Las inestabilidades pueden dar lugar a comportamientos impredecibles y potencialmente peligrosos, por lo que es importante confirmar que un sistema es estable antes de aplicarlo en situaciones prácticas. Demostrando que el Hamiltoniano tiene un límite inferior, podemos estar seguros de que el sistema es estable y libre de inestabilidades de Ostrogradsky.}
+
+\justify{Además, en el estudio de los grados de libertad del campo que nos ocupa, se ha asumido que se trata de un conjunto de partículas masivas y energía positiva (ver Sec. \ref{introduction:WignerClassification}). Estas son uno de los pocos tipos de partículas que el paradigma actual de la física considera, a diferencia de otros casos como los taquiones. Por lo tanto, no solo es necesario comprobar que el hamiltoniano tiene un límite inferior, sino también que se encuentra definido positivamente. Por lo tanto, para concluir con el caso masivo de spin-1, se analiza su hamiltoniano total.}
+
+%\justify{Además, para el estudio de los grados de libertad del campo que nos concierne se ha asumido que se trata del conjunto de partículas no masivas y energía positiva (ver Sec. \ref{introduction:WignerClassification}). Se trata de uno de los pocos tipo de partículas que el paradigma actual de la física que tiene en cuenta, a diferencias de otros casos como los taquiones. Por tanto, no solo se hay que comprobar que el Hamiltoniano presenta límite inferior, si no es que es definido positivo.}
+
+%\justify{En el Apto. \ref{apartado:spin1mass:ghostelimiantion} se hace uso del formalismo hamiltoniano para estudiar los términos que presentan inestabilidades de Ostrogradsky y se demuestra que la imposición de la condición \eqref{eq:spin-1massive:lambdacondition} permite definir un estado sin la presencia de un campo fantasma, es decir, que el hamiltoniano del campo presenta un límite inferior en su valor. Sin embargo, no se demuestra que este límite sea positivo.  en busca de una expresión que muestre que su mínimo es positivo.}
+
+%\justify{Y es verdad que en el Apto \ref{apartado:spin1mass:ghostelimiantion} ya se hace uso del formalismo hamiltoniano para estudiar los términos que presentan las inestabilidades de Ostrogradsky, y que la imposición de la condición \eqref{eq:spin-1massive:lambdacondition} permite definir un estado sin la presencia de un campo \textit{ghost}, es decir, que en principio el hamiltoniano del campo presenta una cota inferior en su valor. Pero en ningún caso se muestra que dicha cota es positiva, por este motivo, para concluir con el caso masivo de spin-1, se analiza el hamiltoniano en búsqueda de una expresión que muestre que su mínimo en positivo.}
+
+\justify{Se hace la transformada de Legendre sobre $\mathcal{L}^{\text{ spin}-1}_{\;m}$ para obtener el hamiltoniano}
+
+%DUDA: ERROR EN EL HAMILTONIANO; NO HEMOS ESCRITO LAS MASAS
+
+\begin{equation} \label{eq:spin1mass2:Hamiltoniano}
+\begin{split}
+	\mathcal{H}^{\text{ spin-1}}_{\;m} &\equiv 
+	\frac{\partial \mathcal{L}^{\text{ spin-1}}_{\;m} }{\partial \left(\partial_{0}A_{\alpha}\right) } \;\partial_{0}A_{\alpha} - \mathcal{L}^{\text{ spin-1}}_{\;m} 
+	= - \left( \partial^{0}A^{\alpha} - \partial^{\alpha}A^{0} \right)\partial_{0}A_{\alpha} -  \mathcal{L}^{\text{ spin-1}}_{\;m} = \\ \\
+	&= -F^{0\alpha}F_{0\alpha} - F^{0\alpha}\partial_{\alpha}A_{0} + \frac{1}{4}F^{\mu\nu}F_{\mu\nu} - \frac{1}{2} m^{2} A_{\mu}A^{\mu} = \\ \\
+	&=   -\frac{1}{2}F^{0i}F_{0i} + \frac{1}{4}F^{ij}F_{ij} + \left(\partial_{\alpha}F^{0\alpha}\right) A_{0} - \partial_{\alpha}\left(F^{0\alpha} A_{0}\right) - \frac{1}{2} m^{2} (A_{0})^{2} + \frac{1}{2} m^{2} (A_{i})^{2} = \\ \\
+	&= \frac{1}{2} \left(F_{0i}\right)^{2} + \frac{1}{4}\left(F_{ij}\right)^{2} + \frac{1}{2}m^{2}\left(A_{0}\right)^{2} + \frac{1}{2}m^{2}\left(A_{i}\right)^{2} +\mathcal{H}_{\text{Boundary}}.
+\end{split}
+\end{equation}
+
+\justify{Al alcanzar la última igualdad, incorporamos la ecuación de movimiento \eqref{eq:EomSpin1mass2} para llegar al resultado del hamiltoniano \textit{on shell} o "en la capa de masas". Este resultado implica que el hamiltoniano se encuentra condicionado por la ecuación de movimiento y no representa simplemente el hamiltoniano genérico de cualquier campo de orden dos antisimétrico. Además, se requiere que el campo obedezca a la Ec. \eqref{eq:EomSpin1mass}. El hamiltoniano \textit{on shell}  es instrumental para calcular la dinámica del sistema en un espacio de fase particular y para analizar la estabilidad del sistema.}
+%\justify{donde los términos cuadráticos, por ejemplo $ \left(F_{0i}\right)^{2} $, vienen descritos bajo el convenio establecido en el capítulo \ref{Introduccion}.}
+
+%\justify{En la última igualdad, se toma en cuenta la ecuación de movimiento \eqref{eq:EomSpin1mass2} para obtener el resultado del hamiltoniano \textit{on shell} o "en la capa de masas". Esto significa que el resultado del hamiltoniano está condicionado por la ecuación de movimiento y no se trata del hamiltoniano genérico de cualquier campo de orden dos antisimétrico, sino que además el campo debe obedecer la Ec. \eqref{eq:EomSpin1mass}. E hamiltoniano \textit{on shell}  permite calcular la dinámica del sistema en un determinado espacio de fase y estudiar la estabilidad del sistema.}
+
+\justify{Es importante mencionar que los términos cuadráticos, tales como $ \left(F_{0i}\right)^{2} $, se presentan bajo el convenio establecido en el Capítulo \ref{Introduccion} definidos positivos. Por tanto, se puede observar de la ecuación resultante que todas las contribuciones están definidas positivamente. De tal modo, se puede afirmar que el hamiltoniano es positivamente definido y presenta una cota inferior para cualquier valor del campo $A_{\mu}$, lo que concuerda con la clasificación de Wigner. El único término que no se define positivamente es el término de frontera $\mathcal{H}_{\text{Boundary}}$, que, a diferencia del lagrangiano, no puede ser omitido. No obstante, es factible imponer condiciones de contorno que cancelen este término.}
+%\justify{Es posible observar que el resultado se presenta con todas las contribuciones definidas positivamente. Por lo tanto, el hamiltoniano es definido positivo y tiene una cota inferior para cualquier valor del campo $A_{\mu}$, acertando con la clasificación de Wigner. El único término no positivo del resultado es el término de frontera $\mathcal{H}_{\text{Boundary}}$, que a diferencia del lagrangiano, no se puede ignorar. Sin embargo, se pueden imponer condiciones de contorno que cancelen este término.}
+
+
+ 

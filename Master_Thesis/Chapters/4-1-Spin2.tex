@@ -1,0 +1,390 @@
+%#####################################################################################################
+\chapter{Campo de spin-2 con masa. } \label{spin-2Masivo}
+%#####################################################################################################
+
+
+\justify{En los siguientes dos capítulos se aborda el estudio del campo de spin-2, más en concreto, en este capítulo nos enfocamos en su forma masiva. A diferencia de los casos tratados en los capítulos anteriores, el análisis de este tipo de campo es puramente teórico, ya que aún no existen evidencias de la existencia de partículas fundamentales asociadas a un campo de spin-2.}
+%\justify{En los dos capítulos siguientes se estudia el campo de spin-2, en este capítulo se centra en el caso masivo. A diferencia de los casos de los capítulos anteriores, el marco de estudio de este tipo de campos resulta puramente teórico; a día de hoy no existe evidencias de ninguna partícula fundamental asociada a un campo de spin-2.}
+
+\justify{Sin embargo, esto no impide que existan motivaciones para su estudio. En primer lugar, gran parte de las interacciones en el universo se encuentran descritas a través de campos de spin, por lo que el conocimiento de este paradigma resulta beneficioso para comprender mejor este tipo de interacciones. En segundo lugar, la búsqueda de teorías más allá de los campos conocidos puede beneficiarse del conocimiento matemático del comportamiento de los campos de spin, ya que podría permitir relacionar estos modelos matemáticos con nuevas teorías físicas, como la física más allá del Modelo Estándar. Y por último, aunque la Relatividad General es la única interacción que no se encuentra descrita bajo una teoría de campo de spin, presenta un comportamiento de spin-2 en su régimen lineal.}
+%\justify{En cualquier caso si existen motivaciones para el estudio de este tipo de campos. En primer lugar, la mayoría de las interacciones se encuentran descritas en el paradigma de los campos de spin, todo aprendizaje sobre este paradigma resulta en beneficio de entender mejor este tipo de interacciones. En segundo lugar, la búsqueda de teorías más allá de los campos conocidos, un mejor entendimiento matemático del comportamiento de los campos de spin podría permitir relacionar nueva física a estos modelos matemáticos, como la física más allá del Modelo Estándar. Y en tercer lugar la Relatividad General, la única interacción que no se encuentra descrita bajo una teoría de campo de spin presenta un comportamiento de spin-2 no masivo en su régimen lineal.}
+
+
+\justify{El campo de spin-2 masivo presenta una connotación ambicioso en la física y se encuentra íntimamente ligado a las teorías de gravedad modificada. En las últimas décadas ha adquirido un papel importante en las teorías de gravedad masiva (e.g. \cite{Kazempour:2022asl, Mousavi:2022puq}), especialmente en los modelos dRGT \cite{2014arXiv1401_4173}.  Obtener una mayor comprensión de este modelo de campo nos permitirá comprender mejor las descripciones de estas, entre otras, novedosas y avanzadas teorías.}
+%\justify{El campo de spin-2 masivo presenta una connotación especulativa en la física, y se encuentra íntimamente asociado a teorías de gravedad modificada. En la última década ha presentado un papel importante en las teorías de gravedad masiva (e.g. \cite{Kazempour:2022asl, Mousavi:2022puq}), más en particular en los modelos dRGT \cite{2014arXiv1401_4173}.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Lagrangiano} \label{spin-2mass:section}
+%#####################################################################################################
+
+\justify{En este estudio, se desea crear un modelo matemático que describa el comportamiento de un campo de spin-2 $h_{\mu\nu}$, que es simétrico y tiene masa, en una variedad de Minkowski de cuatro dimensiones $\left( \mathcal{M}_{4}, \eta\right)$. Además, al igual que ocurren en los capítulos de spin-1, se asume la localidad y la invariancia de Lorentz de la acción para que se comporte como una teoría dentro del marco de la relatividad especial.}
+%\justify{El marco teórico de este análisis resulta el mismo que el de los casos ya estudiados: se trabaja en una variedad plana $\left( \mathcal{M}_{4}, \eta\right)$, un campo $h_{\mu\nu}$ con la peculiaridad de ser simétrico e imponemos que su comportamiento sea local e invariante Lorentz.}
+
+\justify{De igual forma que el caso de spin-1 masivo, la masa del campo afecta a la cinemática, es decir, al lagrangiano del sistema. El término del lagrangiano asociado a la masa $m$ del campo viene dado por la autointeracción del propio campo masivo. En el caso de un campo de spin-2, este término se puede expresar de dos formas distintas}
+%\justify{De igual forma que el caso de spin-1 masivo, Sec \ref{seccion:spin1mass:Lagrangiano}, la masa de la partícula afecta a la cinemática, es decir, al lagrangiano del sistema. La componente masiva se encuentra asociada a la autointeracción del campo, en este caso al ser un campo de orden dos, se puede expresar de dos formas }
+
+\begin{equation} \label{Eq:Spin2Massive:massterms}
+	m^{2} \left(h_{\mu\nu}h^{\mu\nu} + \lambda_{5}\,h^{2}\right),
+\end{equation}
+
+\justify{donde $m^{2}$ es la masa asociada a la autointeración $h_{\mu\nu}h^{\mu\nu}$, $h^{2}$ es el cuadrado de las trazas del campo
+
+\begin{equation}
+h^{2} \equiv h^{\mu}_{\;\;\mu}h^{\nu}_{\;\;\nu},
+\end{equation} 
+
+\justify{y $\lambda_{5}$ es un parámetro adimensional que permite diferenciar al prefactor asociado a la segunda auto-interacción de la masa del primero.}
+
+\justify{En base a las características de nuestro modelo, el lagrangiano más general para el campo de spin-2 masivo presenta la forma }
+
+\begin{equation} \label{eq:spin2mass:Lagrangiano}
+	\mathcal{L}^{\text{ spin}2}_{\,m} = \frac{1}{4} \partial_{\mu} h_{\nu\rho}\, \partial^{\mu} h^{\nu\rho} + 
+						    \lambda_{2}\, \partial_{\mu} h_{\nu\rho}\, \partial^{\nu} h^{\rho\mu} +
+						    \lambda_{3}\, \partial_{\mu} h\, \partial_{\rho}\, h ^{\mu\rho} +
+						    \lambda_{4}\, \partial_{\mu} h\, \partial^{\mu} h 
+						    +\frac{1}{4}m^{2} \left(b_{\mu\nu}b^{\mu\nu} + \lambda_{5}\,b^{2}\right),
+\end{equation}
+
+\justify{donde $h = \eta^{\mu\nu}b_{\mu\nu} = h^{\nu}_{\;\;\,\nu}$ .}
+
+\justify{Este lagrangiano presenta cuatro términos dinámicos independientes entre sí, y el prefactor $\frac{1}{4}$ se debe a la imposición de la normalización canónica del lagrangiano. Otros términos posibles, como $\partial_{\mu}b^{\mu\rho} \, \partial_{\nu}b_{\nu\rho}$, son equivalentes a los términos dinámicos mencionados anteriormente, excepto por un eventual término de derivada total. Un ejemplo de un término dinámico que no aparece en el lagrangiano puede ser }
+%\justify{donde aparecen cuatro términos dinámicos independientes entre sí, y el prefactor $\frac{1}{4}$ se debe a la imposición de la normalización canónica del lagrangiano. El resto de posibles términos - por ejemplo $\partial_{\mu}b^{\mu\rho} \partial_{\nu}b_{\nu\rho}$ - equivalen a los términos dinámicos salvo, si caso, un término de derivada total, siguiendo con el ejemplo}
+
+\begin{equation}
+	\partial_{\mu} h^{\mu\rho}\, \partial^{\nu}h_{\nu\rho} = \partial_{\mu}h_{\nu\rho} \, \partial^{\nu} h^{\mu\rho} + \mathcal{L}_{\text{Boundary}}.
+\end{equation}
+
+
+\justify{Una vez que hemos definido el lagrangiano, el siguiente paso en nuestro estudio es analizar los grados de libertad del sistema. En la sección \ref{Sec:spin2mass:Grados}, profundizaremos más en estos conceptos y examinaremos cómo se relacionan con el lagrangiano que hemos definido.}
+%\justify{Una vez definido el lagrangiano, el siguiente paso de nuestro estudio es el analizar los grados de libertad (Sec \ref{Sec:spin2mass:Grados}). }
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad.} \label{Sec:spin2mass:Grados}
+%#####################################################################################################
+
+\justify{En un análisis previo, hemos estudiado el campo de spin-1, el cual se caracteriza por tener un máximo de cuatro grados de libertad. Sin embargo, en este estudio, nos centraremos en un campo completamente diferente: un campo simétrico de spin-2 representado por el tensor $h_{\mu\nu}$. Este tipo de campo tiene un máximo de 10 grados de libertad $\left(D(D+1)/2 \text{, con  }D=4 \right)$, lo que lo diferencia significativamente del campo de spin-1 que estudiamos anteriormente.}
+%\justify{Hemos estudiado previamente el campo de spin-1, el cual se caracteriza por tener potencialmente un máximo de cuatro grados de libertad. Sin embargo, el campo que estamos analizando ahora es completamente diferente. Se trata de un campo simétrico y de spin-2, representado por el tensor $h_{\mu\nu}$. Este tipo de campo posee un máximo de 10  $\left(\frac{D(D+1)}{2}, \;\;D = 4\right)$  grados de libertad, lo que lo diferencia significativamente del campo de spin-1 que estudiamos anteriormente.}
+
+\justify{Por un lado, la representación irreducible de $\mathfrak{so},(3)$ para un campo de spin-2 con 10 grados de libertad puede tener la forma $\left(2\oplus1\oplus0\oplus0\right)$. El conjunto de segundos números cuánticos asociados a la representación $(2)$ es el quintuplete de spin $\{2, -1, 0, 1, 2\}$, mientras que el resto de segundos números cuánticos son un triplete de spin-1 y dos singletes de spin-0.}
+%\justify{Por un lado, la representación irreducible de $\mathfrak{so}\,(3)$ para un campo con 10 grados de libertad y que queremos que sea de spin-2 tiene la forma $\left(2\oplus1\oplus0\oplus0\right)$. El conjunto de segundos números cuánticos asociados a la representación $(2)$ es el quintuplete de spin $\{2, -1, 0, 1, 2\}$, el resto de segundos números cuánticos son un triplete de spin-1 y dos singletes de spin-0.}
+
+\justify{Por otro lado, según la clasificación de Wigner, el campo $h_{\mu\nu}$ debe presentar 5 grados de libertad, ya que en los casos de campos masivos, los grados de libertad se determinan con la fórmula $2j +1$, donde $j$ es el spin del campo. Además, estas representaciones deben relacionarse con el mayor subconjunto de representación de Lorentz, en este caso, el quintuplete de spin-2.}
+%\justify{Por el otro lado, según la Clasificación de Wigner, el campo $h_{\mu\nu}$ debe presentar 5 grados de libertad, porque para los casos de campo masivo los grados de libertad se determinan con la fórmula  $2j +1$, donde $j$ es el spin del campo (mirar Sec. \ref{introduction:WignerClassification}). Además, estas representaciones deben encontrarse relacionadas con el mayor subconjunto de representación de Lorentz, en este caso se trata del quintuplete de spin-2.}
+
+\justify{Entonces, resulta evidente que existen ciertos grados de libertad sobrantes en este campo. De esta forma conocemos de antemano que debemos buscar un total de 5 ligaduras en el campo $h_{\mu\nu}$, y que se encuentran en las helicidades correspondientes a las representaciones $\left(1\oplus0\oplus0\right)$. Nuestra tarea en esta sección será identificar estos grados de libertad y analizar las ligaduras necesarias para eliminarlos. Esto será llevado a cabo siguiendo una metodología similar a la utilizada en los dos capítulos anteriores.}
+%\justify{Gracias a esta diferencias de grados de libertad ya podemos saber que estamos buscando un total de 5 ligaduras sobre el campo $h_{\mu\nu}$, e incluso sobre qué helicidades. De forma análoga a los capítulos anteriores, dedicaremos esta sección a la búsqueda de estos grados de libertad.}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\vspace{4mm}
+\subsection{Eliminación de los \textit{ghosts}.} \label{apartado:spin2mass:ghostelimiantion}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\justify{Para este estudio, dividiremos el análisis en dos partes. En primer lugar, examinaremos el término de masa del lagrangiano. Como es conocido en la literatura, en los términos de masa nos encontramos ante un \textit{ghost} conocido como el \textit{ghost} escalar de Boulware-Deser \cite{Boulware:1972yco}. En el trabajo original \cite{2014arXiv1401_4173}, se demuestra cómo este ghost presenta problemas en el sistema físico y no permite definir una cota inferior de la energía.}
+%\justify{Para este estudio descompondremos el estudio en dos partes, en primer lugar se analiza el término masivo. En el término de masa de nuestro lagrangiano nos encontramos ante el \textit{ghost} escalar de Boulware–Deser \cite{Boulware:1972yco}. En el trabajo original \cite{2014arXiv1401_4173} se muestra como este ghost presenta problemas en el sistema físico y no permite definir una cota inferior de la energía.}
+
+\justify{A modo de ejemplo, podemos observar que al realizar una descomposición del tipo}
+
+\begin{equation} \label{Eq:Spin2massive:DescEscalar}
+	h_{\mu\nu} = \mathfrak{h}_{\mu\nu} + \partial_{\mu}\partial_{\nu}\chi,
+\end{equation}
+
+\justify{las componentes masivas del lagrangiano quedan descritas de la forma}
+
+\begin{equation}
+\begin{split}
+	\frac{1}{4}m^{2} \left(b_{\mu\nu}b^{\mu\nu} + \lambda_{5}\,b^{2}\right) = 
+	\frac{1}{4}m^{2} &\left( \left[ \mathfrak{h}_{\mu\nu}\, \mathfrak{h}^{\mu\nu} +  \lambda_{5}\, (\mathfrak{h})^{2}  \right] \right. \\
+	 &\left. + \left[ \mathfrak{h}_{\mu\nu}\partial^{\mu}\partial^{\nu}\chi   + \lambda_{5}\, \mathfrak{h} \, \partial_{\alpha}\partial^{\alpha}\chi \right]
+	 +\left( 1+ \lambda_{5}\right) \left(\partial_{\mu}\partial_{\nu}\chi \right)^{2} \right) + \mathcal{L}_{\text{Boundary}},
+\end{split} 
+\end{equation}
+
+\justify{donde $\mathfrak{h} = \mathfrak{h}^{\mu}_{\;\;\mu}$ y $\left( \partial_{\mu}\partial_{\nu}\chi \right)^{2} = \partial_{\mu}\partial_{\nu}\, \chi\partial^{\mu}\partial^{\nu}\chi $.}
+
+\justify{Al igual que ocurre con el término \eqref{eq:Spin1massless:chighost} para los campos de spin-1, los términos de lagrangiano de spin-2 asociado a la masa presenta derivadas temporales de orden dos en el lagrangiano}
+
+\begin{equation}
+	\mathcal{L}^{\text{ spin}2}_{m,\,\chi} = \left( 1+ \lambda_{5}\right) \partial_{\mu}\partial_{\nu}\chi \,\partial^{\mu}\partial^{\nu}\chi \label{eq:Spin2massive:chighost},
+\end{equation}
+
+\justify{y su hamiltoniano asociado solo se puede definir positivo para ciertos valores de $\lambda_{5}$ }
+
+\begin{equation} 
+	\mathcal{H}^{\text{ spin}2}_{m,\,\chi} =
+	(1+\lambda_{5})\left( \left(\partial_{0} \partial_{0}\chi\right)^{2} - \left(\partial_{i}\partial_{j}\chi\right)^{2} \right) .
+\end{equation}
+
+\justify{Se trata del mismo problema que se encuentra en la ecuación \eqref{eq:Spin1massless:chighost2}, con los términos completamente definidos positivos, existe configuraciones del campo $\chi$ que permite definir este hamiltoniano arbitrariamente negativo. Por tanto la solución pasa por el mismo planteamiento que en el caso de \eqref{eq:Spin1massless:chighost2}: la elección precisa de $\lambda_{5}$, de tal forma que permite definir el lagrangiano sin la presencia de campos fantasmas que generen problemas. En este caso debemos tomar}
+%\justify{Se trata del mismo problema que se encuentra en la Ec. \eqref{eq:Spin1massless:chighost2}, y por tanto la solución pasa por el mismo planteamiento que en el caso de \eqref{eq:Spin1massless:chighost2}:  la elección precisa de $\lambda_{5}$, de tal forma que permite definir el lagrangiano sin la presencia de valores que generen problemas }
+
+\begin{equation} \label{eq:spin2mass:masscondition}
+	\lambda_{5} = -1.
+\end{equation}
+
+\justify{A esta condición se denomina el afinado (de \textit{tuning} en inglés) de Fierz-Pauli, elección que toman en sus trabajos originales. Si se aplica la condición, el lagrangiano toma la forma}
+
+\begin{equation} \label{eq:spin2mass:Lagrangiano}
+	\mathcal{L}^{\text{ spin}2}_{\,m} = \frac{1}{4} \partial_{\mu} h_{\nu\rho}\, \partial^{\mu} h^{\nu\rho} + 
+						    \lambda_{2}\, \partial_{\mu} h_{\nu\rho}\, \partial^{\nu} h^{\rho\mu} +
+						    \lambda_{3}\, \partial_{\mu} h\, \partial_{\rho}\, h ^{\mu\rho} +
+						    \lambda_{4}\, \partial_{\mu} h\, \partial^{\mu} h +
+						    \frac{1}{4}m^{2} \left(b_{\mu\nu}b^{\mu\nu} - \,b^{2}\right).
+\end{equation}
+
+\justify{para un estudio más detallado de este ghost se recomienda mirar \cite{Jaccard:2012ut, VanNieuwenhuizen:1973fi,}.}
+
+\justify{En segundo lugar, tras analizar el términos de masas del lagrangiano, también es importante analizar la componente dinámica del lagrangiano. Al igual que en el capítulo anterior (capítulo \ref{Spin-1Massive}), el objetivo es descomponer el campo en dos partes: una con los 5 grados de libertad físicos y otra con los otros 5 grados asociados a las representaciones de spin-1 y a las dos representaciones de spin-0.}
+%\justify{En segundo lugar, toca analizar la componente dinámica del lagrangiano. De forma análoga al capítulo \ref{Spin-1Massive}, el objetivo es descomponer el campo de tal forma que por un lado se tenga un campo con los 5 grados de libertad físicos y por el otro lado queden los otros 5 grados asociados a las representaciones de spin-1 y a las dos representaciones de spin-0.}
+
+\justify{En este capítulo, recogemos los resultados obtenidos en el análisis del campo de spin-1. Sabemos que un campo vectorial $A_{\mu}$ presenta hasta cuatro grados de libertad y que estos están asociados a la representación $\left(1\oplus0\right)$ de $\mathfrak{so}\,(3)$. Además, sabemos que un campo escalar $\chi$ tiene un grado de libertad asociado al singlete de spin-0. Por tanto, la descomposición del campo de spin-2 viene dado como}
+%\justify{En este capítulo recogemos los frutos del análisis del campo de spin-1, ahora conocemos que un campo vectorial $A_{\mu}$ recoge hasta cuatro grados de libertad y que estos se encuentran asociados a la representación $\left(1\oplus0\right)$ de $\mathfrak{so}\,(3)$, y que un campo escalar $\chi$ presenta el grado de libertado asociado al singlete de spin. Por tanto, la descomposición del campo de spin-2 viene de la forma}
+
+\begin{equation} \label{eq:Spin2massive:descomposicion2}
+	h_{\mu\nu} = \text{h}_{\mu\nu} + \frac{1}{2} \partial_{(\mu}A_{\nu)} + \partial_{\mu}\partial_{\nu}\chi.
+\end{equation}
+
+\justify{Sin embargo, a pesar de que podemos afirmar que controlamos el número de grados de libertad y las helicidades de los campos $A_{\mu}$ y $\chi$, no ocurre lo mismo con el nuevo campo $\text{h}_{\mu\nu}$. En este caso, en principio no hemos impuesto ninguna restricción que asegure que este campo presente los cinco grados de libertad correspondientes. Podríamos imponer ligaduras \textit{ad hoc}, pero al igual que en la descomposición \eqref{eq:spin1massive:Bdecomposition} para el caso de spin-1 masivo, observaremos como tras la obtención de la ecuación de movimiento, surgen de forma natural restricciones al campo $\text{h}_{\mu\nu}$ que fijan sus números de grados de libertad al esperado.}
+%\justify{A pesar de que podemos afirmar que controlamos el número de grados de libertad y las helicidades de los campos $A_{\mu}$ y $\chi$, no ocurre lo mismo con el campo $\text{h}_{\mu\nu}$, en este caso en principio no hemos impuesto ninguna restricción que asegure que este campo presente los cinco grados de libertad que le corresponde. Podríamos imponer ligaduras \textit{ad hoc}, pero al igual que en la descomposición \eqref{eq:spin1massive:Bdecomposition} para el caso de spin-1 masivo, observaremos como tras la obtención de la ecuación de movimiento, surge de forma natural restricciones al campo $\text{h}_{\mu\nu}$ que fijan sus números de grados de libertad al esperado.}
+
+\justify{Al sustituir la descomposición presentada en la ecuación \eqref{eq:Spin2massive:descomposicion2} en el lagrangiano del sistema, seguido de un proceso de simplificación y agrupamiento, obtenemos el lagrangiano resultante:}
+%\justify{Si sustituimos la descomposición \eqref{eq:Spin2massive:descomposicion2} en el lagrangiano del sistema, simplificamos y agrupamos obtenemos el siguiente lagrangiano}
+
+
+\begin{align}
+	\mathcal{L}^{\text{ spin}2}_{\,m} = & \frac{1}{4} \partial_{\mu}\text{h}_{\nu  \rho} \, \partial^{\mu}\text{h}^{\nu  \rho} +
+	\lambda_{2} \, \partial_{ \mu}\text{h}_{\nu \rho} \, \partial^{\rho}\text{h}^{\nu  \mu} + 
+	\lambda_{3} \, \partial_{ \rho}\text{h}^{\nu }{}_{\nu } \, \partial^{\mu}\text{h}_{\mu\rho} +
+	\lambda_{4} \, \partial_{ \rho}\text{h}^{\mu}{}_{\mu} \, \partial^{ \rho}\text{h}^{\nu }{}_{\nu } \nonumber \\ \nonumber \\
+	& + \left( \lambda_{2} + \lambda_{3} \right) \partial_{\mu}\text{h}_{\nu  \rho} \, \partial^{ \rho}\partial^{\nu }A_{\mu} + 
+	\frac{1}{2}\left( \frac{1}{2} + \lambda_{2} \right) \partial_{\mu}\text{h}_{\nu  \rho} \, \partial^{\mu}\partial^{( \rho}A^{\nu )} +
+	\left( \lambda_{3} + 2 \lambda_{4} \right) \partial_{\mu}\text{h}^{\nu }{}_{\nu } \, \partial^{\mu}\partial_{ \rho}A^{ \rho} \nonumber \\ \nonumber \\
+	& + \left( \frac{1}{2} + 2 \lambda_{2} + \lambda_{3} \right) \partial_{\mu}\text{h}_{\nu  \rho} \, \partial^{\mu}\partial^{ \nu}\partial^{\rho }\chi \nonumber \\
+	& + \left( \lambda_{3} + 2 \lambda_{4} \right) \partial_{\mu} \text{h}^{\nu }{}_{\nu } \, \partial_{ \rho}\partial^{ \rho} \partial^{\mu} \chi + 
+	2\left( \frac{1}{4} + \lambda_{2} + \lambda_{3} + \lambda_{4} \right) \partial_{\mu}\partial_{ \rho}A_{\nu } \, \partial^{\mu}\partial^{ \nu}\partial^{\rho }\chi \nonumber \\ \nonumber \\
+	& + \left( \frac{1}{8} + \frac{3}{4} \lambda_{2} + \lambda_{3} + \lambda_{4} \right) \partial_{\mu}\partial_{ \rho}A_{\nu } \, \partial^{\mu}\partial^{\nu }A^{ \rho} + 
+	 \frac{1}{8} \left( 1 + 2 \lambda_{2} \right) \partial_{\mu}\partial_{ \rho}A_{\nu } \, \partial^{\mu}\partial^{ \rho}A^{\nu } \nonumber \\
+	&+ \left( \frac{1}{4} +  \lambda_{2} +  \lambda_{3} + \lambda_{4} \right) \partial_{\mu}\partial_{ \nu}\partial_{\rho }\chi \, \partial^{\mu}\partial^{ \nu}\partial^{\rho }\chi.
+\end{align}
+
+\justify{En el análisis anterior, notamos que en las dos últimas líneas del lagrangiano describen los términos dinámicos de los campos $A_{\mu}$ y $\chi$. Estos términos manifiestan derivadas temporales de segundo y tercer orden respectivamente y por tanto merece una exploración más profunda. Para obtener una comprensión más completa de estas estructuras, de forma análoga al caso \eqref{eq:spin1mass:Ldecomposition}, realizamos un análisis exhaustivo de sus respectivos hamiltonianos:}
+%\justify{En este análisis, observamos que en las dos últimas líneas aparecen los términos dinámicos de los campos $A_{\mu}$ y $\chi$. Estos términos se presentan con derivadas temporales de orden dos y orden tres respectivamente. Podemos analizar sus hamiltonianos}
+
+\begin{align}
+	\mathcal{H}^{\text{ spin}2}_{m,\, A} \propto&  
+	\left(\frac{1}{2}+ \lambda_{2}\right) \left( \left( \partial_{0}\partial_{0}A_{0} \right)^{2} - \left( \partial_{0}\partial_{0}A_{i} \right)^{2} - \left( \partial_{0}\partial_{i}A_{j} \right)^{2}  +  \left( \partial_{i}\partial_{j}A_{k} \right)^{2} \right) + \nonumber \\ 
+								&+ \left(\frac{1}{2}+ 3\lambda_{2} + 4\lambda_{3} + 4\lambda_{4}\right) \left( \left(\partial_{0}\partial_{0}A_{0}\right)^{2} + \left(\partial_{i}\partial_{0}A_{0}\right)^{2} 	+ \partial^{0}\partial^{i}A^{\,j}\partial_{0}\partial_{j}A_{i} \right. \nonumber \\ 
+								&\hspace{70mm}\left.  - 2 \partial^{i}\partial^{j}A^{\,0}\partial_{i}\partial_{0}A_{j} - \partial^{i}\partial^{j}A^{\,k}\partial_{i}\partial_{k}A_{j} \right), \\						
+	\mathcal{H}^{\text{ spin}2}_{m, \, \chi} \propto& 
+	\left(\frac{1}{4}+  \lambda_{2} + \lambda_{3} + \lambda_{4}\right) \left( \left(\partial_{0}\partial_{0}\partial_{0} \chi \right)^{2} -  \left(\partial_{0}\partial_{0}\partial_{i} \chi \right)^{2}  -\left(\partial_{0}\partial_{i}\partial_{j} \chi \right)^{2}  + \left(\partial_{i}\partial_{j}\partial_{k} \chi \right)^{2} \right) ,
+ \end{align}
+ 
+
+\justify{donde los términos cuadráticos, del estilo $(\partial_{0}\partial_{0}A_{i})^{2} $ o $(\partial_{0}\partial_{0}\partial_{i}\chi)^{2}$, son definidos positivos bajo el convenio tomado por este trabajo, más detalles en el capítulo \ref{Introduccion}. A modo de ejemplo,}
+
+\begin{align}
+	(\partial_{0}\partial_{0}A_{i})^{2} = \delta^{il} \; \partial_{0}\partial_{0}A_{i} \, \partial_{0}\partial_{0}A_{l}, \\ 
+	\partial_{0}\partial_{0}\partial_{i}\chi)^{2} = \delta^{il} \; \partial_{0}\partial_{0}\partial_{i}\chi \, \partial_{0}\partial_{0}\partial_{l}\chi.
+\end{align}
+
+\justify{De estos análisis, observamos que los límites inferiores de ambos hamiltonianos, $\mathcal{H}^{\text{spin}2}_{m, \, A}$ y $\mathcal{H}^{\text{spin}2}_{, \chi}$, no están bien definidos. Por un lado, si observamos el primer hamiltoniano podemos observar que en el primer sumando es posible obtener cualquier valor arbitrariamente configurando las componentes del campo. En el segundo sumando, a pesar de que aparecen términos cuadráticos positivos, la última componente, $\partial^{i}\partial^{j}A^{T,k} \,\partial_{i}\partial_{k}A^{T}{j}$, contiene términos cuadráticos con un signo negativo (e.g. $-(\partial_{1}\partial_{1}A_{1})^{2}$) que nos sigue permitiendo obtener el valor indefinidamente negativo que queramos.}
+
+\justify{Por el otro lado, el resultado de $\mathcal{H}^{\text{spin}2}_{m, \, \chi}$ es equivalente al primer conjunto de $\mathcal{H}^{\text{spin}2}_{m, \, A}$, y también se visualiza la falta de un límite inferior en los posibles valores de este hamiltoniano.}
+%\justify{Podemos percatarnos de que los límites inferiores de ambos hamiltonianos no se encuentran bien definidos. Para el caso de $\mathcal{H}^{\text{ spin}2}_{m, \, A}$ presenta dos sumandos, en el primer sumando se observa que trivialmente puede expresar cualquier valor configurando arbitrariamente las componentes del campo. Al segundo sumando le ocurre lo mismo, a pesar de aparezcan términos cuadráticos positivos, la última componente $\partial^{i}\partial^{j}A^{T\,k} \,\partial_{i}\partial_{k}A^{T}_{j}$ guarda consigo términos cuadráticos que vienen acompañados por un signo negativo (e.g. $\left( \partial_{1}\partial_{1} A_{1} \right)^{2}$). En segundo lugar, para el resultado de $\mathcal{H}^{\text{ spin}2}_{\, \chi} $ resulta equivalente al primera conjunto de $\mathcal{H}^{\text{ spin}2}_{\, A}$ y trivialmente se visualiza la falta de un límite inferior en los posibles valores de sus hamiltonianos.}
+
+\justify{Debido a estos resultados negativos, como se mencionó en la sección \ref{Sec:Ostrogradsky}, debemos evitar que aparezcan en nuestra teoría. La eliminación de estos términos se logra mediante la elección cuidadosa de los valores de los prefactores $\left( \lambda_{2}, \lambda_{3}, \lambda_{4} \right)$. Al tener que eliminar los tres términos del hamiltoniano, tenemos tres ecuaciones sobre los prefactores, lo que nos permite determinalos con valores:}
+%\justify{Es decir, que los campos $A_{\mu}$ y $\chi$ podrían tomar valores de tal forma que el hamiltoniano total del sistema tome el valor negativo que deseemos.Este tipo de resultados resultan negativos y, como comentamos en la sección \ref{Sec:Ostrogradsky}, debemos evitar que aparezcan en nuestra teoría. Al igual que en todos los casos anteriores, la eliminación de estos términos pasan por la elección fina de los valores de los prefactores $\left( \lambda_{2}, \lambda_{3}, \lambda_{4} \right)$. Como tenemos eliminar los tres términos del hamiltoniano son tres condiciones sobre los prefactores, así que quedan perfectamente determinados con valor }
+
+\begin{equation} \label{Eq:Spin2massive:lambdaconditions}
+	\lambda_{2} = -\frac{1}{2}, \hspace{4mm} \lambda_{3} = \frac{1}{2}, \hspace{4mm} \lambda_{4} = -\frac{1}{4}.
+\end{equation}
+
+\justify{Con estos resultados, el lagrangiano $\mathcal{L}^{\text{ spin}2}_{\,m}$ libre de \textit{ghosts} es de la forma}
+
+\begin{equation} \label{eq:Spin2mass:FPLagrangiano}
+	\mathcal{L}^{\text{ spin}2}_{\,m} = \frac{1}{4} \partial_{\mu} h_{\nu\rho}\, \partial^{\mu}h^{\nu\rho}  
+						    -\frac{1}{2}\, \partial_{\mu} h_{\nu\rho}\, \partial^{\nu}h^{\rho\mu} +
+						    \frac{1}{2}\, \partial_{\mu} h\, \partial_{\rho}\, h^{\mu\rho} 
+						    -\frac{1}{4}\, \partial_{\mu} h\, \partial^{\mu}h 
+						    +\frac{1}{4}m^{2} \left(h_{\mu\nu}h^{\mu\nu} - \,h^{2}\right).
+\end{equation}
+
+\justify{Es importante destacar que de entre todas las opciones para definir el lagrangiano de un campo de spin-2 masivo, el lagrangiano libre de \textit{ghost} es único. Este lagrangiano se conoce como la acción de Fierz-Pauli masiva, en honor a los físicos Markus Eduard Fierz (1912-2006) y Wolfgang Ernst Pauli (1900-1958).}
+%\justify{Nuevamente, recalcar que de todo el espectro de posibilidades para definir el lagrangiano de un campo $h_{\mu\nu}$ de spin-2 masivo el lagrangiano libre de \textit{ghost} es única. A este lagrangiano se le denomina acción de Fierz-Pauli masivo, en honor a los físicos Markus Eduard Fierz (1912 - 2006) y Wolfgang Ernst Pauli (1900 - 1958).}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% DUDA: https://www.diva-portal.org/smash/get/diva2:663715/FULLTEXT02.pdf
+\vspace{4mm}
+\subsection{Ecuación de movimiento.} \label{Subsection:Spin2Massive:EOM}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\justify{A pesar de evitar posibles inestabilidades de Ostrogradsky, la condición \eqref{Eq:Spin2massive:lambdaconditions} no aporta una ligadura del campo de spin. Siguiendo con los pasos dados en el campo de spin-1 en el apartado \ref{Spin-1massive:EOMSubsection}, el siguiente paso es analizar la ecuación de movimiento y comprobar si se obtienen algunas restricciones sobre el campo $h_{\mu\nu}$. }
+
+\justify{Para ello, se aplica la ecuación de Euler-Lagrange sobre el lagrangiano \eqref{eq:Spin2mass:FPLagrangiano}, tras unas ciertas simplificaciones se obtiene la ecuación correspondiente}
+
+\begin{equation} \label{eq:spin2mass:Eom}
+	\partial_{\gamma}\partial^{\gamma} h^{\alpha\beta}  
+	 - \partial_{\gamma}\partial^{\alpha}h^{\beta \gamma} 
+	 - \partial_{\gamma}\partial^{\beta}h^{\alpha \gamma} 
+	 + \partial^{\alpha}\partial^{\beta} h
+	 +\eta^{\alpha\beta} \partial_{\gamma}\left( \partial_{\rho}h^{\gamma\rho} - \partial^{\gamma} h \right) = m^{2} \left( h^{\alpha\beta} - \eta^{\alpha\beta}h \right).
+\end{equation}
+
+\justify{Al derivar la ecuación de movimiento con respecto a uno de los índices libres, se observa tras un breve cálculo que los términos relacionados con la dinámica del lagrangiano de Fierz-Pauli en el lado izquierdo de la ecuación se cancelan. Por lo tanto, la derivada de la ecuación de movimiento deja como resultado la condición }
+%\justify{Al realizar una derivada con respecto a unos de los índices libres de la ecuación de movimiento observamos que el lado derecho, los términos relacionados con la parte dinámica del lagrangiano de Fierz-Pauli, se anulan. Por tanto, la derivada a la ecuación de movimiento deja la siguiente condición }
+
+\begin{equation} \label{eq:Spin2mass:condition}
+	m^{2} \left( \partial_{\alpha}h^{\alpha\beta} - \partial^{\beta}h \right) = 0  
+	\hspace{2mm} \xrightarrow{\forall m} \hspace{2mm} \partial_{\alpha}h^{\alpha\beta} - \partial^{\beta}h = 0.
+\end{equation}
+}
+
+\justify{Este resultado simplifica la ecuación de movimiento de la forma}
+%\justify{Denominaremos a esta condición como condición armónica. Se trata de una condición que sí presenta ligaduras sobre el campo $h_{\mu\nu}$, restringiendo hasta cuatro grados de libertad, lo que deja en el aire aún un grado de libertad no físico. Además, simplifica la ecuación de movimiento de la forma}
+
+\begin{equation} \label{eq:Spin2mass:Eom2}
+	\partial_{\gamma}\partial^{\gamma} h^{\alpha\beta}  
+	 - \partial_{\gamma}\partial^{\alpha}h^{\beta \gamma} = m^{2} \left( h^{\alpha\beta} - \eta^{\alpha\beta}h \right).
+\end{equation}
+
+\justify{La segunda condición sobre el campo se obtiene al realizar la traza de la ecuación de movimiento actual, y teniendo siempre en cuenta la condición \eqref{eq:Spin2mass:condition}. Tras unas simplificaciones obtenemos que}
+
+\begin{equation} \label{eq:Spin2mass:condition2}
+	m^{2}h = 0 \hspace{2mm} \xrightarrow{\forall m} \hspace{2mm} h = 0.
+\end{equation}
+
+\justify{El campo de spin-2 masivo es un campo sin traza, lo que significa que no tiene una componente diagonal en su tensor de energía-momento. Esta condición permite restringir un grado de libertad, permitiendo que una de las componentes de la diagonal principal dependa del resto de las componentes de la misma diagonal. Además, esto permite simplificar la condición \eqref{eq:Spin2mass:condition} a}
+%\justify{Es decir, que el campo de spin-2 masivo es un campo sin traza (\textit{traceless} en inglés). Esta condición permite restringir un grado de libertad, y dejar una de las componentes de la diagonal principal en función del resto de componentes de la diagonal. Además, simplifica la condición armónica}
+
+\begin{equation} \label{eq:Spin2mass:condition3}
+	\partial_{\alpha}h^{\alpha\beta} = 0,
+\end{equation}
+
+\justify{una condición parecida a la condición Lorenz \eqref{eq:spin1mass:condition} pero para el campo de spin-2. Esta restricción impone restricciones sobre el campo $h_{\mu\nu}$, limitando sus grados de libertad a solo cuatro de los diez totales. Las condiciones \eqref{eq:Spin2mass:condition2} y \eqref{eq:Spin2mass:condition3} reducen los grados de libertad del campo $h_{\mu\nu}$ a solo cinco, lo cual coincide con el número de grados predichos por la Clasificación de Wigner.}
+%\justify{de tal forma que esta condición impone restricciones sobre el campo $h_{\mu\nu}$, limitando hasta cuatro grados de libertad los diez totales. Las condiciones \eqref{eq:Spin2mass:condition2} y \eqref{eq:Spin2mass:condition3} dejan al campo $h_{\mu\nu}$ con tan solo cinco grados de libertad, que coincide con el número de grados predichos por la Clasificación de Wigner.}
+
+\justify{Para finalizar con este apartado, aplicamos estas dos últimas condiciones del campo sobre la ecuación de movimiento \eqref{eq:Spin2mass:Eom2} para obtener la ecuación de Fierz-Pauli masiva}
+
+\begin{equation} \label{eq:Spin2mass:Eom3}
+	\partial_{\gamma}\partial^{\gamma} h_{\alpha\beta} = m^{2} h_{\alpha\beta} ,
+\end{equation}
+
+\justify{esta solución respeta las condiciones impuestas en la teoría, se trata de ecuación cuya solución es una onda relativista, lo que permite que se encuentre dentro del marco de la relatividad especial y sea local.}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\vspace{4mm}
+\subsection{Grados de libertad.}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\justify{Las condiciones \eqref{eq:Spin2mass:condition2} y \eqref{eq:Spin2mass:condition3}  permiten describir el campo $h_{\mu\nu}$ en función de únicamente de cinco grados de libertad. Pero además, también resuelven la discrepancia del número de grados de libertad del campo $\text{h}_{\mu\nu}$ de la descomposición \eqref{eq:Spin2massive:descomposicion2}, estas condciiones nos permite expresar hasta cincon componentes de este campo en función de las otras componentes de $\text{h}_{\mu\nu}$ y del resto de campos de la descomposición, $A_{\mu}$ y $\chi$. Por ejemplo, tomando estas condiciones}
+
+\begin{align}
+	\partial_{0} \text{h}^{0\nu} =& 
+	- \partial_{i} \text{h}^{i \nu} - \frac{1}{2} \partial_{\mu}\partial^{(\mu}A^{\nu)} - \partial_{\mu}\partial^{\mu}\partial^{\nu}\chi, \\
+	\text{h}^{0}_{\;\;0} =& 
+	- \text{h}^{i}_{\;\; i} - \partial^{\mu}A_{\mu} - \partial^{\mu}\partial_{\mu}\chi.
+\end{align}
+
+\justify{De esta forma podemos afirmar que $\text{h}_{\mu\nu}$ pierde estos cinco grados de libertad que inicialmente se le podría atribuir, dejándole con los cinco restantes como asumimos en la descomposición.}
+
+\justify{En este apartado, hemos progresado en nuestra comprensión del comportamiento del sistema. A través del análisis de las propiedades del campo, hemos derivado el lagrangiano de Fierz-Pauli, el único lagrangiano viable que es libre de fantasmas para el sistema de spin-2 masivo. Esto significa que el lagrangiano \eqref{eq:Spin2mass:FPLagrangiano} resulta esencial para describir el comportamiento de cualquier campo de spin-2 masivo descrito por un tensor $h_{\mu\nu}$.}
+
+\justify{Utilizando este lagrangiano, hemos logrado calcular la ecuación de movimiento del sistema y obtener dos condiciones sobre el campo: una que indica que el campo es sin traza y otra condición de tipo Lorenz. Esto nos ha permitido descartar los grados de libertad no físicos y comprobar el número final de grados de libertad coinciden con los previstos por la clasificación de Wigner para el caso de un campo masivo de spin-2.}
+%\justify{Empleando este lagrangiano, hemos podido calcular la ecuación de movimiento del sistema y obtener dos condiciones sobre el campo, que el campo es sin traza y otra de tipo Lorenz. Esto nos permitió determinar el exceso de grados de libertad en el sistema y comprobar que coinciden con los previstos por la clasificación de Wigner para el caso de un campo masivo de spin-2.}
+
+\justify{La obtención exitosa del lagrangiano de Fierz-Pauli, el cálculo de su ecuación de movimiento y la confirmación del número adecuado de grados de libertad del campo mediante estas dos condiciones son logros en gran parte debido a los análisis ya realizados en los capítulos previos para el caso de spin-1. Podemos confirmar que el análisis de los lagrangianos de Proca y Maxwell ha sentado las bases para este estudio, dando un mejor entendimiento de como estudiar los grados de libertad.}
+%\justify{La obtención exitosa del lagrangiano de Fierz-Pauli, el cálculo de su ecuación de movimiento y la confirmación del número adecuado de grados de libertad del campo mediante estas dos condiciones son logros gracias en parte a los análisis ya realizados en los capítulos previos para el caso de spin-1. El haber analizado los lagrangianos de Proca y Maxwell han sentado las bases de como hacer este estudio. }
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Hamiltoniano.} \label{Sec:spin2mass:Hamil} 
+%#####################################################################################################
+\justify{ El hamiltoniano puede ser una gran herramienta para el entendimiento de nuestra teoría y resulta esencial para comprender cómo el sistema cambia en el tiempo. En esta sección, continuamos con el análisis del lagrangiano presentado en al comienzo del capítulo mediante el estudio del hamiltoniano del sistema de un campo de spin-2 masivo.}
+
+\justify{Además, siguiendo la metodología utilizada en los capítulos anteriores, demostraremos que el hamiltoniano de nuestro sistema tiene un límite mínimo que garantiza su estabilidad y evita la aparición de inestabilidades de Ostrogradsky. Así como que su valor es positivo para cualquier valor del campo $h_{\mu\nu}$, como venimos afirmando con la clasificación de Wigner.}
+%\justify{Para continuar con el análisis de nuestro lagrangiano, en este capítulo se analizará el hamiltoniano del sistema de un campo de spin-2. Una herramienta que podría sernos de utilidad para el estudio de cómo el sistema cambia con el tiempo. Además, como viene siendo habitual en los capítulos anteriores, demostraremos que hamiltoniano de nuestro sistema tiene un límite mínimo que garantiza su estabilidad y evita la aparición de inestabilidades de Ostrogradsky.}
+%\justify{El Hamiltoniano es una herramienta matemática crucial para estudiar la mecánica clásica y cuántica. Se utiliza para describir cómo los sistemas físicos cambian con el tiempo. En este capítulo, se demostrará que el Hamiltoniano de nuestro sistema tiene un límite mínimo que garantiza su estabilidad y evita comportamientos inestables. Se estudiará también que se trata de partículas masivas y con energía positiva, lo cual es considerado como un caso especial dentro del paradigma actual de la física. Finalmente, se analizará el Hamiltoniano total del caso de spin-2.}
+
+%\justify{Continuamos el análisis de este lagrangiano con el cálculo del hamiltoniano. Más en especifico, buscamos la expresión del hamiltoniano que nos confirme que su dominio presenta un límite inferior positivo. El análisis de este caso, el campo de spin-2, resulta un tanto complejo. Por este motivo, definimos el siguiente tensor}
+
+\justify{Cabe destacar que el análisis del hamiltoniano para el caso de spin-2 masivo es más complejo que el realizado para el caso de spin-1 masivo en la sección \ref{section:spin1mass:H}. Mientras que el cálculo del hamiltoniano en el caso de spin-1 es relativamente sencillo y se puede resolver con pocos pasos, en el caso de spin-2 requiere de un mayor nivel de consideraciones matemáticas debido a la mayor complejidad del sistema y a las interacciones más complejas entre el propio campo. Sin embargo, al igual que en el caso de spin-1, se espera que el hamiltoniano tenga un límite inferior y que se encuentre definido positivamente, lo que garantiza la estabilidad del sistema y su comportamiento físicamente razonable.}
+%\justify{Es importante mencionar que el análisis del Hamiltoniano para el caso de spin-2 es más complejo que el realizado para el caso de spin-1. En el caso de spin-1, el cálculo del Hamiltoniano es relativamente sencillo y se puede resolver con pocos pasos. Sin embargo, en el caso de spin-2, el cálculo es algo más complicado y requiere de más consideraciones matemáticas. Esto se debe a la mayor complejidad del sistema en cuestión y a las interacciones más complejas entre las partículas. Sin embargo, al igual que en el caso de spin-1, se espera que el Hamiltoniano tenga un límite inferior y que se encuentre definido positivamente, lo que garantiza la estabilidad del sistema y su comportamiento físicamente razonable.}
+
+\justify{Para facilitar el cálculo en el análisis del hamiltoniano, es importante definir previamente el siguiente tensor}
+
+\begin{equation} \label{Eq:pitensor}
+	\pi^{\gamma\alpha\beta} = 
+	\frac{\partial \mathcal{L}^{\text{ spin}2}_{\,m} }{ \partial \left( \partial_{\gamma}h_{\alpha\beta} \right) }= 
+	\frac{1}{2}\left(\partial^{\gamma}h^{\alpha\beta} - \partial^{(\alpha}h^{\beta)\gamma}\right).
+\end{equation}
+ 
+\justify{Cabe destacar que la equivalencia obtenida de este tensor en cuestión se encuentra en un estado \textit{on shell}, lo cual se debe a que se han aplicado las condiciones extraídas de la ecuación de movimiento \eqref{eq:Spin2mass:condition2}. Es importante mencionar que el nuevo tensor presenta las siguientes propiedades:}
+
+\begin{align} 
+	\pi^{\gamma\alpha\beta} &= \pi^{\gamma\beta\alpha}, \\
+	\partial_{\alpha}\pi^{\gamma\alpha\beta} &= 
+	 -\frac{1}{2}m^{2}h^{\gamma\beta}. \label{Eq:Spin2Massive:PiProperties}
+\end{align}
+
+\justify{Para la segunda propiedad hemos vuelto a hacer uso de soluciones dentro de la capa de masa, en este caso de la condición \eqref{eq:Spin2mass:condition3} y de la misma ecuación de movimiento \eqref{eq:Spin2mass:Eom3}. Ambas propiedades del tensor $\pi^{\gamma\alpha\beta}$ resultan crucial para este análisis.}
+
+\justify{Tomamos al hamiltoniano del sistema mediante la transformada de Legendre del lagrangiano \eqref{eq:Spin2mass:FPLagrangiano}. Si se aplica la condición sin traza del campo $h_{\mu\nu}$ a este lagrangiano, obtenemos el hamiltoniano \textit{on shell} del sistema. Este hamiltoniano se puede expresar en función de nuestro nuevo tensor de la forma}
+%\justify{Si tomamos la transformada de Legendre del lagrangiano \eqref{eq:Spin2mass:FPLagrangiano} y tomamos la condición sin traza del campo $h_{\mu\nu}$ podemos expresar al hamiltoniano \textit{on shell} del sistema como}
+
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}_{\,m} =  
+	\frac{1}{2}\pi^{0\alpha\beta}\partial_{0}h_{\alpha\beta} - \frac{1}{2}\pi^{i\alpha\beta}\partial_{i}h_{\alpha\beta} - \frac{1}{4}m^{2}h_{\alpha\beta}h^{\alpha\beta}.
+\end{equation}
+
+\justify{Luego completamos el hamiltoniano con productos del tipo $\pi^{\mu\nu\rho}\pi_{\alpha\beta\gamma}$, de tal forma que se ve como}
+%\justify{y si completamos el hamiltoniano para tener productos del estilo $\pi^{\mu\nu\rho}\pi_{\alpha\beta\gamma}$, lo podemos expresar como}
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}_{\,m} =  
+	\pi^{0\alpha\beta}\pi_{0\alpha\beta} - \pi^{i\alpha\beta}\pi_{i\alpha\beta} +\frac{1}{2}\pi^{0\alpha\beta} \partial_{(\alpha}h_{\beta)0} - \frac{1}{2}\pi^{i\alpha\beta} \partial_{(\alpha}h_{\beta)i} - \frac{1}{4}m^{2}h_{\alpha\beta}h^{\alpha\beta}.
+\end{equation}
+
+\justify{Gracias a unos términos de derivadas totales que agruparemos en el término $\mathcal{H}_{\text{Boundary}}$, podemos reexpresar los términos mixtos}
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}_{\,m} =  
+	\pi^{0\alpha\beta}\pi_{0\alpha\beta} - \pi^{i\alpha\beta}\pi_{i\alpha\beta} - \partial_{\alpha}\pi^{0\alpha\beta} h_{\beta0} + \partial_{\alpha}\pi^{i\alpha\beta} h_{\beta i} - \frac{1}{4}m^{2}h_{\alpha\beta}h^{\alpha\beta} + \mathcal{H}_{\text{Boundary}},
+\end{equation}
+
+\justify{y así hacer uso de la propiedad \eqref{Eq:Spin2Massive:PiProperties} del tensor $\pi_{\gamma\alpha\beta}$. Si descomponemos todos los términos en sus componentes espaciales y temporales y simplificamos podemos expresar al hamiltoniano como}
+
+\begin{align}
+	\mathcal{H} &= (\pi_{000})^{2} + (\pi_{0ij} )^{2} + (\pi_{i00})^{2} + (\pi_{ijk})^{2} + 2\pi^{0i0}\pi_{0i0} - 2\pi^{ij0}\pi_{ij0}  \nonumber \\ 
+	&\hspace{55mm}+ \frac{1}{4}m^{2}(h_{00})^{2} + \frac{1}{2}m^{2}(h_{i0})^{2} - \frac{3}{4}m^{2}h_{ij}h^{ij} + \mathcal{H}_{\text{Boundary}}
+\end{align}
+
+\justify{Lamentablemente, al observar el hamiltoniano obtenido, podemos constatar que no se encuentra positívamente definido debido a la falta de tres términos. Para simplificar y acabar con los términos aparentemente prob$\hspace{0.1mm}$lemáticos hacemos uso de las siguiente lista de substituciones:}
+
+\begin{align}
+	(\pi_{000})^{2} &=
+	-\frac{1}{4}m^{2}(h_{00})^{2} + (\pi_{0i0})^{2}, \\ 
+	(\pi_{i00})^{2} &= 
+	(\pi_{0i0})^{2} + 4 (\pi_{000})^{2} + (\partial_{0}h_{0i})^{2}, \\
+	(\pi_{ijk})^{2} &=
+	 \frac{3}{4} (\partial_{i}h_{jk})^{2} - \frac{1}{2}(\partial_{0}h_{0i})^{2}, \\
+	(\pi_{0ij})^{2} &= 2(\pi_{000})^{2} + \frac{1}{4}(\partial_{0}h_{ij})^{2} + \frac{1}{2}(\partial_{0}h_{0j})^{2} - \frac{1}{2}m^{2}(h_{0j})^{2}.
+\end{align}
+
+\justify{En todas ellas hemos obviado los términos de derivadas totales, estas contribuyen al término $\mathcal{H}_{\text{Boundary}}$ del hamiltoniano. De esta forma el hamiltoniano queda expresado como:}
+
+\begin{align}
+	\mathcal{H} &= 10 (\partial_{0}h_{00})^{2}  +\frac{1}{2}(\partial_{0}h_{ij}) + m^{2}(h_{i0})^{2} + \mathcal{H}_{\text{Boundary}}. 
+\end{align}
+
+%DUDA: Añadir la forma alternativa de este cálculo, a través de una descomposición 3+1.
+%Unconstrained canonical action for, and positive energy of, massive spin 2. S. Deser
+
+\justify{A partir de los resultados obtenidos, podemos afirmar con certeza que el hamiltoniano del campo de spin-2 masivo se encuentra definido positivamente para cualquier valor del campo $h_{\mu\nu}$. Esta conclusión nos permite afirmar que el sistema analizado en este capítulo está libre de inestabilidades de Ostrogradsky, más información ver la sección \ref{Sec:Ostrogradsky}. Además, el sistema se encuentra dentro del grupo de la clasificación de Wigner de campos masivos con energía positiva, tal y como se menciona en la sección \ref{introduction:WignerClassification}.}
+%\justify{Lo que permite afirmar sin temor que el hamiltoniano del campo de spin-2 se encuentra definido positivo para cualquier valor del campo $h_{\mu\nu}$. Este resultado nos permite afirmar que efectivamente el sistema de este capítulo se encuentra libre de inestabilidades de Ostrogradsky (ver \ref{Sec:Ostrogradsky}), además de encontrarse dentro del grupo de la clasificación de Wigner de masivos con energía positiva (ver \ref{introduction:WignerClassification}).}
+
+\justify{De esta forma queda concluido el análisis del campo de spin-2 masivo. A través de nuestra metodología, hemos comprobado correctamente los grados de libertad del sistema en cuestión. Esto nos ha permitido determinar la ecuación de movimiento, que es esencial para entender cómo se podría comportar las partículas en el campo de spin-2 masivo. Además, hemos calculado el valor del hamiltoniano, lo cual nos permitiría profundizar y analizar el comportamiento energético del sistema.}
+
+\justify{Los resultados obtenidos en este trabajo son de gran importancia para nuestro entendimiento de la física teórica, como por ejemplo de modelos de gravedad masiva. Estos hallazgos no solo proporcionan una comprensión más profunda del campo de spin-2 masivo, sino que también pueden ser utilizados como punto de partida para futuras investigaciones en este ámbito.}
+
+\justify{En el próximo capítulo, continuaremos nuestro estudio analizando el campo de spin-2 no masivo, el cual presenta características diferentes a las del campo de spin-2 masivo. Los resultados obtenidos en este capítulo serán de gran utilidad en este nuevo análisis, como el campo de Proca lo fue al campo de Maxwell.}

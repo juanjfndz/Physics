@@ -1,0 +1,68 @@
+% !TEX TS–program = pdflatexmk 
+
+\documentclass[10pt, oneside]{book} 
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+\DefineBibliographyStrings{english}{%
+  bibliography = {References}}
+\addbibresource{Chapters/9-Biblio.bib}
+
+\usepackage{amsmath} % Math
+\usepackage{amssymb}
+\usepackage{bbold}
+\usepackage{amsthm}
+\usepackage{cancel}
+
+\usepackage{comment}
+\usepackage[document]{ragged2e} % Alignment (\justify{})
+\usepackage{multicol}
+
+\usepackage[hidelinks]{hyperref}  % Para conectar todas las cosas, enlaces ocultos. 
+
+% Here we set the page dimensions to match the standard thesis format.  These values should not be changed.
+%%% SET LENTGH AND WIDTH %%%
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt} 
+\setlength{\topmargin}{0pt}
+\setlength{\marginparsep}{0pt}
+
+% En el tableofcontets solo aparecen hasta sections
+%\setcounter{tocdepth}{1} 
+
+
+\begin{document}
+	\input{Chapters/00-Titlepage}
+	\input{Chapters/01-Abstract}
+	\tableofcontents 
+	\newpage
+	
+	\input{Chapters/1-Introductionv2}
+	\input{Chapters/2-Preliminar}
+	
+	\input{Chapters/3-1-Spin1}
+	\input{Chapters/3-2-Spin1}
+	
+	\input{Chapters/4-1-Spin2}
+	\input{Chapters/4-2-Spin2}
+	\input{Chapters/5-1-Kalb-Ramond}
+	\input{Chapters/5-2-Kalb-Ramond}
+	\input{Chapters/6-Conclusion}
+	
+	\newpage
+	\begin{multicols}{2}
+	\printbibliography[heading=bibintoc] 
+	\end{multicols}
+% PARA AYUDAR:
+	% https://www.diva-portal.org/smash/get/diva2:663715/FULLTEXT02.pdf
+	
+% Hablar de que no vale pasar de un caso masivo a no masivo por m = 0
+% Revisar clasificación o Clasificación de Wigner
+%DUDA: Variar: masivos por masa finita
+% Cambiar los i.e. por es decir y los e.g. por ejemplo, pero escoger una única forma. 
+% Tiempos verbales, intenar que sea en presente atemporal
+
+% Guíalos
+
+\end{document} 

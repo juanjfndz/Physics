@@ -1,0 +1,1248 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{HiggsParticle}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=AG}{%
+         family={Aad},
+         familyi={A\bibinitperiod},
+         given={Georges},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AG+1}
+    \strng{fullhash}{AG+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1016/j.physletb.2012.08.020
+    \endverb
+    \verb{eprint}
+    \verb 1207.7214
+    \endverb
+    \field{pages}{1\bibrangedash 29}
+    \field{title}{{Observation of a new particle in the search for the Standard
+  Model Higgs boson with the ATLAS detector at the LHC}}
+    \field{volume}{716}
+    \field{journaltitle}{Phys. Lett. B}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-ex}
+    \field{year}{2012}
+  \endentry
+
+  \entry{ATLAS:2012yve}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=AG}{%
+         family={Aad},
+         familyi={A\bibinitperiod},
+         given={Georges},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AG+1}
+    \strng{fullhash}{AG+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1016/j.physletb.2012.08.020
+    \endverb
+    \verb{eprint}
+    \verb 1207.7214
+    \endverb
+    \field{pages}{1\bibrangedash 29}
+    \field{title}{{Observation of a new particle in the search for the Standard
+  Model Higgs boson with the ATLAS detector at the LHC}}
+    \field{volume}{716}
+    \field{journaltitle}{Phys. Lett. B}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-ex}
+    \field{year}{2012}
+  \endentry
+
+  \entry{LIGOScientific:2016aoc}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=ABP}{%
+         family={Abbott},
+         familyi={A\bibinitperiod},
+         given={B.\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABP+1}
+    \strng{fullhash}{ABP+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.116.061102
+    \endverb
+    \verb{eprint}
+    \verb 1602.03837
+    \endverb
+    \field{number}{6}
+    \field{pages}{061102}
+    \field{title}{{Observation of Gravitational Waves from a Binary Black Hole
+  Merger}}
+    \field{volume}{116}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Aste:1998iw}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AAW}{%
+         family={Aste},
+         familyi={A\bibinitperiod},
+         given={Andreas\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Scharf},
+         familyi={S\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAWSG1}
+    \strng{fullhash}{AAWSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1142/S0217751X99001573
+    \endverb
+    \verb{eprint}
+    \verb hep-th/9803011
+    \endverb
+    \field{pages}{3421\bibrangedash 3434}
+    \field{title}{{NonAbelian gauge theories as a consequence of perturbative
+  quantum gauge invariance}}
+    \field{volume}{14}
+    \field{journaltitle}{Int. J. Mod. Phys. A}
+    \field{eprinttype}{arXiv}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Aste:1997rh}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AAW}{%
+         family={Aste},
+         familyi={A\bibinitperiod},
+         given={Andreas\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Scharf},
+         familyi={S\bibinitperiod},
+         given={Gunter},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Duetsch},
+         familyi={D\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAWSGDM1}
+    \strng{fullhash}{AAWSGDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1002/(SICI)1521-3889(199905)8:5<389::AID-ANDP389>3.0.CO;2-A
+    \endverb
+    \verb{eprint}
+    \verb hep-th/9702053
+    \endverb
+    \field{pages}{389\bibrangedash 404}
+    \field{title}{{Perturbative gauge invariance: Electroweak theory. II}}
+    \field{volume}{8}
+    \field{journaltitle}{Annalen Phys.}
+    \field{eprinttype}{arXiv}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Edmund:2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BE}{%
+         family={Bertschinger},
+         familyi={B\bibinitperiod},
+         given={Edmund},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BE1}
+    \strng{fullhash}{BE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{18}
+    \field{title}{{Gravitation in the Weak-Field Limit}}
+    \field{journaltitle}{Massachusetts Institute of Technology}
+    \field{eprintclass}{hep-th}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Boulware:1972yco}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BDG}{%
+         family={Boulware},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Deser},
+         familyi={D\bibinitperiod},
+         given={Stanley},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDGDS1}
+    \strng{fullhash}{BDGDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1103/PhysRevD.6.3368
+    \endverb
+    \field{pages}{3368\bibrangedash 3382}
+    \field{title}{{Can gravitation have a finite range?}}
+    \field{volume}{6}
+    \field{journaltitle}{Phys. Rev. D}
+    \field{year}{1972}
+  \endentry
+
+  \entry{Cebrian:2022brv}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Cebri\'an},
+         familyi={C\bibinitperiod},
+         given={Susana},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{{10th Symposium on Large TPCs for Low-Energy Rare Event
+  Detection}}
+    \verb{eprint}
+    \verb 2205.06833
+    \endverb
+    \field{title}{{Review on dark matter searches}}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{physics.ins-det}
+    \field{month}{05}
+    \field{year}{2022}
+  \endentry
+
+  \entry{vanDam:1970vg}{article}{}
+    \name{author}{2}{}{%
+      {{hash=vDH}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Dam},
+         familyi={D\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=VMJG}{%
+         family={Veltman},
+         familyi={V\bibinitperiod},
+         given={M.\bibnamedelima J.\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DHvVMJG1}
+    \strng{fullhash}{DHvVMJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1016/0550-3213(70)90416-5
+    \endverb
+    \field{pages}{397\bibrangedash 411}
+    \field{title}{{Massive and massless Yang-Mills and gravitational fields}}
+    \field{volume}{22}
+    \field{journaltitle}{Nucl. Phys. B}
+    \field{year}{1970}
+  \endentry
+
+  \entry{2014arXiv1401_4173}{article}{}
+    \name{author}{1}{}{%
+      {{hash=dC}{%
+         family={{de Rham}},
+         familyi={d\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{General relativity, Gravity, Alternative theories of gravity,
+  Modified theories of gravity, Massive gravity, High Energy Physics - Theory}
+    \strng{namehash}{dC1}
+    \strng{fullhash}{dC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.12942/lrr-2014-7
+    \endverb
+    \field{eid}{7}
+    \verb{eprint}
+    \verb 1401.4173
+    \endverb
+    \field{number}{1}
+    \field{pages}{7}
+    \field{title}{{Massive Gravity}}
+    \field{volume}{17}
+    \field{journaltitle}{Living Reviews in Relativity}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-th}
+    \field{month}{12}
+    \field{year}{2014}
+  \endentry
+
+  \entry{WZParticle}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DLL}{%
+         family={Di\bibnamedelima Lella},
+         familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Luigi},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rubbia},
+         familyi={R\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DLLRC1}
+    \strng{fullhash}{DLLRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1142/9789814644150_0006
+    \endverb
+    \field{pages}{137\bibrangedash 163}
+    \field{title}{{The Discovery of the W and Z Particles}}
+    \field{volume}{23}
+    \field{journaltitle}{Adv. Ser. Direct. High Energy Phys.}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Dirkes:2018nkq}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Dirkes},
+         familyi={D\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1142/S0217751X18300132
+    \endverb
+    \verb{eprint}
+    \verb 1802.05958
+    \endverb
+    \field{number}{14n15}
+    \field{pages}{1830013}
+    \field{title}{{Gravitational waves \textemdash{} A review on the
+  theoretical foundations of gravitational radiation}}
+    \field{volume}{33}
+    \field{journaltitle}{Int. J. Mod. Phys. A}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Feng:2010gw}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FJL}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Jonathan\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJL1}
+    \strng{fullhash}{FJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1146/annurev-astro-082708-101659
+    \endverb
+    \verb{eprint}
+    \verb 1003.0904
+    \endverb
+    \field{pages}{495\bibrangedash 545}
+    \field{title}{{Dark Matter Candidates from Particle Physics and Methods of
+  Detection}}
+    \field{volume}{48}
+    \field{journaltitle}{Ann. Rev. Astron. Astrophys.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.CO}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Fierz:1939ix}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Fierz},
+         familyi={F\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pauli},
+         familyi={P\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FMPW1}
+    \strng{fullhash}{FMPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1098/rspa.1939.0140
+    \endverb
+    \field{pages}{211\bibrangedash 232}
+    \field{title}{{On relativistic wave equations for particles of arbitrary
+  spin in an electromagnetic field}}
+    \field{volume}{173}
+    \field{journaltitle}{Proc. Roy. Soc. Lond. A}
+    \field{year}{1939}
+  \endentry
+
+  \entry{Gupta_1952}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GSN}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Suraj\bibnamedelima N},
+         giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IOP} Publishing}%
+    }
+    \strng{namehash}{GSN1}
+    \strng{fullhash}{GSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1088/0370-1298/65/3/301
+    \endverb
+    \field{number}{3}
+    \field{pages}{161\bibrangedash 169}
+    \field{title}{Quantization of Einstein{\textquotesingle}s Gravitational
+  Field: Linear Approximation}
+    \verb{url}
+    \verb https://doi.org/10.1088/0370-1298/65/3/301
+    \endverb
+    \field{volume}{65}
+    \field{journaltitle}{Proceedings of the Physical Society. Section A}
+    \field{year}{1952}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Heisenberg:2019akx}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HL}{%
+         family={Heisenberg},
+         familyi={H\bibinitperiod},
+         given={Lavinia},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Trenkler},
+         familyi={T\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HLTG1}
+    \strng{fullhash}{HLTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1088/1475-7516/2020/05/019
+    \endverb
+    \verb{eprint}
+    \verb 1908.09328
+    \endverb
+    \field{pages}{019}
+    \field{title}{{Generalization of the 2-form interactions}}
+    \field{volume}{05}
+    \field{journaltitle}{JCAP}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-th}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Hinterbichler:2011tt}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HK}{%
+         family={Hinterbichler},
+         familyi={H\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HK1}
+    \strng{fullhash}{HK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1103/RevModPhys.84.671
+    \endverb
+    \verb{eprint}
+    \verb 1105.3735
+    \endverb
+    \field{pages}{671\bibrangedash 710}
+    \field{title}{{Theoretical Aspects of Massive Gravity}}
+    \field{volume}{84}
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-th}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Jaccard:2012ut}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JM}{%
+         family={Jaccard},
+         familyi={J\bibinitperiod},
+         given={Maud},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Maggiore},
+         familyi={M\bibinitperiod},
+         given={Michele},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Mitsou},
+         familyi={M\bibinitperiod},
+         given={Ermis},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JMMMME1}
+    \strng{fullhash}{JMMMME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \verb{doi}
+    \verb 10.1103/PhysRevD.87.044017
+    \endverb
+    \verb{eprint}
+    \verb 1211.1562
+    \endverb
+    \field{number}{4}
+    \field{pages}{044017}
+    \field{title}{{Bardeen variables and hidden gauge symmetries in linearized
+  massive gravity}}
+    \field{volume}{87}
+    \field{journaltitle}{Phys. Rev. D}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-th}
+    \field{year}{2013}
+  \endentry
+
+  \entry{JanssenBook}{book}{}
+    \name{author}{1}{}{%
+      {{hash=JB}{%
+         family={Janssen},
+         familyi={J\bibinitperiod},
+         given={Bert},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Universidad de Granada}%
+    }
+    \strng{namehash}{JB1}
+    \strng{fullhash}{JB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{edition}{1}
+    \field{title}{{Gravitación y Geometría}}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Kalb:1974yc}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KM}{%
+         family={Kalb},
+         familyi={K\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ramond},
+         familyi={R\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KMRP1}
+    \strng{fullhash}{KMRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1103/PhysRevD.9.2273
+    \endverb
+    \field{pages}{2273\bibrangedash 2284}
+    \field{title}{{Classical direct interstring action}}
+    \field{volume}{9}
+    \field{journaltitle}{Phys. Rev. D}
+    \field{year}{1974}
+  \endentry
+
+  \entry{Kazempour:2022asl}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KS}{%
+         family={Kazempour},
+         familyi={K\bibinitperiod},
+         given={Sobhan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZYC}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={Yuan-Chuan},
+         giveni={Y\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=AAR}{%
+         family={Akbarieh},
+         familyi={A\bibinitperiod},
+         given={Amin\bibnamedelima Rezaei},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSZYCAAR1}
+    \strng{fullhash}{KSZYCAAR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1140/epjc/s10052-022-10153-y
+    \endverb
+    \verb{eprint}
+    \verb 2203.05190
+    \endverb
+    \field{number}{3}
+    \field{pages}{190}
+    \field{title}{{Analysis of accretion disk around a black hole in dRGT
+  massive gravity}}
+    \field{volume}{82}
+    \field{journaltitle}{Eur. Phys. J. C}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Mousavi:2022puq}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MM}{%
+         family={Mousavi},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Atazadeh},
+         familyi={A\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMAK1}
+    \strng{fullhash}{MMAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1016/j.dark.2021.100942
+    \endverb
+    \verb{eprint}
+    \verb 2201.00633
+    \endverb
+    \field{pages}{100942}
+    \field{title}{{Cosmological future singularities in massive gravity and
+  massive bigravity}}
+    \field{volume}{35}
+    \field{journaltitle}{Phys. Dark Univ.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2022}
+  \endentry
+
+  \entry{ortín_2004}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OT}{%
+         family={Ortín},
+         familyi={O\bibinitperiod},
+         given={Tomás},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{OT1}
+    \strng{fullhash}{OT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \verb{doi}
+    \verb 10.1017/CBO9780511616563
+    \endverb
+    \field{series}{Cambridge Monographs on Mathematical Physics}
+    \field{title}{Gravity and Strings}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Ostrogradsky:1850fid}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OM}{%
+         family={Ostrogradsky},
+         familyi={O\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OM1}
+    \strng{fullhash}{OM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{4}
+    \field{pages}{385\bibrangedash 517}
+    \field{title}{{M\'emoires sur les \'equations diff\'erentielles, relatives
+  au probl\`eme des isop\'erim\`etres}}
+    \field{volume}{6}
+    \field{journaltitle}{Mem. Acad. St. Petersbourg}
+    \field{year}{1850}
+  \endentry
+
+  \entry{ProcaBiblio}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PDN}{%
+         family={{Poenaru}},
+         familyi={P\bibinitperiod},
+         given={Dorin\bibnamedelima N.},
+         giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \keyw{History of Physics}
+    \strng{namehash}{PDN1}
+    \strng{fullhash}{PDN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{eid}{physics/0508195}
+    \verb{eprint}
+    \verb physics/0508195
+    \endverb
+    \field{pages}{physics/0508195}
+    \field{title}{{Alexandru Proca (1897--1955) the Great Physicist}}
+    \field{journaltitle}{arXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{physics.hist-ph}
+    \field{month}{08}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Rubakov:2004eb}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RVA}{%
+         family={Rubakov},
+         familyi={R\bibinitperiod},
+         given={V.\bibnamedelima A.},
+         giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RVA1}
+    \strng{fullhash}{RVA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{eprint}
+    \verb hep-th/0407104
+    \endverb
+    \field{title}{{Lorentz-violating graviton masses: Getting around ghosts,
+  low strong coupling scale and VDVZ discontinuity}}
+    \field{eprinttype}{arXiv}
+    \field{month}{07}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Ruegg:2003ps}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RH}{%
+         family={Ruegg},
+         familyi={R\bibinitperiod},
+         given={Henri},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RAM}{%
+         family={Ruiz-Altaba},
+         familyi={R\bibinithyphendelim A\bibinitperiod},
+         given={Marti},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RHRAM1}
+    \strng{fullhash}{RHRAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1142/S0217751X04019755
+    \endverb
+    \verb{eprint}
+    \verb hep-th/0304245
+    \endverb
+    \field{pages}{3265\bibrangedash 3348}
+    \field{title}{{The Stueckelberg field}}
+    \field{volume}{19}
+    \field{journaltitle}{Int. J. Mod. Phys. A}
+    \field{eprinttype}{arXiv}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Salimkhani:2020kdn}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SK}{%
+         family={Salimkhani},
+         familyi={S\bibinitperiod},
+         given={Kian},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SK1}
+    \strng{fullhash}{SK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1016/j.shpsb.2020.05.002
+    \endverb
+    \field{pages}{29\bibrangedash 45}
+    \field{title}{{The dynamical approach to spin-2 gravity}}
+    \field{volume}{72}
+    \field{journaltitle}{Stud. Hist. Phil. Sci. B}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Schmidt-May:2015vnx}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMA}{%
+         family={Schmidt-May},
+         familyi={S\bibinithyphendelim M\bibinitperiod},
+         given={Angnis},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=vSM}{%
+         prefix={von},
+         prefixi={v\bibinitperiod},
+         family={Strauss},
+         familyi={S\bibinitperiod},
+         given={Mikael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMASMv1}
+    \strng{fullhash}{SMASMv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1088/1751-8113/49/18/183001
+    \endverb
+    \verb{eprint}
+    \verb 1512.00021
+    \endverb
+    \field{number}{18}
+    \field{pages}{183001}
+    \field{title}{{Recent developments in bimetric theory}}
+    \field{volume}{49}
+    \field{journaltitle}{J. Phys. A}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-th}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Schwartz:2014sze}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SMD}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={Matthew\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{SMD1}
+    \strng{fullhash}{SMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{isbn}{978-1-107-03473-0, 978-1-107-03473-0}
+    \field{title}{{Quantum Field Theory and the Standard Model}}
+    \field{month}{03}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Taylor:1976ru}{book}{}
+    \name{author}{1}{}{%
+      {{hash=TJC}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={J.\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge Univ. Press}%
+    }
+    \strng{namehash}{TJC1}
+    \strng{fullhash}{TJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{isbn}{978-0-521-29518-5}
+    \field{series}{Cambridge Monographs on Mathematical Physics}
+    \field{title}{{Gauge Theories of Weak Interactions}}
+    \list{location}{1}{%
+      {Cambridge, UK}%
+    }
+    \field{month}{02}
+    \field{year}{1979}
+  \endentry
+
+  \entry{Tsujikawa:2013fta}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TS}{%
+         family={Tsujikawa},
+         familyi={T\bibinitperiod},
+         given={Shinji},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TS1}
+    \strng{fullhash}{TS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1088/0264-9381/30/21/214003
+    \endverb
+    \verb{eprint}
+    \verb 1304.1961
+    \endverb
+    \field{pages}{214003}
+    \field{title}{{Quintessence: A Review}}
+    \field{volume}{30}
+    \field{journaltitle}{Class. Quant. Grav.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2013}
+  \endentry
+
+  \entry{VanNieuwenhuizen:1973fi}{article}{}
+    \name{author}{1}{}{%
+      {{hash=VNP}{%
+         family={Van\bibnamedelima Nieuwenhuizen},
+         familyi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VNP1}
+    \strng{fullhash}{VNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1016/0550-3213(73)90194-6
+    \endverb
+    \field{pages}{478\bibrangedash 492}
+    \field{title}{{On ghost-free tensor lagrangians and linearized
+  gravitation}}
+    \field{volume}{60}
+    \field{journaltitle}{Nucl. Phys. B}
+    \field{year}{1973}
+  \endentry
+
+  \entry{Wald:1984rg}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WRM}{%
+         family={Wald},
+         familyi={W\bibinitperiod},
+         given={Robert\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Chicago Univ. Pr.}%
+    }
+    \strng{namehash}{WRM1}
+    \strng{fullhash}{WRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.7208/chicago/9780226870373.001.0001
+    \endverb
+    \field{title}{{General Relativity}}
+    \list{location}{1}{%
+      {Chicago, USA}%
+    }
+    \field{year}{1984}
+  \endentry
+
+  \entry{Wellmann:2001sx}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=WM}{%
+         family={Wellmann},
+         familyi={W\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WM1}
+    \strng{fullhash}{WM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{eprint}
+    \verb hep-th/0103034
+    \endverb
+    \field{title}{{Gravity as the spin-2 quantum gauge theory}}
+    \field{type}{Other thesis}
+    \field{eprinttype}{arXiv}
+    \field{month}{03}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Wigner:1939cj}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WEP}{%
+         family={Wigner},
+         familyi={W\bibinitperiod},
+         given={Eugene\bibnamedelima P.},
+         giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=KYS}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Y.\bibnamedelima S.},
+         giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZWW}{%
+         family={Zachary},
+         familyi={Z\bibinitperiod},
+         given={W.\bibnamedelima W.},
+         giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WEP1}
+    \strng{fullhash}{WEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.2307/1968551
+    \endverb
+    \field{pages}{149\bibrangedash 204}
+    \field{title}{{On Unitary Representations of the Inhomogeneous Lorentz
+  Group}}
+    \field{volume}{40}
+    \field{journaltitle}{Annals Math.}
+    \field{year}{1939}
+  \endentry
+
+  \entry{2015arXiv1506_02210}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WRP}{%
+         family={{Woodard}},
+         familyi={W\bibinitperiod},
+         given={R.\bibnamedelima P.},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{High Energy Physics - Theory}
+    \strng{namehash}{WRP1}
+    \strng{fullhash}{WRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{eid}{arXiv:1506.02210}
+    \verb{eprint}
+    \verb 1506.02210
+    \endverb
+    \field{pages}{arXiv:1506.02210}
+    \field{title}{{The Theorem of Ostrogradsky}}
+    \field{journaltitle}{arXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{hep-th}
+    \field{month}{06}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Yang:2020eow}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YLP}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Li-Ping},
+         giveni={L\bibinithyphendelim P\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Khosravi},
+         familyi={K\bibinitperiod},
+         given={Farhad.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=JZ}{%
+         family={Jacob},
+         familyi={J\bibinitperiod},
+         given={Zubin},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YLPKFJZ1}
+    \strng{fullhash}{YLPKFJZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.1103/PhysRevResearch.4.023165
+    \endverb
+    \verb{eprint}
+    \verb 2004.03771
+    \endverb
+    \field{pages}{023165}
+    \field{title}{{Quantum field theory for spin operator of the photon}}
+    \field{volume}{4}
+    \field{journaltitle}{Phys. Rev. Res.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{quant-ph}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Zakharov:1970cc}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZVI}{%
+         family={Zakharov},
+         familyi={Z\bibinitperiod},
+         given={V.\bibnamedelima I.},
+         giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZVI1}
+    \strng{fullhash}{ZVI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{pages}{312}
+    \field{title}{{Linearized gravitation theory and the graviton mass}}
+    \field{volume}{12}
+    \field{journaltitle}{JETP Lett.}
+    \field{year}{1970}
+  \endentry
+\enddatalist
+\endinput

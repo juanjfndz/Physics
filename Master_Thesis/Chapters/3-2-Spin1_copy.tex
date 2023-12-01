@@ -1,0 +1,387 @@
+% DUDA: Estaría guay aclarar como reflexión que no es lo mismo tener algo y hacerlo desaparecer que simplemente no contemplarlo (como el caso de la masa)
+
+% DUDA: La ecuación de movimiento no es un grado de libertad, eso se puede ver del caso masivo, que aunque se obtiene de él, no es un grado de libertad. Pero por otro lado, la invarianza del grado de libertad solo reduce en un grado de libertad. Lo que se denomina "gauge de Lorentz" en verdad no es un "gauge" de la transformacion (eso sí la restringe, solo faltaba), si no que es una condición que sale de la chistera para obtener la ecuación de movimiento  análogo al caso material y porque del mismo caso masivo uno sabe que restringe. 
+
+% DUDA: Podemos hacer mensión de que las inestabilidades de ostrogaradasky son de la parte ciinética del sistemas, por definición. Así que el tener otro lagrangiano con la misma parte cinétcia nos podemos ahorrar el estudio para comprender que efectivamente esta situciacón es la misma. Por ello, podemso definir el Lamnda 2 tan deseado.
+
+%#####################################################################################################
+\chapter{Campo de spin-1 sin masa.} \label{Spin-1Massless}
+%#####################################################################################################
+
+\justify{En este capítulo, se lleva a cabo un análisis del caso no masivo del campo de spin-1. Este tipo de teoría ha sido ampliamente estudiada debido a su relación con la realidad física, ya que los campos de spin-1 no masivos se encuentran en las teorías de campos bosónicos de dos de las fuerzas fundamentales de la física, el electromagnetismo y la fuerza nuclear fuerte. Las motivaciones físicas resultan suficientes para estudiar el caso sin masa del campo de spin-1.}
+
+%\justify{En este capítulo se analiza el caso no masivo del campo de spin-1. Al igual que con el caso del capítulo anterior, este tipo de teoría se encuentra bien estudiada porque se trata de un modelo íntimamente relacionado con la realidad: los campo de spin-1 no masivos se encuentran en las teorías de los campos bosónicos de dos fuerzas fundamentales de la física, el electromagnetismo y la fuerza nuclear fuerte. Por tanto, existe motivaciones físicas suficientes para querer estudiar el caso sin masa del campo de spin-1.}
+
+\justify{Al igual que en los capítulos anteriores relacionados con casos no masivos, este capítulo presenta un análisis de la teoría del campo de spin-1 no masivo, junto con una sección final en la que se examinan las helicidades de cada una de las componentes del campo de estudio. Para llevar a cabo este análisis, nos basaremos en los resultados obtenidos en el Capítulo \ref{Spin-1Massive}, que trata el caso de masa finita del campo de spin-1.}
+
+%\justify{Como se describe en la introducción de esta tesis, los capítulos relacionados con casos no masivos presentan el mismo análisis de la teoría que el de los casos masivos, además de una última sección en la que analizar las helicidades de cada una de las componentes del campo de estudio. En este caso, al igual que en el resto de casos no masivos, nos apoyaremos de los resultados obtenidos de los casos de masa finita - en este caso del Cap. \ref{Spin-1Massive} - para el análisis de esta teoría.}
+
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Lagrangiano}
+%#####################################################################################################
+
+\justify{Estamos interesados en crear un modelo análogo al capítulo anterior, salvo que en esta teoría no se contempla el posible efecto masivo del campo. Es decir, buscamos modelar el comportamiento de un campo $A_{\mu}$ de spin-1 y sin masa, que viva en $\mathcal{M}_{4}$, y cuya acción sea local e invariante Lorentz.}
+
+\justify{El lagrangiano más general que se puede describir bajo estas condiciones es de la forma}
+
+\begin{equation} \label{eq:spin1massless:lagrangian0}
+	\mathcal{L}^{\text{ spin}-1} = 
+	-\frac{1}{2} \left( \partial_{\mu} A_{\nu} \, \partial^{\mu} A^{\nu} - \partial_{\mu} A^{\mu} \, \partial_{\nu} A^{\nu}\right),
+\end{equation}
+
+\justify{y es análogo al lagrangiano de Proca, expresado en la Ec. \eqref{eq:spin1mass:lagrangianoProca}, salvo por el término masivo. Debido a su enorme relevancia en la física de partículas, y de forma histórica con la interacción electromagnética, este lagrangiano también presentan nombre propio: se define como la acción de Maxwell, en nombre de James Clerk Maxwell.}
+
+\justify{El primer prefactor se define bajo el paradigma de la normalización canónica, mientras que para la elección del segundo prefactor se toma en cuenta el análisis realizado en el Apto. \ref{apartado:spin1mass:ghostelimiantion}: la elección $\lambda_{2} = \frac{1}{2}$ previene las posibles inestabilidades de Ostrogradsky visualizadas en los términos dinámicos de este lagrangiano, al igual que también los previó en $\mathcal{L}^{\text{ spin}-1}_{\;m}$. }
+
+\justify{Ante la idea de añadir posibles términos adicionales - por ejemplo $\partial_{\mu} A_{\nu} \partial^{\mu} A^{\nu}$ - podemos afirmar que se encuentran relacionados a los términos ya expuestos salvo un término de derivada total, como ocurre en la Ec. \eqref{eq:spin1:equivalencia} para el caso del capítulo anterior.}
+
+\justify{Además, se puede definir el tensor de Faraday $F_{\mu\nu}$ como un tensor de orden dos, antisimétrico y que cumple la identidad de Bianchi}
+
+\begin{equation} \label{eq:spin1massless:Bianchi}
+	\varepsilon^{\lambda\rho\mu\nu} \partial_{\rho} F_{\mu\nu} = 0.
+\end{equation}
+
+\justify{El tensor de Faraday se expresa en función del campo $A_{\mu}$ y se define como}
+
+\begin{equation}
+	F_{\mu\nu} \equiv \partial_{[\mu}A_{\nu]} 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	\mathcal{L}^{\text{ spin}-1} =  -\frac{1}{4} F_{\mu\nu}F^{\mu\nu}.
+\end{equation}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad.} \label{Spin1massless:DOF}
+%#####################################################################################################
+
+\justify{Una vez expuesto el lagrangiano, procedemos a analizar sus grados de libertad. Por un lado, el campo $A_{\mu}$ se comporta de forma análoga al campo del capítulo anterior: es un vector lorentziano con un máximo de cuatro grados de libertad, cuya álgebra de Lorentz asociada al campo de spin-1 en la representación irreducible de $\mathfrak{so}\,3$ es $\left(1\oplus0\right)$ y cuya representación de segundos números cuánticos viene dada por $\left\{(-1, 0, 1), (0)\right\}$.}
+
+\justify{Por el otro lado, la clasificación de Wigner (ver Sección \ref{introduction:WignerClassification}) prevé dos grados de libertad para cualquier campo bosónico no masivo, independientemente de su spin. Además, como el campo $A_{\mu}$ tiene spin 1, las representaciones de los dos grados de libertad deben estar relacionadas con las helicidades $\pm 1$.}
+%\justify{Por el otro lado, la clasificación de Wigner (Sec. \ref{introduction:WignerClassification})  predice 2 grados de libertad para cualquier campo bosónico no masivo, indistintamente del número de spin que presente. No solo eso, por ser $A_{\mu}$ un campo con spin-1 las representaciones de los dos grados de libertad deben relacionarse con las helicidades $\pm 1$.}
+
+\justify{La diferencia en los grados de libertad entre el campo $A_{\mu}$ y los previstos por la clasificación de Wigner puede explicarse deduciendo que hay dos restricciones en la teoría. Según la imposición de Wigner, estas dos restricciones deben estar relacionadas con las dos representaciones de spin 0. Esta discrepancia en los grados de libertad nos lleva a profundizar en nuestro estudio del lagrangiano y a buscar sus condiciones de contorno para analizarla más a fondo.}
+%\justify{La diferencia en los grados de libertad entre $A_{\mu}$  y los predichos por la clasificación de Wigner puede resolverse deduciendo que hay dos restricciones en la teoría. A partir de la imposición de Wigner, se deduce que estas dos restricciones deben estar relacionadas con las dos representaciones de spin-0. Esta discrepancia en los grados de libertad nos motiva a realizar nuestro estudio para analizar en mayor profundidad el lagrangiano así como buscar sus condiciones de contorno.}
+
+\justify{En este contexto, es importante señalar que la primera diferencia que hemos encontrado entre el caso masivo y $A_{\mu}$ radica en el número de grados de libertad esperados por la clasificación de Wigner. En el caso masivo se espera un grado de libertad adicional al campo de esta sección. Esta desigualdad en los grados de libertad es un punto de inflexión clave entre ambas teorías. Además, es importante tener en cuenta que esta diferencia no desaparece a medida que se toma el límite $m \rightarrow 0^{+}$ del caso masivo. Es decir, la discrepancia se debe a que el planteamiento de una teoría masiva o no masiva ya condiciona los grados de libertad independientemente del valor de la masa.}
+%\justify{Esta también es la primera disonancia con el caso masivo, el número de grados de libertad esperado en $A_{\mu}$ resulta distinto al esperado en el campo del caso masivo del capítulo anterior. Esta desigualdad en los grados de libertad se trata de un punto de inflexión entre ambas teorías, hay que tener en cuenta que esta diferencia no desaparece tomando un límite $m \rightarrow 0$ del caso masivo, el haber planteado una teoría masiva ya condiciona los grados de libertad indistintamente del valor de la masa, aunque esta después sea nula. }
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Invarianza \textit{gauge.}}
+
+% HABLAR DEL CASO MASIVO;, como este si que no presenta invarianza salvo el caso de añadir un campo auxiliar
+
+% TEXTO: 
+
+%\justify{, y esto presenta dos consecuencias: primero, con esta descomposición no se consigue eliminar un grado de libertad en el campo $A_{\mu}$, y segundo, el lagrangiano no resulta invariante frente a las transformaciones \textit{gauge} del tipo}
+
+%\vspace{2mm}
+
+%\begin{equation}
+%	B_{\mu} \rightarrow B'_{\mu} + \partial_{\mu}\xi  
+%	\hspace{5mm} \Longrightarrow \hspace{5mm}
+%	\mathcal{L}^{\text{ spin}-1}_{\;m} (B'_{\mu} + \partial_{\mu}\xi  ) \neq  \mathcal{L}^{\text{ spin}-1}_{\;m} (B'_{\mu}), 
+%\end{equation}
+
+%\justify{porque el término de masa rompe esta posible simetría en el sistema. Como apunte, informar que hay extensiones de este tipo de teorías que sí permiten que campos masivos vectoriales presenten invarianza bajo este tipo de transformaciones, por ejemplo la acción de Stueckelberg \cite{Ruegg:2003ps}.
+
+%#####################################################################################################
+
+\justify{En este capítulo hemos obtenido la acción de Maxwell como la única opción posible que se encuentra libre de \textit{ghosts}. Para ello, se ha definido el prefactor de $\partial_{\mu}A^{\mu}\partial_{\nu}A^{\nu}$ en el lagrangiano. Esta elección se ha definido de tal manera que no aparezcan términos con derivadas temporales de orden dos cuando se realiza una descomposición del tipo}
+%\justify{En este capítulo, hemos considerado la expresión del lagrangiano de nuestra teoría como la acción de Maxwell, dando un valor concreto al prefactor de $\partial_{\mu}A^{\mu}\partial_{\nu}A^{\nu}$ en el lagrangiano. Esta elección se basa en consideraciones técnicas para garantizar la coherencia de la teoría. Se ha definido de tal manera que no aparezcan términos con derivadas temporales de orden dos cuando se realiza una descomposición del tipo ecuación}
+%\justify{El lagrangiano de nuestra teoría se expresa como la acción de Maxwell, esto implica que en este capítulo hemos tomado una predilección en el valor del prefactor de $\partial_{\mu}A^{\mu}\partial_{\nu}A^{\nu}$ del lagrangiano. Esta decisión se basa en consideraciones técnicas para garantizar la coherencia de la teoría, se encuentra definida de tal forma de que no aparezca términos con derivadas temporales de orden dos cuando se realiza una descomposición del tipo}
+
+\begin{equation} \label{eq:spin1massless:Adecomposition}
+	A_{\mu} = \mathcal{A}_{\mu}  + \partial_{\mu}\chi.
+\end{equation}
+
+\justify{Como ya se analizó en el capítulo anterior en las ecuaciones \eqref{eq:Spin1massless:chighost} y \eqref{eq:Spin1massless:chighost2}, el lagrangiano presentado no incluye términos dinámicos relacionados con el campo $\chi$ de la descomposición \eqref{eq:spin1massless:Adecomposition}. En otras palabras, el campo escalar desaparece trivialmente del lagrangiano $\mathcal{L}^{\text{ spin}-1}$ al elegir el prefactor $\lambda_{2} = \frac{1}{2}$. Y por tanto, podemos afirmar que el lagrangiano de Maxwell resulta invariante bajo transformaciones \textit{gauge} del campo $A_{\mu}$ del tipo}
+%\justify{como se analizó en el capítulo anterior en las ecuaciones \eqref{eq:Spin1massless:chighost} y \eqref{eq:Spin1massless:chighost2}. Es más, este lagrangiano se encuentra descrito de tal forma que no aparece ningún término dinámico relacionado con el campo $\chi$ de la descomposición \eqref{eq:spin1massless:Adecomposition}. Es decir, el campo escalar desaparece trivialmente de $\mathcal{L}^{\text{ spin}-1}$ al elegir el prefactor $\lambda_{2} = \frac{1}{2}$. O lo que es lo mismo, el lagrangiano de Maxwell resulta invariante bajo transformaciones \textit{gauge} del campo $A_{\mu}$ del tipo}
+
+\begin{equation} \label{eq:spin1massless:InvarianzaGauge}
+	A_{\mu} \rightarrow A'_{\mu} = A_{\mu} + \partial_{\mu}\xi 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	\mathcal{L}^{\text{ spin}-1}  \left( A_{\mu} \right) = \mathcal{L}^{\text{ spin}-1}  \left( A'_{\mu} \right),
+\end{equation}
+
+\justify{donde $\xi$ es un parámetro escalar libre. Por tanto, La invariancia del lagrangiano de Maxwell ante transformaciones del tipo descritas en la ecuación \eqref{eq:spin1massless:InvarianzaGauge} permite redefinir el campo de la teoría de forma arbitraria sin afectar el sistema físico resultante.}
+%\justify{El campo de fuerza $F_{\mu\nu}$ también resulta invariante bajo este tipo de transformaciones.}
+
+\justify{La invariancia bajo transformaciones \textit{gauge} es una propiedad que no se presenta en el lagrangiano de Proca, como se puede ver en la ecuación \eqref{eq:spin-1massive:lambdacondition}. Esto se debe a que la invariancia de $\mathcal{L}^{\text{spin}-1}_{;m}$ no se cumple en el término de masa. No obstante, es posible encontrar extensiones de la teoría de spin-1 masiva que permiten que los campos masivos vectoriales tengan invariancia bajo transformaciones gauge mediante el uso de un campo auxiliar, como ocurre en la acción de Stueckelberg \cite{Ruegg:2003ps}.}
+%\justify{La invariancia bajo transformaciones gauge no es una característica presente en el lagrangiano de Proca, como pudimos observar en la ecuación \eqref{eq:spin-1massive:lambdacondition}. Esto se debe a que la invariancia de $\mathcal{L}^{\text{spin}-1}_{;m}$ se rompe en el término de masa. Sin embargo, es posible encontrar extensiones de una teoría de spin-1 masiva que sí permiten que campos masivos vectoriales presenten invarianza bajo transformaciones gauge gracias al uso de un campo auxiliar, como sí ocurre en la acción de Stueckelberg \cite{Ruegg:2003ps}.}
+%\justify{ Esta invarianza no ocurre en el  lagrangiano de Proca, Ec. \eqref{eq:spin-1massive:lambdacondition}, porque la invarianza de $\mathcal{L}^{\text{ spin}-1}_{\;m}$ se rompe en el término de masa. Como apunte, informar que hay extensiones de este tipo de teorías que sí permiten que campos masivos vectoriales presenten invarianza bajo este tipo de transformaciones gracias a un campo auxiliar, por ejemplo la acción de Stueckelberg \cite{Ruegg:2003ps}.}
+
+
+
+\justify{ Esta elección \textit{ad hoc} del campo nos otorga la posibilidad de restringir un grado de libertad al campo del sistema. El campo $\chi$ no aparece en el lagrangiano de Maxwell. Por tanto, su grado de libertad no se encuentra reflejado en la dinámica del sistema. Este resultado nos permite restringirlo, si substituimos la descomposición \eqref{eq:spin1massless:Adecomposition} sobre el campo $A'_{\mu}$ obtenido en la transformación \textit{gauge} \eqref{eq:spin1massless:InvarianzaGauge} obtenemos}
+%\justify{Una forma de comprender esta restricción: el campo $\chi$, que presenta un grado de los cuatro de $A_{\mu}$, no aparece en el lagrangiano de Maxwell; por lo que puede presentar el valor que desee que no se verá reflejado en la dinámica del sistema. Si se estudia la descomposición del tipo ecuación \eqref{eq:spin1massless:Adecomposition} del campo resultante de una transformación del tipo ecuación \eqref{eq:spin1massless:InvarianzaGauge} se obtiene}
+
+\begin{equation}
+	 A'_{\mu} 
+	= \mathcal{A}_{\mu}  + \partial_{\mu} \left( \chi + \xi \right).
+\end{equation}
+
+\justify{En la descomposición de este nuevo campo se puede observar que la nueva componente escalar $\left( \chi' \equiv \chi + \xi \right)$ sí depende de nuestra elección arbitraria. La componente escalar del campo sigue sin aparecer en la dinámica del sistema - es por ello que podemos realizar estas transformaciones - pero su valor, ahora sí, se encuentra restringido a la elección del autor, por lo que ya no es un grado de libertad de $A'_{\mu}$.}
+
+\justify{En el contexto de la teoría del campo de spin-1 no masivo, no existe experiencia empírica que permita medir directamente el campo $A_{\mu}$. Esto significa que cualquiera de los infinitos campos $A'{\mu}$ resultantes de una transformación \textit{gauge} son igualmente válidos para expresar dicha teoría. Además, la presencia de una restricción en el campo $A{\mu}$ que depende de una elección \textit{ad hoc} sugiere que este campo no es una entidad física real, sino más bien un artefacto matemático o un campo auxiliar que nos permite estudiar la realidad física de manera más efectiva.}
+%\justify{En la realidad no existe experiencia empírica con el campo $A_{\mu}$ que permita medirlo, por lo que cualquiera de los infinitos campos $A'_{\mu}$ resultan igual de válidos que $A_{\mu}$ para expresar la teoría. El hecho de que el campo $A_{\mu}$ presente una restricción que dependa de una elección \textit{ad hoc} implica que el campo fundamental de la teoría no es un campo físico, se trata de un artificio matemático un campo auxiliar que permite el estudio de la realidad física. }
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Ecuación de movimiento.} \label{Spin1massless:DOF:EOM}
+%DUDA: Si se asocia el lagrangiano a una carga, si se conserva la carga aparece la simetría gauge -> Teorema de Noether. (Hacer esto también a los spins 2 y kalb-ramond
+%#####################################################################################################
+
+\justify{En esta sección analizamos la ecuación de movimiento asociada al campo $A_{\mu}$. Para ello, utilizaremos para este análisis  un lagrangiano más general que el de Maxwell y consideraremos una versión que no tenga definido el prefactor $\lambda_{2}$}
+%\justify{Entre los objetivos de esta tesis también se encuentra el analizar las ecuaciones de movimiento, en esta ocasión la ecuación asociada al campo $A_{\mu}$. Para este análisis haremos uso del lagrangiano de Maxwell, retrocederemos en la cuestión del prefactor $\lambda_{2}$ y tomaremos un lagrangiano que no tenga definido dicho valor}
+
+\begin{equation}
+	\mathcal{L}^{\text{ spin}-1} = 
+	-\frac{1}{2} \partial_{\mu} A_{\nu} \, \partial^{\mu} A^{\nu} + \lambda_{2} \, \partial_{\mu} A^{\mu} \, \partial_{\nu} A^{\nu},
+\end{equation}
+
+\justify{con el objetivo de demostrar que la condición $\lambda_{2} = \frac{1}{2}$ aparece de forma natural en la teoría libre de interacción de un campo de spin-1 no masivo. La cinemática de este sistema se obtiene a partir de las ecuaciones de Euer-Lagrange y tiene la forma}
+
+\begin{equation} \label{eq:EomSpin1}
+	-\frac{1}{2}\, \partial_{\alpha}\partial^{\alpha}A^{\beta} + \lambda_2\, \partial^{\beta}\partial_{\alpha}A^{\alpha}  = 0.
+\end{equation}
+
+\justify{En un proceso parecido al caso masivo, se puede extraer la condición sobre el prefactor $\lambda_{2}$ si se añade una derivada parcial al resultado}
+
+\begin{equation}  \label{eq:spin1massless:Lagrangiancondition} 
+\begin{split}
+	 \partial_{\beta} \left(  -\frac{1}{2}\, \partial_{\alpha}\partial^{\alpha}A^{\beta} + \lambda_2\, \partial^{\beta}\partial_{\alpha}A^{\alpha} \right)  = ( -\frac{1}{2} + \lambda_2)\, \partial_{\alpha}\partial^{\alpha}\partial_{\beta}A^{\beta} = 
+	0 \hspace{2mm} \xrightarrow{\forall A^{\beta}} \hspace{2mm}  \lambda_2 =  \frac{1}{2},
+\end{split}
+\end{equation}
+
+\justify{que coincide con el valor predispuesto en la Ec. \eqref{eq:spin1massless:lagrangian0}. Si esta condición se tiene en cuenta en la Ec. \eqref{eq:EomSpin1},  la ecuación de movimiento de campo $A_{\mu}$ se expresa como}
+
+\begin{equation} \label{eq:spin1:solEomSpin1massless}
+	\partial_{\alpha}\partial^{\alpha}A^{\beta} - \partial^{\beta}\partial_{\alpha}A^{\alpha}  = 0.
+\end{equation}
+
+\justify{Además, la solución \eqref{eq:spin1:solEomSpin1massless} supone una nueva condición sobre el campo físico $F_{\mu\nu}$ de la forma}
+
+\begin{equation} \label{eq:Spin1massless:EOMF}
+	\partial_{\alpha} F^{\alpha\beta} = 0,
+\end{equation}
+
+\justify{que junto con \eqref{eq:spin1massless:Bianchi} forman las ecuaciones de Maxwell del vacío.}
+
+\justify{Este resultado se encuentra acorde a la ecuación de movimiento del caso masivo \eqref{eq:EomSpin1mass} tomando el límite $m \rightarrow 0$, la diferencia con el caso masivo es que no se puede obtener la condición del \textit{gauge} de Lorenz de forma natural a la ecuación de movimiento, ni ninguna restricción a los grados de libertad del campo $A_{\mu}$.}
+
+\justify{La falta de una condición extra que permita la eliminación de un segundo grado de libertad del campo $A_{\mu}$ permite el imponer bajo elección una segunda restricción. La imposición debe encontrarse de acuerdo a lo planteado hasta ahora en el análisis: no debe cancelar la condición obtenida bajo la invarianza global \eqref{eq:spin1massless:InvarianzaGauge}, y debe encontrarse relacionado con una componente del campo $A_{\mu}$ que se relacione con la representación de spin-0, en la bibliografía a esto se le refiere como escoger o fijar el \textit{gauge}.}
+
+\justify{Existen muchas restricciones que permiten obtener dicha condición, como pueden ser el \textit{gauge} de Coulomb, el \textit{gauge} de Weyl o el conjunto de \textit{gauges} $R_{\xi}$. A pesar del abanico de posibilidades, en el comienzo de la teoría decidimos imponer que se tratase de un modelo relativista, de los \textit{gauges} posibles existe uno que resulta manifiestamente invariante Lorentz y que además presenta relación con el caso masivo: el \textit{gauge} de Lorenz }
+
+\begin{equation} \label{eq:spin1massless:lorenzgauge}
+	\partial_{\mu}A^{\mu} = 0,
+\end{equation} 
+
+\justify{este \textit{gauge} se le denomina incompleto, esto se debe a que la elección de esta condición no permite fijar directamente el término $\xi$ de la transformación \textit{gauge} de la Ec. \eqref{eq:spin1massless:InvarianzaGauge}. Pero podemos afirmar que esta condición es capaz de restringir un grado de libertad al campo $A_{\mu}$, y además nos permite simplificar la ecuación de movimiento \eqref{eq:spin1:solEomSpin1massless} a}
+
+\begin{equation} \label{eq:spin1:solEomSpin1massless2}
+	\partial_{\mu}\partial^{\mu}A^{\nu} = 0,
+\end{equation}
+
+\justify{una solución de tipo relativista, manifestando la invarianza Lorentz comentada. Esta solución también es análoga al caso límite $m \rightarrow 0$ de la ecuación de movimiento del capítulo anterior, Ec. \eqref{eq:EomSpin1mass2}. }
+
+
+% CONTINUAR: HABLAR DE LA ECUACION DE MOVIMIETO COMO ALGO A CALCULAR EN ESTE CAPITULO, LUEGO COMPARAR CON EL RESULTADO MASIVO, QUE NO SE OBTIENE LA ECUACION EXTRA ASÍ QUE LA PODEMOS IMPONER Y VER QU EPASA. 
+
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Hamiltoniano.} \label{Spin1:H}
+%#####################################################################################################
+
+\justify{En el actual paradigma de la física, importa que una teoría clásica se encuentre bien descrita, y entre estas condiciones se encuentra la idea de que el sistema presenta un estado fundamental, un estado de mínima energía. Tanto en el capítulo anterior como en este se han comentado las problemáticas de que la teoría presenten inestabilidades de Ostrogradsky. Es decir, que el hamiltoniano del sistema no presente una cota inferior bien definida.}
+
+\justify{Como la teoría que estamos construyendo es clásica, existe una motivación para calcular y analizar el hamiltoniano de $\mathcal{L}^{\text{ spin}-1}$. No dejaremos escapar la oportunidad de comprobar que efectivamente, nuestro lagrangiano hace alusión a un sistema físico.}
+
+\justify{El Hamiltoniano se puede obtener de forma análoga al caso masivo en el desarrollo \eqref{eq:spin1mass2:Hamiltoniano}, en este caso el resultado es}
+
+\begin{equation} \label{eq:spin1:Hamiltoniano}
+	\mathcal{H^{\text{ spin-1}}} = \frac{1}{2} \left(F_{0i}\right)^{2} + \frac{1}{4}\left(F_{ij}\right)^{2} + \mathcal{H}_{\text{Boundary}},
+\end{equation}
+
+\justify{mostrando a un hamiltoniano definido positivamente salvo un término de frontera, este último término dependerá de las condiciones de contorno a imponer. Este resultado se encuentra en la capa de masas debido a que se ha tenido en cuenta la ecuación de movimientos \eqref{eq:Spin1massless:EOMF} para su desarrollo. De esta forma se obtiene un resultado análogo al límite $m \rightarrow 0$ del hamiltoniano masivo, en \eqref{eq:spin1mass2:Hamiltoniano}, mostrando una vez más las similitudes entre estas teorías.}
+
+\justify{En este punto del análisis, el lagrangiano parece ser un prometedor candidato para el campo físico que se quiere modelizar. Se trata de un lagrangiano que puede presentar los grados de libertad adecuados, con un hamiltoniano no problemático y con una ecuación de movimiento definida. En el siguiente apartado se analiza el comportamiento en sí del campo, observaremos como se manifiesta sus comportamientos de spin.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Helicidad.} \label{Spin1:Helicity}
+%#####################################################################################################
+
+\justify{El último objetivo de este capítulo es comprobar que  $A_{\mu}$ presenta un comportamiento de spin-1. Para ello, se hace acopio de los resultados que se han obtenido a lo largo de este capítulo y se emplean de forma práctica sobre nuestro campo de estudio. El procedimiento que se plantea resulta análogo al presentado en el capítulo 17 de \cite{JanssenBook,}.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Primera restricción.}
+%#####################################################################################################
+
+\justify{En el Apto. \ref{Spin1massless:DOF:EOM} argumentamos que en este modelo se tomaría el \textit{gauge} de Lorenz \eqref{eq:spin1massless:lorenzgauge}, de esta forma la ecuación de movimiento resulta en una ecuación de ondas relativista cuya solución es una combinación lineal de ondas planas. Para simplificar, en este apartado asumiremos que la solución es de la forma}
+
+\begin{equation} 
+	A_{\mu} = C_{\mu} e^{ik_{\lambda}x^{\lambda}},
+\end{equation}
+
+\justify{donde las componentes de la amplitud $C_{\mu}$ son constantes y $k_{\mu}$ el vector de onda. La nueva expresión del campo permite visualizar mejor cómo el \textit{gauge} de Lorenz, junto con la ecuación de movimiento, elimina un grado de libertad.}
+
+\begin{itemize}
+
+	\item Si se aplica la condición \textit{gauge} \eqref{eq:spin1massless:lorenzgauge} sobre el campo 
+
+	\begin{equation} \label{eq:Spin1massless:Condition1}
+		0 = \partial_{\mu}A^{\mu} = 
+		C_{\mu} \partial_{\mu} \left(e^{ik_{\lambda}x^{\lambda}}\right) = 
+		iC_{\mu} k^{\mu} e^{ik_{\lambda}x^{\lambda}} \iff C_{\mu} k^{\mu} = 0,
+	\end{equation}
+	
+	observarmos que la amplitud y el vector de onda resultan perpendiculares entre ellos
+
+	\item Si se aplica la ecuación de movimiento \eqref{eq:spin1:solEomSpin1massless2} se obtiene que el vector de onda $k_{\mu}$ es nulo
+
+	\begin{equation} \label{eq:Spin1massless:Condition2}
+		0 = \partial_{\nu}\partial^{\nu}A^{\mu} = 
+		C_{\mu} \partial_{\nu}\,\partial^{\nu} \left(e^{ik_{\lambda}x^{\lambda}}\right) = 
+		-C_{\mu} k_{\nu}\,k^{\nu} e^{ik_{\lambda}x^{\lambda}} \iff k_{\nu}k^{\nu}= 0,
+	\end{equation}
+
+	y por tanto la velocidad de propagación del campo sobre el espacio-tiempo es a velocidad de la luz.
+
+\end{itemize}
+
+\justify{Aunque las ecuaciones \eqref{eq:Spin1massless:Condition1} y \eqref{eq:Spin1massless:Condition2} se traten de dos condiciones distintas en conjunto se comporta como una ligadura sobre una de las componentes de $A_{\mu}$. Con ambas condiciones se pueden fijar una componente de $k_{\mu}$ y de $C_{\mu}$ - por ejemplo, la componente temporal -  y dejarlas en función de las otras tres coordenadas. }
+
+
+\justify{Si por ejemplo se tomara la cuarta componente de $k_{\mu}$ como la única dirección espacial arbitraria del vector de onda, la única configuración posible para que el vector de onda sea nulo es}
+
+\begin{equation}
+	k^{\lambda} = \begin{pmatrix}
+					k \\
+					0 \\
+					0 \\
+					k 
+			        \end{pmatrix},
+\end{equation}
+
+\justify{y en consecuencia, la Ec. \eqref{eq:Spin1massless:Condition1} sería de la fomra}
+
+\begin{equation}
+	k \left( C_{0} + C_{3} \right) = 0 \hspace{5mm} \iff \hspace{5mm} C_{0} = -C_{3}.
+\end{equation}
+
+\justify{Estos dos últimos resultados dejan a la componente $A_{0}$ completamente atada a la componente $A_{3}$
+
+\begin{equation} \label{eq:spin1massless:A-1}
+	(A_{\mu}) = (-A_{3},\, A_{1},\, A_{2},\, A_{3}).
+\end{equation}
+
+\justify{En general, se puede dejar a una de las componentes del campo $A_{\mu}$ completamente determinada por el resto componentes, mostrando que el \textit{gauge} de Lorenz reduce al campo un grado de libertad. Para nuestro caso, el campo $A_{\mu}$ queda con los tres grados de libertad asociados a las componentes espaciales.}
+
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Segunda restricción.}
+%#####################################################################################################
+
+\justify{Como se avisa en el Apto. \ref{Spin1massless:DOF:EOM}, el \textit{gauge} de Lorenz no fija completamente el \textit{gauge}: aún queda libre el término $\xi$ de la transformación \textit{gauge} \eqref{eq:spin1massless:InvarianzaGauge}, una buena elección de este parámetro nos permitiría fijar el grado de libertad que nos falta. Aplicamos la siguiente transformación sobre el campo $A_{\mu}$}
+
+\begin{equation}
+	\left.
+	\begin{array}{lr}
+		A'_{\mu} &= A_{\mu} + \partial_{\mu}\xi\\
+				      \\
+		\xi &=  iU\, e^{ik_{\lambda} x^{\lambda}}
+  	\end{array}
+	\right\}
+	\hspace{2mm} \Longrightarrow \hspace{2mm}
+	A'_{\mu} = \left(C_{\mu} - k_{\mu}U\right)\, e^{ik_{\lambda}x^{\lambda}} \equiv C'_{\mu} \, e^{ik_{\lambda}x^{\lambda}},
+\end{equation}
+
+\justify{donde la amplitud $U$ es una constante aún sin definir. Esta elección de $\xi$ permite que el nuevo campo transformado siga respetando la condición \textit{gauge} de Lorenz}
+
+\begin{equation}
+	\partial_{\mu}A'^{\mu} = 0,
+\end{equation}
+
+\justify{donde se ha tenido en cuenta $k_{mu}$ es un vector nulo. Como consecuencia, esta elección de $\xi$ permite que la transformación mantenga los resultados \eqref{eq:Spin1massless:Condition1} y \eqref{eq:Spin1massless:Condition2}.}
+
+\justify{Si Volvemos a tomar el desplazamiento del campo únicamente bajo la última coordenada espacial, la amplitud de $A'_{\mu}$ presenta la forma}
+
+\begin{equation}
+	(C'_{\mu}) = \left( - (C_{3} + kU), \; C_{1},\;  C_{2},\;   C_{3} + kU \right),
+\end{equation}
+
+\justify{perdiendo nuevamente un grado de libertad, en nuestro caso asociado a la componente temporal. El escoger la dirección de traslación del campo, junto con los resultados sobre las ondas relativistas, presenta el mismo resultado que el esperado en la Ec. \eqref{eq:spin1massless:A-1}: la componente temporal se queda anclada al última componente espacial, el campo pierde esa libre configuración y pasan a estar ligado.}
+
+\justify{La novedad de este nuevo caso repercute en que ahora se puede hacer uso del \textit{gauge}. Este nuevo planteamiento cambia cómo se configura las componente co-dependientes de $A'_{\mu}$, la última componente no depende únicamente de la amplitud $C_{3}$, depende del $U$ que aun no se ha definido. La tentación es clara, relacionarla con la amplitud de la última componente espacial}
+
+\begin{equation}
+	U = - k^{-1} C_{3}
+	\hspace{5mm} \Longrightarrow \hspace{5mm}
+	(C'_{\mu}) = \left( 0, \; C_{1},\;  C_{2},\;  0\right),
+\end{equation}
+
+\justify{y así eliminar dos componentes de $A'_{\mu}$. Finalmente, tenemos una muestra visual de que los grados de libertad del campo $A'_{\mu}$ son dos, resultado estudiado en la sección \ref{Spin1massless:DOF} y predicho en la Sec. \ref{introduction:WignerClassification}. Además, gracias a este desarrollo se observa que las componentes del campo que se conservan son las perpendiculares al vector de onda, en nuestro caso en particular: perpendiculares a la tercera componente espacial.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Helicidides del campo de spin-1.}}
+%#####################################################################################################
+
+\justify{Queda comprobar que efectivamente las componentes del campo $A'_{\mu}$ asociadas a los grados de libertad también son las que presentan las helicidades $\pm 1$. La visualización de estos spins viene dado por la aplicación de una rotación al campo bajo el grupo de transformaciones de Lorentz. Si la transformación de campo al rotar presenta la forma}
+
+\begin{equation}
+	A''_{\mu} = (\Lambda^{-1})^{\nu}_{\hspace{2mm}\mu} A'_{\nu} \equiv e^{ih\theta} A'_{\mu},
+\end{equation}
+
+\justify{se puede afirmar que el campo presenta spin, donde $\theta$ se define como el ángulo de rotación y $h$ es la helicidad de cada una de las componente del campo.}
+
+\justify{El generador infinitesimal del grupo de Lorentz se suele expresar con la letra $\Lambda^{\nu}_{\hspace{2mm}\mu} $. Retomando el caso que nos atañe, para el caso de una rotación de un ángulo $\theta$ sobre el plano $x_{1}x_{2}$ el tensor de transformación se expresa como} 
+
+\begin{equation} \label{eq:spin1massless:rotation}
+	(\Lambda^{-1})^{\nu}_{\hspace{2mm}\mu} = \begin{pmatrix}
+							1 & 0 & 0 & 0  \\
+							0 & \cos{\left(\theta\right)} & -\sin{\left(\theta\right)} & 0 \\
+							0 & \sin{\left(\theta\right)} & \cos{\left(\theta\right)} & 0\\
+							0 & 0 & 0 & 1
+		       			            \end{pmatrix} .
+\end{equation}
+
+\justify{Si se aplica la transformación en las componentes del campo que no presentan los grados de libertad podemos observar que resultan invariantes bajo esta transformación}
+
+\begin{equation}
+	C''_{0} = C'_{0}, \hspace{5mm}
+	C''_{3} = C'_{3},
+\end{equation}
+
+\justify{es decir, que la helicidad de ambos es $0$, se trata de los spin-0 de las representaciones del triplete y el singlete. Las otras dos componentes del campo quedan al transformase de la siguiente forma}
+
+\begin{align} \label{eq:spin1massless:secondtrans}
+	C''_{1} &=  C'_{1}\cos{\left(\theta\right)} - C'_{2}\sin{\left(\theta\right)}, \\
+	C''_{2} &=  C'_{1}\sin{\left(\theta\right)} + C'_{2}\cos{\left(\theta\right)},
+\end{align}
+
+\justify{a primera vista no se aprecia qué helicidad de cada una de las componentes, pero se pueden redefinir unas nuevas componentes del campo $A'_{\mu}$}
+
+\begin{align} \label{eq:spin1massless:cambiobase}
+	C'_{R} &= \frac{1}{\sqrt{2}} \left( C'_{1} + iC'_{2} \right) 
+	\hspace{17mm}
+	C''_{R} = \frac{1}{\sqrt{2}} \left( C''_{1} + iC''_{2} \right) = e^{i\theta} C'_{R} \nonumber
+	\\ &\hspace{32mm} \iff  \nonumber \\
+	C'_{L} &= \frac{1}{\sqrt{2}} \left( C'_{1} - iC'_{2} \right) 
+	\hspace{17mm}
+	C''_{L} = \frac{1}{\sqrt{2}} \left( C''_{1} - iC''_{2} \right) = e^{-i\theta} C'_{R},
+\end{align}
+
+\justify{que reflejen las helicidades del sistema, a estas nuevas componentes se les conoce como polarizaciones circulares. Es en esta nueva base sí se aprecia la helicidad de cada una de las componentes, $C'_{R}$ y $C'_{L}$ presentan una helicidad de $1$ y $-1$ respectivamente.}
+
+\justify{El conjunto de las helicidades obtenidas encajan con las esperadas en las representación de spin, lo que permite afirmar que se trata de un campo de spin-1. Además, las helicidades se encuentran distribuidas como predice la Clasificación de Wigner, las componentes con helicidad $\pm1$ se encuentran asociadas a los grados de libertad del sistema.}
+
+\justify{El campo electromagnético no es una excepción de este comportamiento. La helicidad de los fotones se encuentra bien estudiada, y permite distinguir dos subtipos de partícula, fotones levógiros y fotones dextrógiros (para más información \cite{Yang:2020eow}).} 

@@ -1,0 +1,343 @@
+% DUDA: Citar los trabajos en los que me estoy basando. 
+% DUDA: Comentar que efectivamente podríamos haber ido al campo de spin-3 o teorías de alto spin, pero por motivo de la estructurura tensorial que ofrece este campo que lo hemos escogido. 
+% DUDA: Comentar que no es agregar derivadas totales, es aplicar la regla de Leibniz, que esto vale para todos los capítulos. 
+\chapter{Campo de Kalb-Ramond con masa. } \label{Kalb-Ramond-massive}
+
+\justify{En los capítulos siguientes nos enfocaremos en el estudio del campo de Kalb-Ramond, propuesto por Michael Kalb y Pierre Ramond en 1974 en el artículo \cite{Kalb:1974yc}. Este campo desempeña un papel importante en la teoría de cuerdas, ya que permite describir de manera consistente un campo de spin-1. Además, su uso en la teoría de cuerdas, por ejemplo el campo de Kalb-Ramond se utiliza para describir las fluctuaciones de las cuerdas en el espacio-tiempo, véase por ejemplo \cite{ortín_2004}.}
+
+\justify{Nuestra motivación para estudiar este campo se basa en su estructura tensorial, ya que el campo de Kalb-Ramond se define como un campo de tensor dos antisimétrico, en contraposición del campo de spin-2 de Fierz-Pauli que es de orden dos pero simétrico. En este capítulo, nos centraremos en el análisis del campo de Kalb-Ramond masivo, estudiaremos la dinámica a través de su lagrangiano. Estudiaremos los grados de libertad, haremos uso de las propiedades propias de los tensores antisimétricos, analizaremos las ecuaciones de movimiento que se derivan de este lagrangiano y así como el dominio de su hamiltoniano. Finalmente, con el objetivo de profundizar en la naturaleza del spin de este campo, comprobaremos el campo de Kalb-Ramond masivo es dual al campo descrito por la acción de Proca.}
+
+%\justify{En estos dos próximos capítulos estudiaremos al campo de Kalb-Ramond, propuesto por Michael Kalb y Pierre Ramond en 1974 en el artículo \cite{Kalb:1974yc}. A diferencia de los capítulos anteriores, la motivación de campo no comienza con la determinación del spin de dicho campo. Se encuentra cogido debido al tipo de tensor que con el que se define. Es decir, en esta ocasión cogeremos un lagrangiano dado por un campo determinado y estudiaremos cuál es el spin de dicho campo.}
+
+%\justify{es un marco teórico para comprender las interacciones entre objetos extendidos unidimensionales, conocidos como cuerdas, en el espacio-tiempo. , permitiendo una mejor comprensión de la dinámica de las cuerdas en el universo.}
+
+%\justify{El campo de Kalb-Ramond, introducido por primera vez en el artículo \cite{Kalb:1974yc} de Michael Kalb y Pierre Ramond (1943 - actualidad), es un marco teórico para entender las interacciones entre objetos extendidos unidimensionales, conocidos como cuerdas, en el espacio-tiempo. }
+
+%\justify{El campo Kalb-Ramond es un campo vectorial en la física de las partículas que se utiliza en la teoría de cuerdas. Se llama así en honor a los físicos Kalb y Ramond, quienes lo propusieron en 1974. El campo Kalb-Ramond  juega un papel importante en la unificación de las fuerzas fundamentales de la naturaleza en la teoría de cuerdas.}
+
+%\justify{El campo de Kalb-Ramond es especialmente importante en la física de las cuerdas, donde se utiliza para describir las fluctuaciones de las cuerdas en el espacio-tiempo. También ha sido estudiado en el contexto de la física de la gravedad y la cosmología, donde se ha propuesto como una posible solución para algunos problemas cosmológicos.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Lagrangiano}
+%#####################################################################################################
+
+\justify{En la introducción de este capítulo, se mencionó que el campo escogido se basa en su estructura tensorial, en lugar de su spin. En contraposición a la descripción simétrica del campo de Fierz-Pauli, definimos el campo de Kalb-Ramond $B_{\mu\nu}$ como un tensor de orden dos y antisimétrico}
+%\justify{Como comentamos la introducción de este capítulo, el campo escogido no se debe al spin que presenta sino a su estructura tensorial. De esta forma definimos el campo de Kalb-Ramond $B_{\mu\nu}$ como un tensor de orden dos y antisimétrico.}
+
+\begin{equation}
+	B_{\mu\nu} = -B_{\nu\mu}.
+\end{equation}
+
+%DUDA: Comentar que a pesar de que se utilice como un campo para el estudio de la teoría de cuerdads, en este caso nos centraremos únicamente en el estudio de M4
+\justify{Además, como en otros modelos, suponemos que este campo vive en una variedad cuatro-dimensional de Minkowski $\left(\mathcal{M}_{4}, \eta \right)$ y que cuya acción debe ser relativista y local. Además, como condición previa para este capítulo, exigimos que el campo sea masivo. Es decir, que su lagrangiano debe presenta una autointeracción del estilo}
+%\justify{Además, como en el resto de modelos, asumiremos que vive en un en una variedad cuatro dimensional de Minkowski, que su acción debe ser relativista y local.}
+%\justify{Como última condición preliminar, para capitulo exigiremos que el campo debe ser masivo. Es decir, el campo presenta una autointeracción del estilo}
+
+\begin{equation}
+	m^{2}B_{\mu\nu}B^{\mu\nu}, 
+\end{equation}
+
+\justify{donde $m$ es la masa no nula del campo. A diferencia de los términos masivos del caso de Fierz-Pauli, definidos inicialmente en la ecuación \eqref{Eq:Spin2Massive:massterms}, el campo de Kalb-Ramond solo presenta un único término relacionado con la masa, debido a que como es antisimétrico, su traza es nula}
+%\justify{a diferencia de los términos masivos del caso de Fierz-Pauli, definidos inicialmente en ecuación \eqref{Eq:Spin2Massive:massterms}, el campo de Kalb-Ramond solo presenta un único término relacionado con la masa, porque como es antisimétrico su traza es nula}
+
+\begin{equation}
+	B = \eta^{\mu\nu}B_{\mu\nu} = B^{\nu}_{\;\;\nu} = 0.
+\end{equation}
+
+\justify{Junto con el término de masa, el lagrangiano propuesto por el campo de Kalb-ramond es de la forma}
+
+\begin{equation} \label{Eq:KRmassive:Lagrangian}
+	\mathcal{L}^{\text{KR}} = \frac{1}{4}\partial_{\mu}B_{\nu\rho}\partial^{\mu}B^{\nu\rho} + \frac{1}{2}\partial_{\mu}B_{\nu\rho}\partial^{\nu}B^{\rho\mu} + \frac{1}{4}m^{2}B_{\mu\nu}B^{\mu\nu}, 
+\end{equation}
+
+\justify{donde el primer prefactor es escogidos en función de la normalización canónica exigida a lo largo de esta tesis, y el resto vienen dados por el artículo original de Kalb y Ramond \cite{Kalb:1974yc}. De esta forma, podemos afirmar que e lagrangiano se encuentra completamente descrito y definido. Se trata de una acción que no deja cabida a la elección de prefactores, ya que se encuentra descrito de tal manera que no aparezcan términos con derivadas temporales de orden dos en descomposiciones del campo del estilo:}
+
+\begin{equation}
+	B_{\mu\nu} = b_{\mu\nu} + \partial_{[\mu}\chi_{\nu]}.
+\end{equation}
+
+\justify{Por tanto, en un principio el lagrangiano se encuentra libre de posibles acciones fantasmales, aunque ya delantamos la importancia del análisis del hamiltoniano para comprobar que nuestro sistema se encuentra libre de inestabilidades de Ostrogradsky. }
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Campo de fuerza $H_{\mu\nu\rho}$}
+%#####################################################################################################
+
+\justify{El campo fundamental de Kalb-Ramond se relaciona con un campo de fuerza $H_{\mu\nu\rho}$, que se define mediante}
+%\justify{Al igual que ocurre con el electromagnetismo, el campo fundamental de Kalb-Ramond se encuentra asociado a un campo de fuerza, en este caso $H_{\mu\nu\rho}$ que se define como}
+
+\begin{equation} \label{Eq:KRmassive:Hdef}
+	H_{\mu\nu\rho} \equiv \partial_{[\mu}B_{\nu\rho]} = 
+	\partial_{\mu}B_{\nu\rho} + \partial_{\rho}B_{\mu\nu} + \partial_{\nu}B_{\rho\mu}.
+\end{equation}
+
+\justify{De esta manera, el lagrangiano de la acción de Kalb-Ramond se puede expresar en términos del campo $H_{\mu\nu\rho}$,}
+%\justify{Por tanto, el lagrangiano de la acción de Kalb-Ramond lo podemos escribir en función del nuevo campo como}
+
+\begin{equation}
+	\mathcal{L}^{\text{KR}} = \frac{1}{12}H_{\mu\nu\rho}H^{\mu\nu\rho} + \frac{1}{4}m^{2}B_{\mu\nu}B^{\mu\nu}.
+\end{equation}
+
+\justify{Debido a que el campo $B_{\mu\nu}$ es antisimétrico, $H_{\mu\nu\rho}$ es completamente antisimétrico, por lo que satisface}
+%\justify{Debido a que el campo es antisimétrico, el campo $H_{\mu\nu\rho}$ también es completamente antisimétrico. Es decir, que satisface la siguiente lista de propiedades}
+
+\begin{align} \label{Eq:KRmassive:Hprop}
+	H_{\mu\nu\rho} = -H_{\mu\rho\nu}, 
+	\hspace{10mm} 
+	H_{\mu\nu\rho} = -H_{\nu\rho\mu}
+	\hspace{10mm} 
+	H_{\mu\nu\rho} = H_{\rho\nu\mu}.
+\end{align}
+
+\justify{Además, como se menciona en el capítulo \ref{Preliminar}, los tensores completamente antisimétricos están asociados a un tensor dual, también antisimétrico, gracias al operador del dual de Hodge (véase el apartado \ref{Intro:Dual}). En este caso, definimos al tensor dual $\bar{H}$ como}
+%\justify{Y además, como describimos en el capítulo \ref{Preliminar}, los tensores completamente antisimétricos vienen asociados a un tensor dual gracias al operador del dual de Hodge (véase el apartado \ref{Intro:Dual}). En esta ocasión definimos al tensor dual $\bar{H}$ de la siguiente forma}
+ 
+\begin{equation} \label{Eq:Hdual}
+	\bar{H}^{\lambda} = \frac{1}{3!} \varepsilon^{\lambda\mu\nu\rho}H_{\mu\nu\rho},  
+\end{equation}
+
+\justify{lo que permite reducir un tensor de orden tres a un vector, tal  y como se ilustra en las clases de equivalencia \eqref{Eq:Intro:ClasesEquivalencias}. Esta equivalencia resulta de crucial importancia para entender el paralelismo entre la teoría de Kalb-Ramond y la acción de Proca. }
+%\justify{reduciendo un tensor de orden tres a un vector, como se mostraba en las clases de equivalencia \eqref{Eq:Intro:ClasesEquivalencias}.}
+
+%DUDA: FALTA COMPLETAR ALGO AQUÍ
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad} \label{KRMassive:GradosLibertad}
+%#####################################################################################################
+
+\justify{En la sección anterior se estableció que el campo de esta teoría se describe mediante un tensor antisimétrico de orden dos en una variedad de dimensión cuatro. El número máximo de grados de libertad asociados a este tipo de tensores es de seis ($D\left(D - 1\right)/2$, con $D = 4$).}
+%\justify{En la sección anterior se definió que el campo de esta teoría se describe mediante un tensor antisimétrico de orden dos en una variedad de dimensión cuatro. El número máximo de grados de libertad asociados a este tipo de tensores es de seis ($D\left(D - 1\right)/2$, con $D = 4$). Sin embargo, el número de grados de libertad físicos es menor, ya que deben cumplirse ciertas condiciones de ligadura para eliminar los grados de libertad extras.}
+%\justify{Como definimos en la sección anterior, el campo de esta teoría se encuentra descrito por un tensor de orden dos antisimétrico en una variedad de dimensión cuatro. El número de grados de libertad asociado a este tipo de tensores es de un máximo de seis ($D\left(D - 1\right)/2$, con $D = 4$).}
+
+\justify{Para el caso de Kalb-Ramond, nos encontramos ante una propiedad hasta ahora no vista de un campo, ya que el spin de Kalb-Ramond varía dependiendo de si se trata de un campo masivo o no. El salto de spin (del inglés, \textit{spin jumping}) del campo de Kalb-Ramond es un fenómeno interesante y novedoso en esta tesis. Esta capacidad de cambiar el spin dependiendo de si el campo presenta masa o no, permite la generación de nuevas soluciones y da pie a la exploración de nuevos fenómenos físicos.}
+%\justify{En este capítulo nos encontramos ante una propiedad del campo, ya que el spin de Kalb-Ramond varía dependiendo de si se trata de un campo masivo  o no. El salto de spin ( del inglés, \textit{spin jumping} ) del campo de Kalb-Ramond es un fenómeno interesante y novedoso en esta tesis. Esta capacidad de cambiar el spin dependiendo de si el campo tiene masa o no, permite la generación de nuevas soluciones y la exploración de nuevos fenómenos físicos.}
+%\justify{En el caso del campo de Kalb-Ramond, su spin varía dependiendo de si tiene masa o no. Esta propiedad se conoce como el salto de spin del campo de Kalb-Ramond en la teoría de cuerdas. En el caso de un campo masivo, su spin es de 1. Ya hemos estudiado este tipo de campos en el caso del lagrangiano de Procas, y sabemos que su número de grados de libertad físicos es de tres, asociados al triplete de spin.}
+%\justify{En cuanto al número de grados de libertad físico, debemos tener en cuenta que las representaciones se deben encontrar en un máximo de 6 grados de libertad. El campo de Kalb-Ramond se caracteriza por tener un distinto spin se caracteriza por tener un distinto spin, dependiendo de si el campo presenta masa o no, a esta propiedad del campo de Kalb-Ramond en teoría de cuerdas se le conoce como el salto de spin  ( del inglés, \textit{spin jumping} del campo de Kalb-Ramond.}
+
+\justify{Para el caso masivo, el campo de Kalb-Ramond se comporta como un campo de spin-1. Este tipo de campos ya lo hemos estudiado en el caso del lagrangiano de Proca en el apartado \ref{seccion:spin1mass:GradosdeLibertad}, y por tanto, conocemos que el número de grados de libertad físicos es de tres asociados a las helicidades del triplete de spin $\{-1, 0, 1\}$.}
+%\justify{Para el caso que nos corresponde, es decir para el caso masivo, este se comporta como un campo de spin-1. Este tipo de campos ya lo hemos estudiado en el caso de lagrangiano de Proca y por tanto, ya conocemos que el número de grado de libertad físico y por tanto ya conocemos que el número de grados de libertad físico debe ser de tres asociados al triplete de spin. }
+
+\justify{En resumen, el número de grados de libertad del tensor es mayor al número de grados de libertad físicos predichos por la clasificación de Wigner. Esto se podría explicar con la existencia de condiciones de ligadura extras que permiten eliminar los grados de libertad extras. En el caso del campo de Kalb-Ramond masivo, estas condiciones son necesarias para garantizar la estabilidad y la coherencia de las soluciones de acuerdo con la bibliografía existente.}
+%\justify{En resumen, el número de grados de libertad del tensor es mayor al número de grados de libertad físicos predichos por la clasificación de Wigner. Esto se podría explicar con la existencia de condiciones de ligadura extras que permitieran eliminar los grados de libertad extras. En el caso del campo de Kalb-Ramond masivo, estas condiciones son necesarias para garantizar la estabilidad y la coherencia de las soluciones, así de encontrarse en de acuerdo con la bibliografía.}
+%\justify{En resumen, entre el número de grados de libertad del tensor y el número esperado por la clasificación de Wigner, deben existir hasta tres condiciones de ligadura para eliminar los tres grados de libertad extras en el campo de Kalb-Ramond masivo.}
+%\justify{A modo de conclusión. Entre el número de grados de Libertad, que presenta el tensor Y el número esperado por la clasificación de Withner, podemos entrever que deben existir hasta tres condiciones de ligadura para eliminar los tres grados de Libertad extras.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Ecuación de movimiento.}
+%#####################################################################################################
+
+\justify{En esta sección, analizaremos la ecuación de movimiento del sistema con el objetivo de obtener una condición que restrinja el campo de Kalb-Ramond. Para ello, primero comenzaremos con la obtención de la ecuación de movimiento a través de  la ecuación de Euler-Lagrange. Variando con respecto al campo fundamental $B_{\mu\nu}$ el lagrangiano y simplificando, obtenemos}
+%\justify{En este sección, como en el resto de los casos masivos, vamos a analizar la ecuación de movimiento de nuestro sistema con el objetivo de obtener alguna condición que restrinja el campo de Kalb-Ramond. Para ello, utilizaremos la ecuación de Euler-Lagrange para obtener la ecuación de movimiento del sistema. Tras variar con respecto al campo fundamental $B_{\mu\nu}$ el lagrangiano y simplificar obtenemos}
+
+\begin{equation}
+	\partial_{\gamma}\partial^{[\gamma}B^{\alpha\beta]} = m^{2}B^{\alpha\beta}, 
+\end{equation}
+
+\justify{o expresado en función del tensor de fuerza}
+
+\begin{equation} \label{Eq:KRmassive:EOMH}
+	\partial_{\gamma}H^{\gamma\alpha\beta} = m^{2}B^{\alpha\beta}.
+\end{equation}
+
+\justify{Esta ecuación de movimiento nos permite entender la cinemática del sistema, pero también la utilizaremos para extraer una condición sobre el campo de Kalb-Ramond. Realizaremos una derivada parcial a ambos lados de la igualdad para llegar a}
+%\justify{La ecuación de movimiento nos permite entender la cinemática del sistema, pero además, la usaremos para extraer una condición sobre el campo de Kalb-Ramond. Así que, como suele ser habitual en este trabajo, realizamos una derivada parcial a ambos lados de la igualdad.}
+
+\begin{equation}
+	0 = \partial_{\alpha}\partial_{\gamma}H^{\gamma\alpha\beta} = m^{2}\partial_{\alpha}B^{\alpha\beta} 
+	\hspace{2mm} \xrightarrow{\forall m} \hspace{2mm} 
+	\partial_{\alpha}B^{\alpha\beta} = 0.
+\end{equation}
+
+\justify{El término de la derecha se elimina trivialmente debido a que el tensor $H_{\mu\nu\rho}$ es completamente antisimétrico. De esta forma, hemos obtenido una condición del tipo condición de Lorenz. Para un campo antisimétrico de orden dos, esta condición restringe un total de tres grados de libertad, ya que desde un principio las componentes del campo relacionadas con la diagonal del tensor se encuentra completamente determinada.}
+%\justify{El término de la derecha se elimina trivialmente porque recordemos qu el tensor $H_{\mu\nu\rho}$ es completamente antisimétrico. De esta forma, hemos obtenido una condición del tipo condición de Lorenz. Para un campo antisimétrico de orden dos, esta condición restringe un total de tres grados de libertad, ya que desde un principio la diagonal del sistema se encuentra completamente determinado.}
+
+\justify{Si aplicamos la condición sobre la ecuación de movimiento del sistema, simplificamos dos de los tres términos que hay en el lado derecho, lo que nos lleva a}
+%\justify{Si uno aplica la condición sobre la ecuación de movimiento del sistema, simplificamos dos de los tres términos que hay en el lado derecho. Por tanto, queda como la siguiente solución}
+
+\begin{equation} \label{Eq:KRmassive:eom}
+	\partial_{\gamma}\partial^{\gamma}B^{\alpha\beta} =  m^{2}B^{\alpha\beta},
+\end{equation}
+
+\justify{es decir, a una ecuación de tipo onda masiva relativista. Esta solución respeta las imposiciones del comienzo del capítulo, ya que es un campo que resulta invariante Lorenz y cuyo acción es local.}
+%\justify{Es decir, una solución de tipo onda masiva relativista. Solución que respeta las imposiciones del comienzo del capítulo, la búsqueda de un campo que resulte invariante Lorenz y que su acción sea local.}
+
+\justify{En este apartado, hemos establecido que el campo en cuestión posee tres grados de libertad, lo que lo convierte en un candidato ideal para ser un campo masivo de spin-1, tal como lo predice la clasificación de Wigner. En la sección \ref{KRmassive:Dualidad}, profundizaremos en un breve análisis para demostrar que el campo de Kalb-Ramond masivo es en realidad dual a un campo de Proca, como el presentado en el capítulo \ref{Spin-1Massive}.}
+%\justify{Por tanto, hemos determinado que efectivamente el campo presenta tres grados de libertad. Lo que le deja como un fiel candidato para ser un campo masivo de spin-1, como predice la clasificación de Wigner. En la sección \ref{KRmassive:Dualidad} haremos un breve desarrollo para mostrar que efectivamente el campo de Kalb-Ramond masivo es dual a un campo de Proca como el analizado en el capítulo \ref{Spin-1Massive}.}
+
+\justify{A lo largo de esta tesis, hemos llevado a cabo un total de tres estudios de campos masivos. En cada uno de ellos, hemos observado que el número de grados de libertad físicos difiere del número de grados de libertad original del campo. Pero, para determinar el total de las restricciones necesarias en cada uno de los casos masivos hemos podido utilizar la ecuación de movimiento.}
+
+\justify{Por tanto, estos resultados dan a entender que la masa es un factor clave en la obtención de restricciones en los campos masivos, ya que presenta una ventaja significativa en comparación con los campos no masivos. No es solo que el número de restricciones necesarias es menor en los campos masivos debido a que la clasificación de Wigner brinda una mayor cantidad de grados de libertad a los casos masivos. Si no que en la ecuación de movimiento nos permite apoyarnos en el término relacionado con la masa para encontrar restricciones sobre el campo.}
+%\justify{A lo largo de este tesis ya hemos realizado un total de tres casos de campos masivos. En todos ellos, el número de grados de libertad físicos ha diferido con respecto al número de grados de libertad que presenta originalmente el campo, y en todos ellos hemos encontrado el número de restricciones mediante la ecuación de movimiento. El término de masa presenta una ventaja para la obtención de restricciones del campo masivo frente al caso no masivo, no solo porque el número de restricciones que se debe encontrar es menor por ser masivo (ya que los campos masivo presentan más grados de libertad que los casos no masivos), si no que además nos podemos apoyar en la ecuación de movimiento para encontrarlos.}
+%DUDA:  Hablar de lo cómodo que resulta extraer condiciones de los casos masivos, como el término de masas nos permite jugar para extraer alguna condición sobre el campo estudiado. 
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Hamiltoniano}
+%#####################################################################################################
+
+\justify{En la sección anterior \ref{KRMassive:GradosLibertad}, analizamos los grados de libertad del lagrangiano de Kalb-Ramond. Sin embargo, no se llevó a cabo un estudio detallado sobre las posibles componentes \textit{ghost} que este lagrangiano podría presentar. Esto es en parte debido a la falta de prefactores abiertos que permitieran realizar una restricción del sistema.}
+%\justify{En esta ocasión, en la sección anterior \ref{KRMassive:GradosLibertad} en la que analizamos los grados de libertad, no se ha llevado a cabo un estudio detallado sobre las posibles componentes \textit{ghosts} que podría ofrecer el lagrangiano. En particular, esto es en parte debido a que al analizar el lagrangiano de Kalb-Ramond, no se han encontrado prefactores abiertos que permitieran realizar una restricción del sistema.}
+
+\justify{A pesar de ello, es crucial destacar que el hamiltoniano debe cumplir con las propiedades exigidas para considerar este sistema físico como un candidato válido para modelar la realidad. En particular, el hamiltoniano debe presentar una cota inferior y, dado que se trata de un sistema libre de interacciones, debe ser definido como positivo. Por lo tanto, es fundamental llevar a cabo un análisis detallado del hamiltoniano del lagrangiano de Kalb-Ramond para verificar si cumple con estas propiedades.}
+%\justify{Sin embargo, es importante destacar que el hamiltoniano debe cumplir con las mismas propiedades exigidas en los casos anteriores para considerar este sistema físico como un candidato válido para modelar la realidad. En particular, el hamiltoniano debe presentar una cota inferior, y dado que se trata de un sistema libre de interacciones, debe ser definido como positivo.}
+% \justify{Por primera vez en esta tesis no hemos realizado un estudio de las posibles componentes \textit{ghosts} que pueda ofrecer el lagrangiano. En este caso, analizando el lagrangiano de Kalb-Ramond, no existen prefactores abiertos que nos permitan hacer una restricción del sistema. En cualquier caso, el hamiltoniano debe cumplicar con las mismas propiedades exigidas para los casos anteriores para tomar este sistema físico como candidato a modelizar la realidada. El hamiltoniano debe presentar una cota inferior, y como se trata de un tema un sistema libre de interacción debe ser definido positivo.}
+ 
+ \justify{Para calcular el campo de Kalb-Ramond, al igual que en el caso de spin-2, definimos un nuevo tensor en la ecuación con el objetivo de facilitar el cálculo del hamiltoniano. De forma análoga al tensor descrito en la ecuación \eqref{Eq:pitensor} del capítulo de Fierz-Pauli masivo, definimos }
+% \justify{Para ello, al igual que con el caso de spin-2, para facilitar el cálculo del hamiltoniano, definimos el siguiente tensor:}
+ 
+\begin{equation} \label{Eq:KRPiTensor}
+	\Pi^{\gamma\alpha\beta} 
+	= \frac{\partial \mathcal{L}^{KR}}{\partial \left( \partial_{\gamma}B_{\alpha\beta} \right)} = 
+	\frac{1}{2}\partial^{[\gamma}B^{\alpha\beta]} 
+	= \frac{1}{2}H^{\gamma\alpha\beta}.
+\end{equation}
+
+\justify{La necesidad de definir un tensor de este estilo se debe a que el desarrollo que empleamos para analizar este hamiltoniano es un proceso análogo al realizado en el campo de spin-2, que a su vez procede de forma similar al caso de spin-1. De esta manera, podemos comprobar que la base obtenida a lo largo de este trabajo resulta útil para la exploración de nuevos campos.}
+%\justify{El desarrollo de este hamiltoniano es un proceso análogo al realizado en el campo de Fierz-Pauli, que a su vez procede de forma análoga al caso de spin-1. De esta forma podemos comprobar que efectivamente la base obtenida a lo largo de este trabajo nos resulta de utilidad para la exploración de nuevos campos.}
+
+\justify{A continuación, expresamos el hamiltoniano como la transformada de Legendre del lagrangiano en la siguiente expresión}
+%\justify{A continuación expresamos el hamiltoniano como la transformada de Legendre del lagrangiano}
+
+\begin{equation}
+	\mathcal{H}^{KR} = \Pi^{0\alpha\beta}\partial_{0}B_{\alpha\beta} - \frac{1}{12}H_{\mu\nu\rho}H^{\mu\nu\rho} - \frac{1}{4}m^{2}B_{\mu\nu}B^{\mu\nu}.
+\end{equation}
+
+\justify{Substituimos el tensor $\Pi^{0\alpha\beta}$ con la ecuación \eqref{Eq:KRPiTensor} y completamos el hamiltoniano para obtener un producto del estilo $\Pi^{0\alpha\beta}\Pi_{0\alpha\beta}$. Por tanto, el hamiltoniano lo encontramos de la forma}
+%\justify{Substituimos el tensor $\Pi^{0\alpha\beta}$ con la ecuación \eqref{Eq:KRPiTensor}, y completamos el hamiltoniano para obtener producto del estilo $\Pi^{0\alpha\beta}\Pi_{0\alpha\beta}$. Por tanto el hamiltoniano es de la forma}
+
+\begin{equation}
+	\mathcal{H}^{KR} = \frac{1}{2}H^{0\alpha\beta}H_{0\alpha\beta} - \frac{1}{2}H^{0\alpha\beta}(\partial_{\beta}B_{0\alpha} - \partial_{\alpha}B_{\beta0}) - \frac{1}{12}H_{\mu\nu\rho}H^{\mu\nu\rho} + \frac{1}{4}m^{2}B_{\mu\nu}B^{\mu\nu}.
+\end{equation}
+
+\justify{Para continuar, hacemos uso de la regla de Leibniz sobre la derivada para poder calcular la derivada parcial en los productos mixtos del tensor $H^{0\alpha\beta}$. Al conjunto de términos relacionados con derivadas totales, los agregamos en el término $\mathcal{H}_{\text{Boundary}}$. Utilizando la ecuación de movimiento \eqref{Eq:KRmassive:EOMH}, obtenemos}
+%\justify{Para continuar, añadimos un conjunto de derivadas totales que nos permitan para la derivada parcial en los productos mixtos al tensor $H^{0\alpha\beta}$. Al conjunto de términos relacionados con derivadas totales los agregamos en el término $\mathcal{H}_{\text{Boundary}}$. Si hacemos uso de la ecuación de movimiento \eqref{Eq:KRmassive:EOMH}, obtemos}
+
+\begin{equation}
+	\mathcal{H}^{KR} = \frac{5}{12}H^{0\alpha\beta}H_{0\alpha\beta} - \frac{1}{12}H_{i\nu\rho}H^{i\nu\rho} + m^{2}B_{\beta0}B^{\beta0} - \frac{1}{4}m^{2}B_{\mu\nu}B^{\mu\nu} + \mathcal{H}_{\text{Boundary}}.
+\end{equation}
+
+\justify{Hacemos una descomposición de los índices entre la componente temporal y la componentes espaciales}
+%\justify{Hacemos una descomposición de los índices entre la componente temporal y la componente espacial}
+
+\begin{equation}
+	\mathcal{H}^{KR} = 
+	 \frac{7}{12}(H^{0ij})^{2} + \frac{1}{12}(H^{ijk})^{2}
+	+ \frac{1}{2}m^{2}B_{i0}B^{i0} - \frac{1}{4}m^{2}B_{ij}B^{ij} 
+	+ \mathcal{H}_{\text{Boundary}}.
+\end{equation}
+
+\justify{Y, para comprobar que el hamiltoniano es positivo, hacemos uso de las equivalencias}
+%\justify{Para comprobar que efectivamente el hamiltoniano es positivo, realizamos las siguientes equivalencias}
+
+\begin{align}
+	(H_{0ij})^{2} &= (\partial_{0}B_{ij})^{2} + 2(\partial_{i}B_{j0})^{2} + (\partial_{0}B_{i0})^{2}, \\
+	(H_{ijk})^{2} &= 3(\partial_{i}B_{jk})^{2} + 6(\partial_{0}B_{i0})^{2}, \\
+	m^{2}B_{i0}B^{i0} &= (\partial_{0}B_{i0})^{2} - (\partial_{j}B_{i0})^{2}, \\
+	m^{2}B_{ij}B^{ij} &= (\partial_{k}B_{ij})^{2} - (\partial_{0}B_{ij})^{2}. \\
+\end{align}
+
+\justify{En todas las equivalencias se han omitido los términos de derivadas total, y se integran el término $\mathcal{H}_{\text{Boundary}}$ del hamiltoniano. Finalmente, comprobamos que el hamiltoniano \textit{on shell} se encuentra positivo}
+
+\begin{equation}
+	\mathcal{H}^{KR} = 
+	 \frac{5}{6}(\partial_{0}B_{ij})^{2} 
+	 + \frac{2}{3}(\partial_{i}B_{j0})^{2} 
+	 + \frac{19}{12}(\partial_{0}B_{i0})^{2}
+	+ \mathcal{H}_{\text{Boundary}}.
+\end{equation}
+
+\justify{Gracias a este resultado, podemos afirmar que el sistema se encuentra libre de inestabilidades de Ostro-\hspace{4mm}gradsky. Y en realidad, es importante destacarlo porque se trata del primer campo estudiado que se encuentra desligado de las interacciones fundamentales del Modelo Estándar, o de la Relatividad General. El hecho de que el campo se encuentre libre de este tipo de inestabilidades es esencial para su consideración como candidato para un campo físico. Recordemos, que estas inestabilidades son un problema común en los sistemas hamiltonianos con más de un grado de libertad y pueden llevar a comportamientos no deseados en el sistema.}
+%\justify{De esta forma podemos afirmar que el sistema se encuentra libre de inestabilidades de Ostrogradsky. Es decir, el campo de Kalb-Ramond no presenta comportamiento de tipo \textit{ghost}.}
+
+\justify{Por tanto, podemos confirmar que efectivamente el campo de Kalb-Ramond cumple con las expectativas teóricas para considerarlo como un candidato a un posible campo físico. Se trata de un campo que se encuentra dentro del marco de la relatividad y cuya acción es local, como observamos en su ecuación de movimiento (\ref{Eq:KRmassive:eom}). Además, podemos afirmar que presenta un número de grados de libertad reducidos, equivalente a un campo de spin-1, como indicaba la bibliografía. También, podemos afirmar que no presenta inestabilidades de Ostrogradsky y que su energía se encuentra acotada inferiormente y positiva para cualquier valor del campo $B_{\mu\nu}$.}
+%\justify{Por tanto, podemos confirmar que efectivamente el campo de Kalb-Ramond cumple con las expectativas teóricas para considerarlo como un candidato a un posible campo físico. Efectivamente se trata de un campo que se encuentra dentro del marco de la relatividad y que cuya acción es local, como observamos en su ecuación de movimiento \eqref{Eq:KRmassive:eom}. También, podemos afirmar que presenta un número de grados de libertad reducidos, equivalente a un campo de spin-1, como indicaba la bibliografía. Y además, que no presenta inestabilidades de Ostrogradsky, que su energía se encuentra acotada inferiormente y positiva para cualquier valor del campo $B_{\mu\nu}$.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Dualidad.} \label{KRmassive:Dualidad}
+%#####################################################################################################
+
+\justify{Para concluir con este capítulo, dedicaremos una sección a la verificación del campo de Kalb-Ramond $B_{\mu\nu}$ como un dual del campo de spin-1 masivo analizado en el capítulo \ref{Spin-1Massive}. Con esto, buscamos mostrar desde un nuevo punto de vista la naturaleza del spin del campo de Kalb-Ramond masivo. Para este desarrollo nos basaremos en el trabajo de Lavinia Heisenberg y Georg Trenkler en \cite{Heisenberg:2019akx}.}
+%\justify{Para concluir con el capítulo, dedicaremos una sección a la comprobación del campo de Kalb-Ramond $B_{\mu\nu}$ como un dual del campo de spin-1 masivo. Poniendo en manifiesto la naturaleza del spin del campo de Kalb-Ramond masivo. Para el desarrollo de esta sección nos basamos en el trabajo de Lavinia Heisenberg y Georg Trenkler en \cite{Heisenberg:2019akx,}.}
+
+\justify{Para esta demostración, proponemos un nuevo lagrangiano para el campo $H_{\mu\nu\rho}$ y el campo antisimétrico $B_{\mu\nu}$, ambos totalmente independientes entre ellos. El lagrangiano que proponemos es definido como}
+%\justify{Para esta demostración tomamos un nuevo lagrangiano del campo, un lagrangiano que en la capa de masa resulte equivalente a nuestro lagrangiano \eqref{Eq:KRmassive:Lagrangian}. El lagrangiano que proponemos es}
+
+\begin{equation}
+	\mathcal{L}^{KR}_{\text{Dual}} \left(H_{\mu\nu\rho}, B_{\mu\nu}\right) = 
+	-\frac{1}{12}H_{\mu\nu\rho}H^{\mu\nu\rho}  
+	- \frac{1}{4}m^{2}B_{\mu\nu}B^{\mu\nu} 
+	+ \frac{1}{6}H_{\mu\nu\rho}\partial^{[\mu}B^{\nu\rho]}.
+\end{equation}
+
+\justify{Con este lagrangiano buscamos un sistema físico que resulte equivalente al que describe nuestro lagrangiano \eqref{Eq:KRmassive:Lagrangian} en la capa de masa. Si estudiamos la variación de ambos campos obtenemos las dos siguientes relaciones}
+
+\begin{align}
+	H_{\gamma\alpha\beta} &= \partial_{[\gamma}B_{\alpha\beta]}, \label{Eq:DualEom1} \\
+	\partial_{\gamma}H^{\gamma\alpha\beta} & = m^{2}B^{\alpha\beta} \label{Eq:DualEom2}.
+\end{align}
+
+\justify{La primera solución relaciona al campo de Kalb-Ramond con $H_{\mu\nu\rho}$ como el tensor de fuerza descrito en \eqref{Eq:KRmassive:Hdef}. La segunda solución es la ecuación de movimiento \eqref{Eq:KRmassive:EOMH}. Al juntar estas dos soluciones, obtenemos}
+%\justify{La primera solución relaciona al campo de Kalb-ramond con $H_{\mu\nu\rho}$ como el tensor de fuerza que describimos al comienzo del capítulo \eqref{Eq:KRmassive:Hdef}. Y el segundo es la ecuación de movimiento descrito en la ecuación \eqref{Eq:KRmassive:EOMH}. Si juntamos las dos soluciones obtenemos}
+
+\begin{align}
+	\partial_{\gamma}\partial^{[\gamma}B^{\alpha\beta]} = m^{2}B^{\alpha\beta},
+\end{align}
+
+\justify{que es la ecuación de movimiento original del lagrangiano del sistema. Por lo tanto, podemos afirmar que este sistema se comporta de forma equivalente al lagrangiano original \textit{on shell}. Al reemplazar las ecuaciones \eqref{Eq:DualEom1} y \eqref{Eq:DualEom2} en el lagrangiano propuesto en esta sección dejamos al lagrangiano como}
+%\justify{que es la ecuación de movimiento original del lagrangiano de nuestro sistema original. Por tanto, podemos afirmar que este sistema se comporta \textit{on shell} de forma equivalente al lagrangiano de nuestro sistema. Si volvemos a tomar las ecuaciones \eqref{Eq:DualEom1} y \eqref{Eq:DualEom2} y las substituimos en el lagrangiano propuesto en esta sección obtenemos}
+
+\begin{equation}
+	\mathcal{L}^{KR}_{\text{Dual}} \left(H_{\mu\nu\rho} \right) = 
+	\frac{1}{12}H_{\mu\nu\rho}H^{\mu\nu\rho} - 
+	\frac{1}{4m^{2}}\partial_{\mu}H^{\mu\nu\rho}\partial^{\gamma} H_{\gamma\nu\rho}.
+\end{equation}
+
+\justify{Se trata de un lagrangiano que ahora se expresa únicamente en función del tensor $H_{\mu\nu\rho}$. Dado que este tensor es completamente antisimétrico, podemos hacer uso de su campo dual $\bar{H}_{\mu}$ definido en la ecuación \eqref{Eq:Hdual}}
+%\justify{un lagrangiano que ahora se expresa únicamente en función del tensor $H_{\mu\nu\rho}$, como se trata de un tensor completamente antisimétrico podemos hacer uso de su campo dual $\bar{H}_{\mu}$ definido en la ecuación \eqref{Eq:Hdual},}
+
+\begin{equation} 
+	\bar{H}^{\lambda} = \frac{1}{3!} \varepsilon^{\lambda\mu\nu\rho}H_{\mu\nu\rho} 
+	\iff
+	H^{\mu\nu\rho} = \varepsilon^{\mu\nu\rho\lambda}\bar{H}_{\lambda},
+\end{equation}
+
+\justify{para reexpresar el lagrangiano y que quede de la forma}
+
+\begin{equation}
+	\mathcal{L}^{KR}_{\text{Dual}} \left( \bar{H}_{\mu} \right) = 
+	\frac{1}{12}\varepsilon^{\mu\nu\rho\lambda}\varepsilon_{\mu\nu\rho\gamma}\bar{H}_{\lambda}\bar{H}^{\gamma} - \frac{1}{4m^{2}}\varepsilon^{\mu\nu\rho\lambda}\varepsilon_{\gamma\nu\rho\delta} \partial_{\mu}\bar{H}_{\lambda}\partial^{\gamma}\bar{H}^{\delta}.
+\end{equation}
+
+\justify{Finalmente, haciendo uso de las propiedades del tensor de Levi-Civita, obtenemos
+%&\justify{Hacemos uso de las propiedades del tensor de Levi-Civita y obtemos}
+
+\begin{equation}
+	\mathcal{L}^{KR}_{\text{Dual}} \left( \bar{H}_{\mu} \right) = 
+	\frac{1}{6}\bar{H}_{\mu}\bar{H}^{\mu} - 
+	\frac{1}{m^{2}}\left(\partial_{\mu}\bar{H}_{\nu}\partial^{\mu}\bar{H}^{\nu} - \partial_{\mu}\bar{H}_{\nu}\partial^{\nu}\bar{H}^{\mu} \right).
+\end{equation}
+
+\justify{En este punto ya podemos observar la equivalencia con el lagrangiano de Proca. Pero para finalizar, si reajustamos el campo y reexpresamos el término de masa podemos obtener que efectivamente Kalb-Ramond es dual al lagrangiano de Proca}
+
+\begin{align}
+	A _{\mu} &= \frac{1}{m\sqrt{2}}\, \bar{H}_{\mu} \\
+	\mathcal{L}^{KR}_{\text{Dual}} \left( A_{\mu} \right) &= 
+	M^{2} A_{\mu}A^{\mu} - 
+	\frac{1}{2}\left(\partial_{\mu}A_{\nu}\partial^{\mu}A^{\nu} - \partial_{\mu}A_{\nu}\partial^{\nu}A^{\mu} \right) = 
+	\mathcal{L}^{\text{ spin}-1}_{\;m}, 
+\end{align}
+
+\justify{donde $M = \frac{m}{\sqrt{3}}$. De esta forma podemos confirmar que el campo de Kalb-Ramond masivo es dual a un campo de spin-1 masivo como el campo de Proca.}
+
+
+\justify{Por tanto, damos por concluido este primer análisis del campo de Kalb-Ramond masivo. A lo largo de este capítulo, se ha calculado sus grados de libertad, expresado su ecuación de movimiento y estudiado su hamiltoniano. Se ha comprobado que la ecuación de movimiento es local y relativista, y que el hamiltoniano presenta un límite inferior, lo que lo hace libre de inestabilidades de Ostrogradsky. Además, se ha demostrado cómo este campo se comporta de forma dual a un campo de spin-1 masivo, lo que representa un importante avance en la comprensión del uso de las dualidades en las teorías de campos de spin.}
+
+\justify{El campo de Kalb-Ramond es un campo interesante debido a sus propiedades relacionadas con la antisimetría de su tensor. Al analizarlo, hemos podido observar que existe la posibilidad de describir un campo de spin-1 a través de un tensor de orden dos, al menos en el caso masivo. Este estudio resulta fundamental para poder entender posibles descripciones de candidatas a nuevas partículas o incluso a cuerdas, que puedan ser descritas por este tipo de modelos.}
+%\justify{Por tanto, damos por concluido este primer análisis del campo de Kalb-Ramond masivo, hemos calculado sus grados de libertad, expresado su ecuación de movimiento y estudiado su hamiltoniano. Hemos comprobado que efectivamente su ecuación de movimiento es local y relativista, y que el hamiltoniano presenta un límite inferior, lo que confirma que se encuentra libre de inestabilidades de Ostrogradsky. Finalmente hemos comprobado como este campo se comporta de forma dual a un campo de spin-1 masivo, dando el primer paso para entender el uso de las dualidades en las teorías de campos de spin. El campo de Kalb-Ramond es un campo curioso por sus propiedades relacionadas con la antisimetría de su tensor. Con él hemos podido observar como describir un campo de spin-1 a través de un tensor de orden dos, al menos para el caso masivo. Este estudio nos permitirá entender descripciones de nuevas partículas, o incluso de cuerdas, que vengan descritos por este tipo de modelos.}
+
+\justify{En el siguiente capítulo, se procederá a analizar el modelo no masivo del campo de Kalb-Ramond. Se realizará el mismo estudio realizado para el resto de campos no masivos, y se comprobará que el spin de la siguiente teoría no coincide con el spin del caso masivo del Kalb-Ramond, dando lugar a una diferencia entre los casos masivos y no masivos del mismo campo.}
+%\justify{En el capítulo siguiente procederemos a analizar el modelo no masivo. Haremos el mismo estudio realizado para el resto de campos no masivos, y comprobaremos que el spin de la siguiente teoría no concuerda con el caso del Kalb-Ramond masivo. Dando lugar a una diferencia de spin entre los casos masivos y no masivos del mismo campo.}

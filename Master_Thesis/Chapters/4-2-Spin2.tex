@@ -1,0 +1,473 @@
+%DUDA: Hablar del gap que hay entre el caso masivo y no masivo. 
+
+\chapter{Campo de spin-2 sin masa. } \label{spin-2Sinmasa}
+
+\justify{En este capítulo, se realizar el segundo caso del campo de spin-2, el caso no masivo. Este tipo de teoría ha sido objeto de gran interés debido a su relación con la gravedad. A pesar de la falta de evidencias empíricas, las motivaciones físicas resultan suficientes para estudiar el caso sin masa del campo de spin-2.}
+
+\justify{El hecho más relevante para estudiar este campo es que el espacio-tiempo que describe Einstein se comporta en el régimen lineal como si fuera un campo de spin-2 no masivo \cite{Wald:1984rg, JanssenBook}. Este hallazgo motiva a los físicos teóricos a investigar y trabajar en torno al paradigma del campo de spin-2, con el objetivo de encontrar resultados que permitan avanzar en el entendimiento de la gravedad. Por ejemplo, el campo de spin-2 se emplea en gravedad modificada, como podría ser \textit{bigravity} \cite{Schmidt-May:2015vnx}, o en aproximaciones cuánticas, como puede ser la cuantización canónica \cite{Salimkhani:2020kdn, Wellmann:2001sx, Gupta_1952}. También permite estudiar a la relatividad general en regímenes de campo débil, como por ejemplo con las ondas gravitatorias \cite{Edmund:2000, Dirkes:2018nkq}.}
+
+\justify{En este estudio, se presenta un análisis detallado de la teoría del campo de spin-2 no masivo, junto con una sección final en la que se analizan las propiedades de cada una de las componentes del campo. Para llevar a cabo este análisis, nos basaremos en los resultados obtenidos en el capítulos previo, que trata el caso de masa finita del campo de spin-2.}
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Lagrangiano}
+%#####################################################################################################
+
+\justify{Este capítulo nos basamos en el mismo campo que para el caso masivo, un campo que pueda ser descrito por un tensor simétrico de orden 2, $h_{\mu\nu}$, y que presente un spin-2 y sin masa. Con la base de que este campo reside en un espacio-tiempo de 4 dimensiones y que su acción debe local y relativista. De esta forma, llegamos a la conclusión de que el lagrangiano más general para estas características es}
+
+\begin{equation} \label{eq:spin2massless:Lagrangiano}
+	\mathcal{L}^{\text{ spin}-2} = \frac{1}{4} \partial_{\mu} h_{\nu\rho}\, \partial^{\mu}h^{\nu\rho} + 
+						    \lambda_{2}\, \partial_{\mu} h_{\nu\rho}\, \partial^{\nu}h^{\rho\mu} +
+						    \lambda_{3}\, \partial_{\mu} h\, \partial_{\rho}\, h^{\mu\rho} +
+						    \lambda_{4}\, \partial_{\mu} h\, \partial^{\mu}h,
+\end{equation}
+
+\justify{donde $h = \eta^{\mu\nu}h_{\mu\nu}$ y el prefactor $\frac{1}{4}$ del primer sumando procede de la imposición de la normalización canónica sobre el lagrangiano.}
+
+\justify{Los términos del lagrangiano presentado en este estudio coinciden con la parte dinámica del lagrangiano del campo de spin-2 con masa, mostrado en la ecuación \eqref{eq:spin2mass:Lagrangiano}. Por lo tanto, utilizaremos los resultados obtenidos en el capítulo anterior, específicamente en lo relacioando a la búsqueda de las posibles partículas fantasma de la sección \ref{apartado:spin2mass:ghostelimiantion}. En el estudio que realizamos en el capítulo anterior, comprobamos que resultado crucial realizar un ajuste preciso en los prefactores para evitar inestabilidades de Ostrogradsky en el sistema. Por ello, debemos cumplir la condición \eqref{Eq:Spin2massive:lambdaconditions}}
+%\justify{Los términos de este lagrangiano coinciden con la parte dinámica del lagrangiano \eqref{eq:spin2mass:Lagrangiano} del campo de spin-2 con masa. Por tanto, haremos uso del estudio realizado en el capítulo anterio, más en concreto en el análisis en la búsqueda de posibles $\ghosts}. De la sección \ref{apartado:spin2mass:ghostelimiantion} sabemos que hay que hacer un ajuste fino sobre los prefactores para evitar que el sistema sufra de inestabilidades de Ostrogradsky. Por ello debemos hacer uso de la condición \eqref{Eq:Spin2massive:lambdaconditions} y tomar}
+
+\begin{equation}
+	\lambda_{2} = -\frac{1}{2}, \hspace{4mm} \lambda_{3} = \frac{1}{2}, \hspace{4mm} \lambda_{4} = -\frac{1}{4},
+\end{equation}
+
+\justify{y substituirlos en nuestro lagrangiano}
+
+\begin{equation} \label{eq:spin2massless:Lagrangiano}
+	\mathcal{L}^{\text{ spin}-2} = \frac{1}{4} \partial_{\mu} h_{\nu\rho}\, \partial^{\mu}h^{\nu\rho}  
+						    -\frac{1}{2}\, \partial_{\mu} h_{\nu\rho}\, \partial^{\nu}h^{\rho\mu} +
+						    \frac{1}{2}\, \partial_{\mu} h\, \partial_{\rho}\, h^{\mu\rho} 
+						    -\frac{1}{4}\, \partial_{\mu} h\, \partial^{\mu}h.
+\end{equation}
+
+\justify{El lagrangiano de Fierz-Pauli es el único lagrangiano libre de términos que no permiten la existencia de campos fantasmales para un campo $h_{\mu\nu}$. Este lagrangiano fue presentado originalmente por Fierz y Pauli en su artículo \cite{Fierz:1939ix}, por ello se le denomina como acción de Fierz-Pauli. Para un análisis más general del mismo, se recomienda revisar el artículo de Van Nieuwenhuizen \cite{VanNieuwenhuizen:1973fi}.}
+%\justify{Este lagrangiano se trata del único lagrangiano se encuentra libre de términos que permitan la existencia de campos fantasmales para un campo $h_{\mu\nu}$. Se le conoce acción de Fierz-Pauli, los autores del artículo artículo original en el que aparece este lagrangiano \cite{Fierz:1939ix}. Para un análisis más general del lagrangiano se recomienda el artículo \cite{VanNieuwenhuizen:1973fi}.} 
+
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Grados de Libertad.} \label{Sec:spin2massless:Grados}
+%#####################################################################################################
+
+\justify{En el apartado anterior, hemos aprovechado las analogías entre los campos sin masa y con masa, así como el entendimiento de los campos de spin-1. Del mismo modo, al calcular los grados de libertad, partimos del campo simétrico $h_{\mu\nu}$, que es el mismo campo que el campo de spin-2 masivo. Por tanto, ya sabemos que presenta un máximo de diez grados de libertad, cuya álgebra de Lorentz asociada en la representación irreducible de $\mathfrak{so}(3)$ es $\left(2\oplus1\oplus0\oplus0\right)$ y cuya representación de los segundos números cuánticos está dada por $\left\{(-2, -1, 0, 1, 2), (-1, 0, 1), (0), (0) \right\}$.}
+%\justify{En el apartado anterior hemos podido aprovecharnos de las analogías de los campos sin masa y con mása, así como del entendimiento de los campos de spin-1. Pasa de igual forma al calcular los grado de libertad, partimos del mismo campo $h_{\mu\nu}$ que el campo masivo, un campo simétrico. Por lo que ya sabemos que presenta un máximo de diez grados de libertad, cuya álgebra de Lorentz asociada en la representación irreducible de $\mathfrak{so},3$ es $\left(2\oplus1\oplus0\oplus\right)$ y que cuya representación de segundos números cuánticos viene dada por $\left\{(-2, -1, 0, 1, 2), (-1, 0, 1), (0), (0) \right\}$}
+
+\justify{El uso de la clasificación de Wigner permite conocer la discrepancia existente entre el número máximo de grados de libertad posibles del campo $h_{\mu\nu}$ y los grados de libertad reales. Como sabemos de la sección \ref{introduction:WignerClassification} y como también ocurre en el campo de spin-1 no masivo, el campo de spin-2 no masivo solo presenta dos grados de libertad, los cuales están asociados a las helicidades $\pm 2$ del quintuplete de spin.}
+%\justify{Conocidos el número máximo de grados de libertad posibles del campo $h_{\mu\nu}$, hacemos uso de la clasificación de Wigner para conocer la discrepancia con la que partimos. Al igual que ocurre con el campo de spin-1, sabemos que el campo de spin-2 no masivo presenta únicamente dos grados de libertad, y además, se tratan de dos grados asociados a las helicidade $\pm 2$ del quintuplete de spin. Por tanto, debemos encontrar hasta ocho restricciones sobre el campo de spin-2 para que coincidan las previsiones con los grados del campo.}
+
+\justify{Por lo tanto, es necesario encontrar hasta ocho restricciones sobre el campo de spin-2 para que las previsiones teóricas coincidan con los grados de libertad del campo observado. Esto se debe a que, en el caso de campos no masivos, se observa que a medida que aumenta el orden del tensor con el que se desea describir el campo, el número de restricciones se incrementa significativamente. Esto se debe a que, para un espacio de dimensión $D$, el número de componentes de un campo de orden $n$ es de $D^{n}$, pero para todos los casos no masivos (exceptuando el caso de spin-0), el número de componentes que deben ser libres son únicamente dos. Es decir, que para dicho campo deben existir $D^{n}-2$ restricciones.}
+%\justify{Por lo tanto, es necesario encontrar hasta ocho restricciones sobre el campo de spin-2 para que las previsiones teóricas coincidan con los grados de libertad del campo observado. Y es que para el caso de campos no masivos podemos observar que a medida que el orden del tensor con el que queremos describir el campo aumente, el número de restricciones se incrementa sustancialmente. Esto se debe a que el número de componentes de un campo de orden n para un espacio de dimensión $D$ presenta $D^{n}$ componentes, pero para todos los casos no masivos (exceptuando el caso de spin-0), el número de componentes que deben ser libres son únicamente dos. Es decir, que para dicho campo deben existir $D^{n}-2$ restricciones.}
+
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Invarianza \textit{gauge.}}
+%#####################################################################################################
+
+\justify{Tal como ocurre con el lagrangiano de Maxwell, el lagrangiano de Fierz-Pauli se encuentra libre de campos fantasmas debido a la selección de prefactores gracias a los lagrangianos estudiados en los correspondientes casos masasivos. De esta forma, en el lagrangiano de Fierz-Pauli no masivo, y en la parte dinámica del lagrangiano de Fierz-Pauli masivo, no aparece el campo $A_{\mu}$ de la descomposición}
+%\justify{El lagrangiano de Fierz-Pauli, al igual que en el caso del lagrangiano de Maxwell, se encuentra libre de campos fantasmas gracias a la incorporación de prefactores del lagrangiano estudiados en los casos masivos correspondientes. Como consecuencia, en el lagrangiano de Fierz-Pauli no masivo y en la parte dinámica del lagrangiano de Fierz-Pauli masivo, no aparece el campo $A_{\mu}$ en la descomposición.}
+%\justify{Al igual que ocurre con el lagrangiano de Maxwell, ya tenemos descrito al lagrangiano de Fierz-Pauli no masivo de tal forma que se encuentra libre de campos fantasmas gracias a las correspondientes casos masivos. Como consecuencia, en el lagrangiano de Fierz-Pauli, y también en la parte dinámica del lagrangiano de Fierz-Pauli masivo, no aparece el campo $A_{\mu}$ de la descomposición}
+
+\begin{equation} \label{eq:Spin2massless:descomposicion}
+	h_{\mu\nu} = \text{h}_{\mu\nu} + \frac{1}{2}\partial_{(\mu}A_{\nu)}.
+\end{equation}
+
+\justify{O lo que es lo mismo, el lagrangiano resulta invariante frente a transformaciones del campo del estilo }
+
+\begin{equation} \label{eq:Spin2massless:Gauge}
+	h_{\mu\nu} \rightarrow h^{'}_{\mu\nu} = h_{\mu\nu}  + \frac{1}{2}\partial_{(\mu}\xi_{\nu)} 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	\mathcal{L}^{\text{ spin}-2}\left( h_{\mu\nu} \right) = \mathcal{L}^{\text{ spin}-2}\left(h^{'}_{\mu\nu}\right). 
+\end{equation}
+
+\justify{Esta invarianza \textit{gauge} del lagrangiano nos permite seleccionar el campo $h_{\mu\nu}$ con el que deseamos trabajar en nuestro sistema físico. La independencia en la elección del campo en esta teoría nos indica que el campo $h_{\mu\nu}$ no es un campo físico medible, sino más bien un campo auxiliar utilizado para realizar los cálculos matemáticos de nuestro modelo. Además, la transformación nos permite fijar hasta un total de cuatro componentes del campo transformado}
+%\justify{Este invarianza \textit{gauge} del lagrangiano permite escoger el campo $h_{\mu\nu}$ con el que queremos trabajar en nuestro sistema físico. El hecho de que no importe el campo a escoger de esta teoría nos aclara que el campo $h_{\mu\nu}$ no es un campo físico, no es medible. Más bién, se trata de un campo auxiliar para realizar los cálculos matemáticos de nuestro modelo. Además, la transformación nos permite fijar hasta un total de cuatro componentes del campo transformado}
+
+\begin{equation}
+	h^{'}_{\mu\nu} = h_{\mu\nu}  + \frac{1}{2}\left(\partial_{(\mu}A_{\nu)} + \partial_{(\mu}\xi_{\nu)}\right) = \text{h}_{\mu\nu} + \frac{1}{2}\partial_{(\mu}A'_{\nu)}.
+\end{equation}
+
+\justify{Las transformaciones de \textit{gauge} permiten vincular hasta cuatro componentes del campo $h_{\mu\nu}$. Es decir, que de los diez grados de libertad originales del tensor simétrico, seis quedan restantes. Lo podemos considerar como si al campo de spin-2 no masivo se le pudiera configurar un campo de spin-1 a elección. Esto se debe a que la invarianza no solo implica que en el lagrangiano aparezca la descomposición $A_{\mu}$, sino que también, gracias a las transformaciones de \textit{gauge}, podemos dar el valor deseado a la nueva descomposición $A'_{\mu}$.}
+%\justify{Estas transformaciones \textit{gauge} que permiten ligar hasta cuatro componentes del campo $h_{\mu\nu}$. Es decir, que de los diez grados de libertad que presentaba originalmente el tensor simétrico, seis quedan restantes. Podríamos considerar que al campo de spin-2 no masivo le podemos configurar un campo de spin-1 a elección. Esto se debe a que la invarianza no solo implica que en el lagrangiano no solo aparezca la descomposición $A_{\mu}$, si no gracias a la transformación \textit{gauge} podemos dar el valor que deseemos a la nueva descomposición $A'_{\mu}$.}
+
+\justify{De esta forma concluimos que la invarianza \textit{gauge} del campo de spin-2 es esencial para el estudio del campo de spin-2 no masivo. Esta propiedad de independencia del campo con respecto a las transformaciones de tipo \textit{gauge} nos permite reducir el número de grados de libertad totales del campo $h_{\mu\nu}$ a seis.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Ecuación de movimiento y Elección del \textit{gauge}.} \label{Spin1massless:DOF:EOM}
+%DUDA: Si se asocia el lagrangiano a una carga, si se conserva la carga aparece la simetría gauge -> Teorema de Noether. (Hacer esto también a los spins 2 y kalb-ramond
+%#####################################################################################################
+
+\justify{En los capítulos previos, hemos demostrado mediante el uso de la ecuación de movimiento que es posible obtener condiciones precisas sobre el campo para los casos masivos. Sin embargo, en el caso del campo de spin-1 no masivo, a pesar de los esfuerzos realizados, no hemos logrado reducir el número de grados de libertad del campo en cuestión.}
+
+\justify{Sin embargo, el conocimiento de la ecuación de movimiento del campo que estamos analizando nos permite tener una mejor comprensión del sistema y una mayor comprensión del campo de spin-2. A través de la solución de la ecuación de movimiento es posible obtener información valiosa sobre las características del campo, como su comportamiento en diferentes condiciones o incluso su interacción con otros campos.}
+
+\justify{De manera similar a como hemos obtenido la ecuación de movimiento del campo de spin-1, para esta ocasión abordaremos la ecuación de movimiento desde un caso distinto al que realizamos con el campo masivo (apartado \ref{Subsection:Spin2Massive:EOM}). En esta ocasión, nos enfocaremos en el estudio de nuestro campo $h_{\mu\nu}$ asociado a una corriente  $T_{\mu\nu}$. En particular, partiremos del lagrangiano más general para un campo de spin-2 no masivo \eqref{eq:spin2massless:Lagrangiano} como base para analizar la dinámica del campo}
+%\justify{En los capítulos anteriores, hemos comprobado que a partir de la ecuación de movimiento se han podido extraer condiciones sobre el campo para los casos masivos. Sin embargo, en el caso del spin-1 no masivo no se ha podido aplicar esta misma técnica.}
+%\justify{La invarianza \textit{gauge} del campo de spin-2 resulta crucial para el estudio del campo de spin-2 no masivo y nos ha permitido restringir el número de grados de libertad total del campo $h_{\mu\nu}$. En los casos de los capítulos anteriores hemos comprobado que a partir de la ecuación de movimiento se ha podido extraer condiciones sobre el campo para los casos masivos, pero el caso del spin-1 no masivo no fue cuenta de ello.}
+
+%\justify{En cualquier caso, el conocer la ecuación de movimiento del campo que queremos analizar nos permite tener un mejor entendimiento del sistema, y nos permite tener una mayor comprensión del campo de spin-2. All igual que hacemos con la ecuación de movimiento del campo de spin-1 haremos un ejercicio distinto al realizado con el campo masivo. Tomaremos el lagrangiano general \eqref{eq:spin2massless:Lagrangiano} y lo asociamos a una corriente física $T_{\mu\nu}$. De esta forma, el lagrangiano del sistema viene dado por}
+
+\begin{equation}
+\mathcal{L}^{\text{ spin}-2} = 
+\frac{1}{4} \partial_{\mu} h_{\nu\rho}\, \partial^{\mu}h^{\nu\rho} + 
+						    \lambda_{2}\, \partial_{\mu} h_{\nu\rho}\, \partial^{\nu}h^{\rho\mu} +
+						    \lambda_{3}\, \partial_{\mu} h\, \partial_{\rho}\, h^{\mu\rho} +
+						    \lambda_{4}\, \partial_{\mu} h\, \partial^{\mu}h,
+- h_{\mu\nu}T^{\mu\nu}.
+\end{equation}
+
+\justify{Debido a lo conocido por la relatividad general, en el marco de la gravedad cuántica se considera el tensor de energía-momento canónico como la corriente física asociada al campo $h_{\mu\nu}$. Este tensor juega un papel fundamental en la descripción de la dinámica de los campos interactuantes y en la distribución de energía y momento en un sistema físico \footnote{En este ejercicio consideramos a la corriente $T_{\mu\nu}$ como una corriente independiente del campo $h_{\mu\nu}$. Por lo tanto, se asume que es constante frente a las variaciones del campo. Sin embargo, si tomáramos en cuenta que $T_{\mu\nu}$ es el tensor  $\hspace{2mm}$energía-momento del sistema, tendríamos que tener en cuenta que el campo $h_{\mu\nu}$ contribuiría al mismo. Como resultado, la ecuación de movimiento sería distinta. Para profundizar más leer \cite{JanssenBook} capítulo 26.}. Obtenemos la ecuación de movimiento de este nuevo sistema a partir de la ecuación de Euler-Lagrange para obtener}
+%\justify{En el contexto de la gravedad cuántica se suele asumir que es el tensor de energía-momento canónico la corriente física asociada al campo $h_{\mu\nu}$. Esta corriente es responsable de describir la energía, el momento y la cantidad de movimiento de los campos interactuantes. Obtenemos la ecuación de movimiento de este nuevo sistema a partir de la ecuación de Euler-Lagrange para obtener}
+
+\begin{equation} \label{eq:Spin2massless:Eom}
+	\frac{1}{2}\partial_{\gamma}\partial^{\gamma} h^{\alpha\beta} + 
+	 \lambda_{2} \, \partial_{\gamma}\partial^{(\alpha}h^{\beta)\gamma} +
+	 \lambda_{3} \, \left( \eta^{\alpha\beta} \, \partial_{\gamma}\partial_{\rho}h^{\gamma\rho} + \partial^{\alpha}\partial^{\beta} h \right) +
+   	 2 \lambda_{4} \, \eta^{\alpha\beta} \partial_{\gamma}\partial^{\gamma} h = -T^{\alpha\beta}.
+\end{equation}
+
+\vspace{5mm}
+
+\justify{Si asumimos que la corriente se conserva mediante la ecuación $\partial_{\mu}T^{\mu\nu} = 0$, podremos observar que aparecen las condiciones que originan la simetría del lagrangiano con respecto al campo $h_{\mu\nu}$. Al aplicar la derivada a ambos lados de la ecuación, y luego simplificar, llegamos a la condición deseada}
+%\justify{Si asumimos que la corriente se conserva $\partial_{\mu}T^{\mu\nu} = 0$ podremos observar que aparecen las condiciones que original la simetría del lagrangiano con respecto al campo $h_{\mu\nu}$. Aplicamos la derivada a ambos lados de la ecuación, tras simplificar llegamos a la condición}
+
+\begin{equation} \label{eq:Spin2massless:condicion}
+	 \left( \frac{1}{2} + \lambda_{2} \right) \partial_{\gamma}\partial^{\gamma}\partial_{\alpha}h^{\alpha\beta} + 
+	 \left( \lambda_{2} + \lambda_{3} \right) \partial^{\beta}\partial_{\alpha}\partial_{\gamma}h^{\alpha\gamma} + 
+	 \left( \lambda_{3} + 2\lambda_{4}  \right) \partial_{\alpha}\partial^{\alpha}\partial^{\beta}h = 0  \xrightarrow{\forall h_{\mu\nu}} 
+\end{equation}
+
+\vspace{2mm}
+\begin{equation*}
+	\xrightarrow{\forall h_{\mu\nu}}  \lambda_{2} = -\frac{1}{2}, \hspace{4mm} \lambda_{3} = \frac{1}{2}, \hspace{4mm} \lambda_{4} = -\frac{1}{4}.
+\end{equation*}
+
+\justify{Las condiciones presentadas en este análisis coinciden con las impuestas sobre el lagrangiano de Fierz-Pauli que se mencionaron al inicio del capítulo. Nuevamente, el teorema de Noether demuestra su importancia en la física teórica. La conservación de la corriente física sugiere la existencia de simetrías en el sistema, lo que permite que el lagrangiano sea descrito de manera tal que sea invariante a las transformaciones \textit{gauge} \eqref{eq:Spin2massless:Gauge} discutidas en el apartado anterior.}
+%\justify{Estas condiciones coinciden con las impuestras sobre el lagrangiano de Fierz-Pauli al comienzo del capítulo. Nuevamente observamos como el Teorema de Noether hace presencia. Obligar a que la corriente física se conserve implica que la existencia de simetrías en el sistema, en este caso, permite que el lagrangiano quede descrito de tal forma que sea invariante a las transformaciones comentadas en el apartado anterior.}
+
+\justify{Si sustituimos la condición \eqref{eq:Spin2massless:condicion} sobre la ecuación de movimiento \eqref{eq:Spin2massless:Eom} obtenemos}
+
+\begin{equation} \label{eq:Spin2massless:Eom2}
+	\partial_{\gamma}\partial^{\gamma}h^{\alpha\beta} - \frac{1}{2}\partial_{\gamma}\partial^{(\alpha}h^{\beta)\gamma} +
+	\partial^{\alpha}\partial^{\beta}h + \eta^{\alpha\beta}\left( \partial_{\gamma}\partial_{\rho}h^{\gamma\rho} - \partial_{\gamma}\partial^{\gamma} h\right) = -T^{\alpha\beta},
+\end{equation}
+
+\justify{y la solución sin traza es de la forma}
+
+\begin{equation} \label{eq:Spin2massless:EOM3}
+	\partial_{\gamma}\partial^{\gamma}h^{\alpha\beta} - \frac{1}{2}\partial_{\gamma}\partial^{(\alpha}h^{\beta)\gamma} + \partial^{\alpha}\partial^{\beta}h = -\left(T^{\alpha\beta} - \frac{1}{2}\eta^{\alpha\beta}T^{\gamma}_{\;\;\gamma}\right).
+\end{equation}
+
+\justify{Sin embargo, a pesar de haber utilizado la ecuación de movimiento, no hemos encontrado ninguna restricción que permita simplificar aún más los grados de libertad del campo de spin-2 no masivo. Por lo tanto, proponemos adoptar una condición adicional \textit{ad hoc} que restrinja los cuatro grados de libertad restantes, asegurando que esta restricción no interfiera con las restricciones de la invarianza \textit{gauge} del sistema. Al igual que en el caso del spin-1, existe una variedad de \textit{gauges} disponibles para elegir. Teniendo en cuenta que buscamos una teoría relativista e invariante Lorentz, elegiremos el \textit{gauge} armónico como nuestra opción}
+%\justify{Sin embargo, a partir de la ecuación de movimiento no hemos encontrado ninguna restricción que permite simplificar aún más los grados de libertad del campo de spin-2 no masivo. Por tanto, proponemos tomar una condición extra \textit{ad hoc} que restrinja los cuatro grados de libertad restantes y que no interfieran con las restricciones de la invarianza. Al igual que en el caso de spin-1, existe una variedad de \textit{gauges} a escoger. Teniendo en cuenta que buscamos que la teoría sea relativista e invariante Lorentz, tomaremos el \textit{gauge} armónico}
+
+\begin{equation}\label{eq:Spin2massless:gaugearmonico}
+	\partial_{\mu}h^{\mu\nu} = \frac{1}{2}\partial^{\nu} h.
+\end{equation}
+
+\justify{Se trata de una condición que, al igual que el \textit{gauge} de Lorenz, no determina completamente la invarianza \textit{gauge}. Esta condición, como se verá en la sección de \ref{spin2massless:Helicity}, reduce otros cuatro grados de libertad del campo $h_{\mu\nu}$, dejándole un total de dos grados de libertad, el número esperado por la clasificación de Wigner. Además, permite simplificar aún más la ecuación de movimiento \eqref{eq:Spin2massless:EOM3}. De tal forma que se puede expresar como}
+%\justify{Se trata una condición, que al igual que el \textit{gauge} de Lorenz no determina completamente a la invarianza \textit{gauge}. Además, esta condición, como observaremos en la sección de \ref{spin2massless:Helicity}, reduce otros cuatro los grados de libertad del campo $h_{\mu\nu}$ dejándole un total de dos grados de libertad, el número esperado por la clasificación de Wigner. Además, permite simplificar aún más la ecuación de movimiento \eqref{eq:Spin2massless:EOM3}}
+
+\begin{equation} \label{eq:Spin2massless:EOM3}
+	\partial_{\gamma}\partial^{\gamma}h^{\alpha\beta} = -\left(T^{\alpha\beta} - \frac{1}{2}\eta^{\alpha\beta}T^{\gamma}_{\;\;\gamma}\right),
+\end{equation}
+
+\justify{y la deja como una ecuación de ondas relativista inhomogenea, respetando el comportamiento relativista y local exigido en todos los modelos de esta tesis.}
+
+\justify{En el caso de un sistema sin corriente, la ecuación de movimiento que obtendríamos es de la forma }
+
+\begin{equation} \label{eq:Spin2massless:EOM4}
+	\partial_{\gamma}\partial^{\gamma} h_{\alpha\beta} - \frac{1}{2}\eta_{\alpha\beta}\, \partial_{\gamma}\partial^{\gamma}h = 0.
+\end{equation}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Grados de libertad.} 
+%#####################################################################################################
+\justify{En esta sección, se ha estudiado los grados de libertad del campo de spin-2 sin masa. Además, se ha observado cómo obligar al campo de la teoría a conservar una corriente asociada a este implica la invariancia gauge del propio lagrangiano. La elección del gauge armónico nos permite restringir un total de cuatro grados de libertad, lo que junto con la invariancia deja al campo con los dos grados de libertad predichos para un campo no masivo. Lo cual concuerda con la clasificación de Wigner para esta clase de partículas. En la sección \ref{spin2massless:Helicity}, se lleva a cabo un análisis detallado del campo, el cual reconfirma el número de grados de libertad y muestra la relación entre las componentes del campo y la helicidad de las mismas.
+%\justify{En esta sección, se ha estudiado el campo de spin-2 sin masa. Se ha demostrado que este campo tiene dos grados de libertad, lo que concuerda con la clasificación de Wigner para esta clase de partículas. Además, hemos podido observar como el obligar al campo de la teoría que conserve una corriente asociada a este implica la invariancia \textit{gauge} del lagrangaino. La elección del \textit{gauge} armónico nos permite restringir un total de cuatro grados de libertad, que junto con la invarianza deja al campo con los dos grados de libertad predichos para una un campo no masivo. En la sección \ref{spin2massless:Helicity}, se lleva a cabo un análisis detallado del campo, el cual reconfirma esta afirmación y muestra la relación entre las componentes del campo y la helicidad de las mismas.}
+
+
+En el campo de spin-2, se ha comprobado que solo existen dos posibles lagrangianos: uno para el caso no masivo y otro para el caso de masa finita. A pesar de que la parte dinámica del lagrangiano de ambas teorías sea igual, la analogía entre el caso masivo y sin masa es menos evidente. Las condiciones sobre el campo obtenidas en ambos casos son distintas, a diferencia del caso de spin-1, lo cual presenta consecuencias tanto en la ecuación de movimiento como en el hamiltoniano, como se observará en el capítulo siguiente.
+
+
+\justify{En cuanto al campo de spin-2, hemos comprobado que solo existen dos posibles lagrangianos para este tipo de campo, uno para el caso no masivo y otro para el caso de masa finita. Aun así, a pesar de que la parte dinámica del lagrangiano de ambas teorías sea igual, la analogía entre el caso masivo y sin masa es menos evidente con en los casos de Proca y Maxwell. Las condiciones sobre el campo obtenidos en ambos casos resultan distintos, no como en el caso de spin-1, y esto presenta consecuencias tanto en la ecuación de movimiento como en el hamiltoniano, como observaremos en la siguiente sección.}
+%\justify{Al igual que ocurre con el campo de spin-1 vectorial, la dinámica de un campo de spin-2 para un tensor de orden dos simétrico es escueta. Solo existen dos posibles lagrangianos para este tipo de campo, uno para el caso no masivo y otro para el caso de masa finita. A pesar de que la parte dinámica del lagrangiano de ambas teorías seas iguales, el comportamiento de los campos cada vez se vuelve más diferentes. Las condiciones sujetas a cada sistema son distintas e incluso su cinemática.}
+
+\justify{Estas discrepancias entre el caso no masivo y el de masa finita son conocidas y bien estudiadas, el ejemplo más famoso ocurre con la discontinuidad cDVZ, descubierta por Hendrik van Dam y Martinus J. G. Veltman, y también por Valentin I. Zakharov en los años 70 \cite{vanDam:1970vg, Zakharov:1970cc}. Esta discontinuidad muestra que existen diferencias entre las interacciones dadas por ambos casos, y que, por ejemplo, mientras que a pequeñas escalas ambos casos se recupera la ley gravitacional de Newton, en el caso masivo la curvatura de la luz solo es tres cuartos del resultado obtenido por el caso sin masa (para mayor información véase \cite{Hinterbichler:2011tt, Rubakov:2004eb}).}
+%\justify{Estas discrepancias entre el caso no masivo y el de masa finita son conocidos y se encuentran bien estudiadas. Como ocurre con la discontinuidad cDVZ, descubierta por Hendrik van Dam y Martinus J. G. Veltman y, independientemente, Valentin I. Zakharov en los años 70 \cite{vanDam:1970vg, Zakharov:1970cc}. Esta discontinuidad muestra que existen diferencias entre las interacciones dadas por ambos casos, y que por ejemplo, mientras que a pequeñas escalas ambos casos se recupera la ley gravitacional de Newton, en el caso masivo la curvatura de la luz solo es tres cuartos del resultado obtenido por el caso sin masa (para mayor información véase \cite{Hinterbichler:2011tt, Rubakov:2004eb,}).}
+ 
+%#####################################################################################################
+\vspace{4mm}
+\section{Hamiltoniano.} 
+%#####################################################################################################
+\justify{En este capítulo, consideramos el hamiltoniano asociado al campo de spin-2 sin masa. Utilizando la experiencia adquirida en el caso masivo, recurrimos al mismo tensor definido en la ecuación \eqref{Eq:pitensor}.}
+%\justify{El hamiltoniano del sistema de este capítulo es el asociado al campo de spin-2 sin masa. Gracias a la experiencia adquirida en el caso masivo, en esta ocasión también recurriremos al mismo tensor al que recurrimos en el capítulo anterior definido en la ecuación \eqref{Eq:pitensor}}
+
+\begin{equation} \label{Eq:pitensor}
+	\pi^{\gamma\alpha\beta} =
+	\frac{1}{2}\left(\partial^{\gamma}h^{\alpha\beta} - \partial^{(\alpha}h^{\beta)\gamma}\right).
+\end{equation}
+
+\justify{Sin embargo, a diferencia del caso masivo, la segunda propiedad \eqref{Eq:Spin2Massive:PiProperties} no se cumple debido a que se encuentra dentro de la masa de capas del campo masivo. A pesar de las similitudes entre los lagrangianos, las condiciones sobre el campo obtenidas no son equivalentes. Por lo tanto, en lugar de considerar la condición utilizada en el capítulo anterior, debemos tener en cuenta la condición específica para este campo, el \textit{gauge} armónico \eqref{eq:Spin2massless:gaugearmonico}, y la ecuación de movimiento correspondiente \eqref{eq:Spin2massless:EOM4}.}
+%\justify{A pesar de que el tensor sigue siendo simétrico en los dos últimos índices, la segunda propiedad \eqref{Eq:Spin2Massive:PiProperties}, establecida en el capítulo anterior, no se cumple porque se encuentra dentro de la masa de capas del campo masivo. Como expresamos en la anterior sección, a pesar de las similitudes entre los lagrangianos, las condiciones sobre el campo obtenidas no resultan equivalentes,. Por lo tanto, en su lugar, ahora tenemos que tener en cuenta la condición que hemos escogido para este campo, el \textit{gauge} armónico \eqref{eq:Spin2massless:gaugearmonico}, y la ecuación de movimiento \eqref{eq:Spin2massless:EOM4}. Para esta ocasión, las propiedades del tensor $\pi^{\gamma\alpha\beta}$ son}
+
+\begin{align} 
+	\pi^{\gamma\alpha\beta} &= \pi^{\gamma\beta\alpha}, \\
+	\partial_{\alpha}\pi^{\gamma\alpha\beta} &= 
+	 -\frac{1}{4}\eta^{\beta\gamma}\, \partial_{\mu}\partial^{\mu}h. \label{Eq:Spin2Massless:PiProperties}
+\end{align}
+
+\justify{Una vez redefinido este tensor, expresamos el hamiltoniano. Al igual que ocurre para el caso masivo, podemos expresar al hamiltoniano \textit{on shell} en función de este tensor de la forma}
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}=  
+	\frac{1}{2}\pi^{0\alpha\beta}\partial_{0}h_{\alpha\beta} - \frac{1}{2}\pi^{i\alpha\beta}\partial_{i}h_{\alpha\beta}.
+\end{equation}
+
+\justify{Y continuando de forma análoga al caso del capítulo anterior, completamos el hamiltoniano para obtener productos del estilo $\pi^{\mu\nu\rho}_{\alpha\beta\gamma}$ y a los términos mixtos resultantes pasamos la derivada parcial al tensor $\pi^{\gamma\alpha\beta}$. De esta forma, el lagrangiano queda de la forma}
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}=  
+	\pi^{0\alpha\beta\gamma}\pi_{0\alpha\beta\gamma} - \pi^{i\alpha\beta\gamma}\pi_{i\alpha\beta\gamma} - \partial_{\alpha}\pi^{0\alpha\beta}h_{0\beta} + \partial_{\alpha}\pi^{i\alpha\beta}h_{i\beta} + \mathcal{H}_{\text{Boundary}}.
+\end{equation}
+
+\justify{Hasta este momento, el desarrollo realizado es equivalente al ocurrido en el caso masivo. Hacemos uso de la propiedad \eqref{Eq:Spin2Massless:PiProperties} y la substituimos en el hamiltoniano para dar}
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}=  
+	\pi^{0\alpha\beta\gamma}\pi_{0\alpha\beta\gamma} - \pi^{i\alpha\beta\gamma}\pi_{i\alpha\beta\gamma} - \partial_{\mu}h\partial^{\mu}h + \mathcal{H}_{\text{Boundary}}.
+\end{equation}
+
+\justify{El último término obtenido $\partial_{\mu}h\partial^{\mu}h$ equivale al producto $\pi^{\alpha\beta\gamma}pi_{\alpha\beta\gamma}$. Si hacemos la substitución y separamos las componentes espaciales y temporales, el hamiltoniano se puede describe como}
+
+\begin{equation}
+	\mathcal{H}^{\text{ spin}2}=  
+	- 2 \pi^{i\alpha\beta\gamma}\pi_{i\alpha\beta\gamma} = 
+	2 \left( \left(\pi_{i00}\right)^{2} - 2 \pi^{ij0}\pi_{ij0} + \left(\pi_{ijk}\right)^{2}\right).
+\end{equation}
+
+\justify{Nuevamente, nos encontramos ante un término no definido estrictamente positivo $- 2 \pi^{ij0}\pi_{ij0}$ . Por tanto, hacemos uso de las siguientes equivalencias}
+
+\begin{align}
+	(\pi_{i00})^{2} &= \frac{1}{4} \left( \partial_{i}h_{00} \right)^{2} + \left( \partial_{0}h_{i0} \right)^{2}, \\
+	(\pi_{ij0})^{2} &= \frac{1}{2} \left( \partial_{0}h_{i0} \right)^{2} - \frac{1}{8} \left( \partial_{0}h \right)^{2} -  \frac{1}{2} \left( \partial_{0}h_{00} \right)^{2} - \frac{1}{4} \left( \partial_{0}h_{ij} \right)^{2}, \\
+	\mathcal{H}^{\text{ spin}2} &=  
+	\frac{1}{2} \left( \partial_{i}h_{00} \right)^{2} + \frac{1}{2} \left( \partial_{0}h \right)^{2} + 2 \left( \partial_{0}h_{00} \right)^{2} +\left( \partial_{0}h_{ij} \right)^{2} + 2 \left(\pi_{ijk}\right)^{2}.
+\end{align}
+
+\justify{En el estudio del spin-2 no masivo, hemos obtenido un hamiltoniano definido positivamente para cualquier valor de los componentes del campo $h_{\mu\nu}$. Esto implica que nuestro hamiltoniano tiene una cota inferior bien definida, lo cual es esencial para garantizar la estabilidad del sistema.}
+
+\justify{Como se discutió en el capítulo \ref{Preliminar}, las inestabilidades de Ostrogradsky son un problema recurrente en teorías clásicas, ya que suelen carecer de una cota inferior bien definida en su hamiltoniano. Sin embargo, en el caso del spin-2 no masivo, hemos comprobado que nuestro hamiltoniano cumple con el grupo de clasificación de Wigner correspondiente a energía positiva. Esto garantiza la estabilidad del sistema y nos permite afirmar que la teoría está bien descrita.}
+%\justify{Y finalmente obtenemos un hamiltoniano definido positivo, para cualquier valor que presente cualquier componente del campo $h_{\mu\nu}$. Por tanto, podemos verificar que nuestro hamiltoniano presenta una cota inferior, y que este se encuentra definido positivamente. En el capítulo \ref{Preliminar} se discutió sobre la problemática de las inestabilidades de Ostrogradsky en teorías clásicas, en el cual el hamiltoniano del sistema carece de una cota inferior bien definida. Por tanto podemos afirmar, que este resultado demuestra que el hamiltoniano cumple con el grupo de clasificación de Wigner correspondiente a energía positiva, lo que garantiza la estabilidad del sistema.}
+
+\justify{En resumen, el análisis del hamiltoniano es fundamental para garantizar la estabilidad de las teorías clásicas. En el caso del spin-2 no masivo, se ha demostrado que el hamiltoniano cumple con los requisitos necesarios para garantizar la estabilidad del sistema, lo que es esencial para asegurar que la teoría está bien descrita.}
+%\justify{En conclusión, el análisis del hamiltoniano es esencial para garantizar la estabilidad de las teorías clásicas. En el caso de spin-2 no masivo, se ha comprobado que el hamiltoniano cumple con los requisitos necesarios para garantizar la estabilidad del sistema, lo que es fundamental para asegurar que la teoría está bien descrita.}
+
+
+%#####################################################################################################
+\vspace{4mm}
+\section{Helicidad.} \label{spin2massless:Helicity}
+%#####################################################################################################
+
+\justify{En este apartado se demuestra que el campo en cuestión se comporta efectivamente como un campo de spin-2. Para ello, se hace uso de las condiciones obtenidas en esta sección, la invariancia de \textit{gauge} \eqref{eq:Spin2massless:Gauge} y la condición del \textit{gauge} armónico \eqref{eq:Spin2massless:gaugearmonico}. El procedimiento es análogo al presentado en el capítulo anterior (Aptdo. \ref{Spin1:Helicity}), así como al descrito en \cite{JanssenBook}, en el capítulo 17.}
+%\justify{En este apartado se muestra que efectivamente el campo se comporta como un campo de spin-2, para ello se hace uso de las condiciones obtenidas en esta sección, la invarianza \textit{gauge} \eqref{eq:Spin2massless:Gauge} y la condición del \textit{gauge} armonico  \eqref{eq:Spin2massless:gaugearmonico}. El procedimiento es análogo al presentado en el capítulo anterior (Aptdo. \ref{Spin1:Helicity}), y el mismo que en \cite{JanssenBook,} en el capítulo 17}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Primera restricción.}
+%#####################################################################################################
+
+\justify{La filosofía subyacente a la teoría de este capítulo es análoga a la que fundamenta el campo de spin-1, un modelo relativista Lorentz y con una acción local. Es decir, nuestro campo debe encontrarse dentro del marco de la relatividad especial. Por este motivo el \textit{gauge} elegido es el \textit{gauge} armónico.}
+%\justify{La filosofía de esta teoría es la misma que en la que se fundamenta el campo de spin-1, nuestro campo debe encontrarse dentro del panorama de la relativista especial. Por este motivo, el \textit{gauge} que se escoge es el \textit{gauge} armónico \eqref{eq:Spin2massless:gaugearmonico}. }
+
+\justify{En el caso del sistema libre de interacciones, el \textit{gauge} permite simplificar las ecuaciones de movimiento a la expresión (\ref{eq:Spin2massless:EOM4}). Si redefinimos la expresión en función de un nuevo campo $\bar{h}_{\mu\nu}$, podemos obtener una ecuación de movimiento del tipo onda relativista}
+%\justify{En el caso del sistema libre de interacciones, el \textit{gauge} permite simplificar las ecuaciones de movimiento a la expresión \eqref{eq:Spin2massless:EOM4}. Si redefinimos la expresión en función del campo $\bar{h}_{\mu\nu}$ podemos obtener una ecuación de movimiento del tipo onda relativista}
+
+\begin{equation} \label{eq:spin2massless:EOMhbar}
+	\partial_{\gamma}\partial^{\gamma} \left( h_{\alpha\beta} - \frac{1}{2}\eta_{\alpha\beta}h\right) 
+	\equiv \; \partial_{\gamma}\partial^{\gamma}\bar{h}_{\alpha\beta} = 0.
+\end{equation}
+
+\justify{La solución propuesta permite afirmar que nuestra teoría del campo de spin-2 se encuentra dentro del marco de la relatividad especial. Además, se trata de un campo cuya transmisión de fluctuaciones no supera la velocidad de la luz, lo que nos permite afirmar que su acción es local. La solución de este tipo de ecuaciones es conocida como una combinación lineal de ondas planas, pero por simplicidad, tomaremos $\bar{h}_{\mu\nu}$ como una única onda plana}
+%\justify{Esta solución permite afirmar que nuestra teoría de campo de spin-2 se encuentra dentro del marco de la relatividad especial. Y además, se trata de un campo cuya transmisión de fluctuaciones no es más rápida que la de la velocidad de la luz, por tanto podemos afirmar que su acción es local. La solución de este tipo de ecuaciones es conocido, una combinación lineal de ondas planas, pero por simplicidad tomaremos $\bar{h}_{\mu\nu}$ como una única onda plana}
+
+\begin{equation} \label{eq:spin2massless:hondaplana}
+	\bar{h}_{\mu\nu} = \mathcal{C}_{\mu\nu} \, e^{ik_{\lambda}x^{\lambda}}, \hspace{5mm} 
+	( \mathcal{C}_{\mu\nu} ) =  \begin{pmatrix}
+							\mathcal{C}_{00} & \mathcal{C}_{01} & \mathcal{C}_{02} & \mathcal{C}_{03}\\
+							& \mathcal{C}_{11} & \mathcal{C}_{12} & \mathcal{C}_{13}\\
+							&  \cdots & \mathcal{C}_{22} & \mathcal{C}_{23}\\
+							&  & & \mathcal{C}_{33}\\
+					      \end{pmatrix},
+\end{equation}
+
+\justify{donde se define $k_{\mu}$ como el vector de onda y $\mathcal{C}_{\mu\nu}$ como la amplitud de cada componente. Este último es un tensor de orden dos simétrico, como también ocurre con $\bar{h}_{\mu\nu}$. Con esta nueva redefinición y las condiciones \eqref{eq:Spin2massless:gaugearmonico} y \eqref{eq:spin2massless:EOMhbar} podemos extraer dos nuevas condiciones sobre el campo}
+
+\begin{itemize}
+	\item Se se impone la condición del \textit{gauge} armónico sobre la ecuación de onda plana obtenemos
+	\begin{equation} \label{eq:spin2massless:condition1}
+		\partial^{\mu} \left( \mathcal{C}_{\mu\nu} \, e^{ik_{\lambda}x^{\lambda}} \right) = 
+		\frac{1}{2} \partial_{\nu} \left( \mathcal{C}_{\mu}^{\;\;\;\mu} \, e^{ik_{\lambda}x^{\lambda}} \right) \iff 
+		k^{\mu}\, \mathcal{C}_{\mu\nu} = \frac{1}{2} k_{\nu}\, \mathcal{C}_{\mu}^{\;\;\;\mu}.
+	\end{equation}
+
+	\item Si se impone que la onda plana cumpla la ecuación de movimiento \eqref{eq:spin2massless:EOMhbar} se obtiene que el vector de onda $k_{\mu}$ debe ser nulo, como en la Ec. \eqref{eq:Spin1massless:Condition2} para el caso de spin-1,
+
+	\begin{equation} \label{eq:spin2massless:condition2}
+		0 = \partial_{\rho}\partial^{\rho} \left( \mathcal{C}_{\mu\nu} \, e^{ik_{\lambda}x^{\lambda}} \right) =
+	      		- \mathcal{C}_{\mu\nu} \, k_{\rho}k^{\rho} e^{ik_{\lambda}x^{\lambda}} \iff k_{\rho}k^{\rho}  = 0.
+	\end{equation}
+\end{itemize}
+
+\justify{A pesar de aparentar ser dos condiciones aisladas, las ecuaciones (1) y (2) forman en realidad una única ligadura. El poder definir al campo como una onda plana simplifica y acota el espectro de posibilidades del campo, pero a su vez dobla los grados de libertad: el vector de onda $k_{\mu}$ y la amplitud de la onda $\mathcal{C}_{\mu\nu}$. Por este motivo, deben aparecer el doble de condiciones. Hasta este punto del análisis de la helicidad, la analogía con el realizado para el campo de spin-1 es $1:1$.}
+%\justify{Aunque aparenten ser dos condiciones aisladas, se tratan de una única ligadura. El poder definir al campo como una onda plana simplifica y acota el espectro de posibilidades del campo, pero a su vez dobla los grados de libertad: el vector de onda ($k_{\mu}$) y la amplitud de la onda ($\mathcal{C}_{\mu\nu}$). Por este motivo, deben aparecer el doble de condiciones. La analogía con el campo de spin-1 es $1:1$. }
+
+\justify{Las condiciones se pueden expresar de la forma}
+
+\begin{align}
+	k_{0} &= k_{0} (\vec{k}), \hspace{5mm}
+	\mathcal{C}_{00} = \frac{2 k^{i}}{k^{0}} \, \mathcal{C}_{0i} + \mathcal{C}_{i}^{\;\; i}, \hspace{5mm}
+	\mathcal{C}_{0i} = \frac{1}{k^{0}} \left( k^{j}\mathcal{C}_{0j} + \frac{k_{j}}{2} \mathcal{C}_{\mu}^{\;\;\mu} \right).
+\end{align}
+
+\justify{Para simplificar, a partir de este momento supondremos que la onda se propaga en una dirección espacial arbitraria, más en concreto en la última componente espacial. Las componentes de la amplitud que consideramos dependen del resto son $\left(\mathcal{C}_{03}, \; \mathcal{C}_{13}, \; \mathcal{C}_{22}, \; \mathcal{C}_{23}\right)$}
+%\justify{Para simplificar, a partir de este momento supondremos que la onda se propaga por una única dirección espacial arbitraria, la última componente. Las componentes de la amplitud que hacemos depender del resto son $\left(\mathcal{C}_{03}, \; \mathcal{C}_{13}, \; \mathcal{C}_{22}, \;\mathcal{C}_{23}\right) $}
+
+\begin{equation} \label{eq:spin2massless:ligaduras1}
+	\mathcal{C}_{03} = -\frac{1}{2}\left( \mathcal{C}_{00} + \mathcal{C}_{33} \right), \hspace{5mm}
+	\mathcal{C}_{13} = -\mathcal{C}_{01}, \hspace{5mm}
+	\mathcal{C}_{23} = -\mathcal{C}_{02}, \hspace{5mm}
+	\mathcal{C}_{22} = -\mathcal{C}_{11},
+\end{equation}
+
+\justify{si se expresan de forma matricial}
+
+\begin{equation} \label{eq:spin2massless:ligaduras1Matrix}
+	(k^{\mu}) = \begin{pmatrix}
+					k \\
+					0 \\
+					0 \\
+					k 
+			        \end{pmatrix}, \hspace{5mm} ( \mathcal{C}_{\mu\nu} ) =  \begin{pmatrix}
+							\mathcal{C}_{00} & \hspace{4mm}\mathcal{C}_{01}\hspace{4mm} & \mathcal{C}_{02}\hspace{4mm} & -\frac{1}{2}\left( \mathcal{C}_{00} + \mathcal{C}_{33} \right)\\
+							& & & & \\
+							& \hspace{4mm}\mathcal{C}_{11}\hspace{4mm} & \mathcal{C}_{12\hspace{4mm}} &  -\mathcal{C}_{01}\\
+							& & & & \\
+							&  \ddots & -\mathcal{C}_{11}\hspace{4mm} & -\mathcal{C}_{02}\\
+							& & & & \\
+							&  & &  \hspace{3mm}\mathcal{C}_{33}\\
+					      \end{pmatrix}.
+\end{equation}
+
+\justify{Por tanto, podemos observar que las ecuaciones \eqref{eq:spin2massless:condition1} y \eqref{eq:spin2massless:condition2} permiten determinar hasta cuatro componentes en función del resto de componentes. O lo que es lo mismo, el \textit{gauge} armónico restringe cuatro grados de libertad sobre el campo $h_{\mu\nu}$.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Segunda restricción.}
+%#####################################################################################################
+
+\justify{Al fijar cuatro grados de libertad del tensor simétrico, que presenta un total de diez grados de libertad, nos quedan seis grados de libertad disponibles  $\left(\mathcal{C}_{00}, \; \mathcal{C}_{01}, \; \mathcal{C}_{02}, \;\mathcal{C}_{11}, \;\mathcal{C}_{12}, \;\mathcal{C}_{33}, \right) $. A pesar de haber considerado el \textit{gauge} armónico en el procedimiento, todavía debemos definir por completo la condición \textit{gauge} y así restringir los cuatro grados de libertad restantes.}
+%\justify{Fijado 4 grados de libertad, de los 10 grados de libertad que presenta el tensor simétrico, nos deja con 6 grados de libertad $\left(\mathcal{C}_{00}, \; \mathcal{C}_{01}, \; \mathcal{C}_{02}, \;\mathcal{C}_{11}, \;\mathcal{C}_{12}, \;\mathcal{C}_{33}, \right) $. Quedan otros 4 grados de libertad por fijar. Además, aunque hemos tenido en cuenta el \textit{gauge} armónico para el procedimiento, no hemos definido la condición \textit{gauge} en sí. Aprovecharemos para definirlo de tal forma que mantenga la condición y consiga restringir los cuatro grados que sobran. }
+
+\justify{Si definimos el parámetro $\xi$ de la transformación \eqref{eq:Spin2massless:Gauge} dejamos el \textit{gauge} determinado, lo que nos permite aplicar las condiciones ligaduras intrínsecas a la condición}
+
+\begin{equation}
+	\xi_{\mu} = iU_{\mu}e^{ik_{\lambda}x^{\lambda}} 
+	\hspace{4mm} \Longrightarrow \hspace{4mm}
+	h_{\mu\nu} \rightarrow h^{'}_{\mu\nu} = h_{\mu\nu} + i k_{(\mu} U_{\nu)}e^{ik_{\lambda}x^{\lambda}},
+\end{equation}
+
+\justify{donde $U_{\mu}$ es únicamente una constante. El planteamiento es el mismo que en el caso de spin-1: las nuevas componentes del campo transformado no afecta la forma de las condiciones obtenidas previamente. Es más, el hecho de que en la transformada aparezca el vector de onda garantiza que en cualquier operación relacionada con derivadas, este término desaparezca. Como se cumple la ecuación (\ref{eq:spin2massless:EOMhbar}), el campo $\bar{h}_{\mu\nu}$ sigue siendo una solución de onda plana. Esta vez lo expresamos como}
+%\justify{donde $U_{\mu}$ es únicamente una constante. El planteamiento es el mismo que en el caso de spin-1, la nueva transformada no interfiere en la forma de las condiciones obtendidas. El hecho de que la transformada aparezca con el vector de onda, garantiza que en cualquier operación relacionado con derivadas desaparezca. Como se cumple \eqref{eq:spin2massless:EOMhbar}, el campo $\bar{h}_{\mu\nu}$ sigue siendo una solución de onda plana. Esta vez lo expresamos como}
+
+\begin{equation}
+	\bar{h}'_{\mu\nu} = \left( \mathcal{C}_{\mu\nu} + k_{(\mu} U_{\nu)} \right) \, e^{ik_{\lambda}x^{\lambda}}.
+\end{equation}
+
+\justify{Según el argumento presentado en la ecuación de movimiento, las condiciones \eqref{eq:spin2massless:condition1} y \eqref{eq:spin2massless:condition2} continúan cumpliéndose. En otras palabras, se pueden establecer las mismas componentes que en la ecuación \eqref{eq:spin2massless:ligaduras1}. Sin embargo, lo que se modifica es el tensor de amplitud que ahora queda se expresa como}
+%\justify{Por el mismo argumento que en la ecuación de movimiento las condiciones \eqref{eq:spin2massless:condition1} y \eqref{eq:spin2massless:condition2} se siguen cumpliendo. Es decir, que se pueden fijar las mismas componentes que en Ec. \eqref{eq:spin2massless:ligaduras1}. Lo que cambia es el tensor de amplitud $\left( \mathcal{C}_{\mu\nu} + k_{(\mu} U_{\nu)} \right)$ }
+
+\begin{equation}
+	\left(\mathcal{C}_{\mu\nu} + k_{(\mu} U_{\nu)} \right) =  \begin{pmatrix}
+							\mathcal{C}_{00} + 2kU_{0} & \hspace{3mm}\mathcal{C}_{01} + kU_{1} \hspace{3mm} & \mathcal{C}_{02} + kU_{2}\hspace{3mm} & -\frac{1}{2}\left( \mathcal{C}_{00} + 2kU_{0}+ \mathcal{C}_{33} + 2kU_{3}\ \right)\\
+							& & & & \\
+							& \hspace{3mm}\mathcal{C}_{11}\hspace{3mm} & \mathcal{C}_{12\hspace{3mm}} &  -\left(\mathcal{C}_{01} + kU_{1}\right)\\
+							& & & & \\
+							&  \ddots & -\mathcal{C}_{11}\hspace{3mm} & -\left(\mathcal{C}_{02} + kU_{2}\right)\\
+							& & & & \\
+							&  & &  \hspace{3mm}\mathcal{C}_{33} + 2kU_{3}\\
+					      \end{pmatrix}.
+\end{equation}
+
+\justify{A partir del resultado obtenido, podemos observar que se presentan las cuatro componentes del vector $U_{\mu}$. Estas componentes se encuentran en una configuración libre, específicamente en $\left(\mathcal{C}_{00}, \; \mathcal{C}_{01}, \; \mathcal{C}_{02}, \;\mathcal{C}_{33}, \right)$. Sin embargo, es importante mencionar que las componentes de $U_{\mu}$ no están previamente definidas. La elección del valor de sus componentes se determina mediante el \textit{gauge}, una condición que se impone de forma arbitraria. Por tanto, si se define $U_{\mu}$ con el objetivo de anular las cuatro componentes que se le relacionan, la amplitud queda de la forma}
+%\justify{De este resultado podemos observar que aparece las cuatro componentes del vector $U_{\mu}$. Aparecen en cuatro de las componentes que hasta en este momento se tratan de libre configuración $\left(\mathcal{C}_{00}, \; \mathcal{C}_{01}, \; \mathcal{C}_{02}, \;\mathcal{C}_{33}, \right)$. Las componentes de $U_{\mu}$ no se encuentran definidas, la elección del valor de sus componentes viene dado por el \textit{gauge}, condición que se impone de forma arbitraria. Por tanto, si se define $U_{\mu}$ con el objetivo de anular las cuatro componentes que se le relacionan, la amplitud queda de la forma}
+
+\begin{equation}
+	(U_{\mu}) = k^{-1} \left( -\frac{1}{2} \mathcal{C}_{00},\; \mathcal{C}_{01},\; \mathcal{C}_{02},\; -\frac{1}{2} \mathcal{C}_{00},  \right)  
+	\hspace{4mm}\Longrightarrow\hspace{4mm}
+	\left(\mathcal{C}_{\mu\nu} + k_{(\mu} U_{\nu)} \right) =  \begin{pmatrix}
+													0& 0& 0 & 0\\
+													0& \mathcal{C}_{11}& \mathcal{C}_{12}  & 0\\
+													0& \mathcal{C}_{12}& -\mathcal{C}_{11} & 0\\
+													0& 0& 0 & 0
+											    \end{pmatrix}.
+\end{equation}
+
+\justify{Una vez determinadas las componentes de $\bar{h}_{\mu\nu}$, podemos afirmar que la clasificación de Wigner se cumple para este caso. El campo de spin-2 no masivo presenta dos grados de libertad. Las restricciones impuestas sobre las componentes restantes se encuentran asociadas a la naturaleza simétrica del tensor, a la invariancia de \textit{gauge} mediante la ecuación \eqref{eq:Spin2massless:Gauge} del lagrangiano de Fierz-Pauli y a la condición del \textit{gauge} armónico mediante la ecuación \eqref{eq:Spin2massless:gaugearmonico}. Sin embargo, todavía nos queda por demostrar cuál es el spin del campo.}
+%\justify{Una vez determinado las componentes de $\bar{h}_{\mu\nu}$, podemos afirmar que la clasificación de Wigner se cumple para este caso. El campo de spin no masivo presenta dos grados de libertad. Las ligaduras del resto de componentes se encuentran asociadas a la naturaleza simétrica del tensor, a la invariancia de gauge \eqref{eq:Spin2massless:Gauge} del lagrangiano de Fierz-Pauli y a la condición del gauge armónico \eqref{eq:Spin2massless:gaugearmonico}. Nos queda por demostrar cual es el spin del campo.}
+
+%#####################################################################################################
+\vspace{4mm}
+\subsection{Helicidades del campo de spin-2.}
+%#####################################################################################################
+%DUDA: hay que hablar que la transformada es una rotación. 
+\justify{Se estudia las helicidades de las componentes de $h$, para ello se aplica una transformación asociado a una rotación con el tensor \eqref{eq:spin1massless:rotation}. Al aplicarse sobre un tensor de orden 2, el campo se transforma como}
+
+\begin{equation} \label{eq:spin2massless:Ltrans}
+	h^{'}_{\mu\nu} = (\Lambda^{-1})^{\alpha}_{\hspace{2mm}\mu} (\Lambda^{-1})^{\beta}_{\hspace{2mm}\nu}\, h_{\alpha\beta} .
+\end{equation}
+
+%DUDA: LA HELICIDAD ES EL MISMO SIMBOLO QUE LA TRAZA DEL CAMPO, tenemos que hacer algo. 
+\justify{De forma análoga al caso de spin-1, asociaremos a las componentes del campo una helicidad $(\text{h})$ cuando al transformar el campo bajo una rotación de ángulo $\theta$ aparezca una relación del tipo}
+
+\begin{equation} \label{eq:spin2massless:spincond}
+	h^{'}_{\mu\nu} = e^{i\text{h}\theta} h_{\alpha\beta} .
+\end{equation}
+
+\justify{En el capítulo anterior, tras el estudio del caso masivo (ver Sec. \ref{seccion:spin1mass:GradosdeLibertad}), llegamos a entrever que las ligaduras asociadas a la condición \textit{gauge} se encuentran asociadas a la mayor de las representaciones de Lorentz. Para el caso de campo vectorial $A_{\mu}$ afirmamos que la condición \textit{gauge} eliminaba el spin-0 del triplete, y la ecuación de movimiento el singlete.}
+
+\justify{Por este motivo, nos proponemos estudiar las helicidades de las componentes que quedaron libre tras imponer la condición de movimiento (Ec. \eqref{eq:spin2massless:ligaduras1}), es decir $\left(\mathcal{C}_{00}, \; \mathcal{C}_{01}, \; \mathcal{C}_{02}, \;\mathcal{C}_{11}, \;\mathcal{C}_{12}, \;\mathcal{C}_{33}, \right) $. Si tomamos como premisa el caso de spin-1, en estas componentes deberíamos encontrarnos las helicididas asociadas al quintuplete y una extra. }
+
+\justify{Se estudia la transformación \eqref{eq:spin2massless:Ltrans} sobre las componentes libres de $h_{\mu\nu}$ en la Ec. \eqref{eq:spin2massless:ligaduras1Matrix}}
+
+\begin{equation}
+\begin{matrix}
+\mathcal{C}^{'}_{00} = \mathcal{C}_{00}, \hspace{4mm} & \mathcal{C}^{'}_{01} = C_{01} \cos{(\theta)} - C_{02} \sin{(\theta)} ,   \hspace{4mm}& \mathcal{C}^{'}_{11} = \mathcal{C}_{11} \cos{\left(2 \theta \right)} - \mathcal{C}_{12} \sin{\left(2 \theta \right)},  \\
+\mathcal{C}^{'}_{33} = \mathcal{C}_{33}, \hspace{4mm}& \mathcal{C}^{'}_{02} =  C_{01} \sin{(\theta)} + C_{02}\cos{(\theta)},    \hspace{4mm}& \mathcal{C}^{'}_{12} = \mathcal{C}_{11} \sin{\left(2 \theta \right)} + \mathcal{C}_{12} \cos{\left(2 \theta \right)}.
+\end{matrix}	
+\end{equation}
+
+\justify{En el estudio de la helicidad en las componentes $\mathcal{C}$, se ha observado que las componentes $\mathcal{C}_{00}$ y $\mathcal{C}_{33}$ presentan una helicidad nula. Sin embargo, el comportamiento de las demás componentes se asemeja al caso descrito en la ecuación \eqref{eq:spin1massless:secondtrans}. Aunque no sea evidente a simple vista, estas componentes también poseen helicidad. Por ello, se propone realizar dos transformaciones similares al cambio de base descrito en \eqref{eq:spin1massless:cambiobase}, con el fin de poder visualizar las helicidades de las componentes.}
+%\justify{Se puede observar como las componentes $\mathcal{C}_{00}$ y $\mathcal{C}_{33}$ presentan una helicidad nula. El resto de componentes se comportan de forma análoga al caso \eqref{eq:spin1massless:secondtrans}, a pesar de que no se pueda apreciar a primera vista la helicidad de las componentes, está. Para ello, se plantea realizar dos transformaciones (análogas al cambio de base \eqref{eq:spin1massless:cambiobase}) para poder visualizar las helicidades de las componentes.}
+
+\justify{Se re-definen las componentes de $\mathcal{C}_{\mu\nu}$}
+
+\begin{equation}
+\begin{matrix}
+\mathcal{V}_{R} = \frac{1}{\sqrt{2}}\left( \mathcal{C}_{01} + i\mathcal{C}_{02} \right), \hspace{4mm} &\mathcal{C}_{R} = \frac{1}{\sqrt{2}}\left( \mathcal{C}_{11} + i\mathcal{C}_{12} \right), \\ \\
+ \mathcal{V}_{L}  = \frac{1}{\sqrt{2}}\left( \mathcal{C}_{01} - i\mathcal{C}_{02} \right) , \hspace{4mm}& \mathcal{C}_{L} = \frac{1}{\sqrt{2}}\left( \mathcal{C}_{11} - i\mathcal{C}_{12} \right).
+\end{matrix}	
+\end{equation}
+
+\justify{Gracias a esta recombinación, se puede apreciar las helicidades que estamos estudiando}
+
+\begin{equation} \label{eq:spin2massless:represen}
+\begin{matrix}
+\mathcal{C}^{'}_{00} = \mathcal{C}_{00}, \hspace{4mm} & \mathcal{V}^{'}_{R} = e^{i\theta} \mathcal{V}_{R},   \hspace{4mm}& \mathcal{C}^{'}_{R} = e^{i2\theta} \mathcal{C}_{R},  \\
+\mathcal{C}^{'}_{33} = \mathcal{C}_{33}, \hspace{4mm}&  \mathcal{V}^{'}_{L} = e^{-i\theta} \mathcal{V}_{R},    \hspace{4mm}& \mathcal{C}^{'}_{L}  = e^{-i2\theta} \mathcal{C}_{L}.
+\end{matrix}	
+\end{equation}
+
+\justify{Efectivamente, se puede observar como aparecen las helicidades esperadas de un campo de spin-2: ${0, \pm1, \pm2}$. Además, las componentes asociadas a las helicidades de $\pm2$ son las mismas que presentan los grados de libertad del sistema: $\mathcal{C}_{11}$ y $\mathcal{C}_{12}$. Llegados a este punto, podríamos estar satisfechos por haber desarrollado las bases de una teoría que modela un campo de spin-2. }
